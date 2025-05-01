@@ -61,6 +61,22 @@
       transition: font-size 0.3s ease;
     }
 
+    /* Hamburger Menu */
+    .hamburger {
+      display: none;
+      cursor: pointer;
+      padding: 10px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 5px 0;
+      transition: 0.3s;
+    }
+
     nav ul {
       list-style: none;
       display: flex;
@@ -75,23 +91,8 @@
       transition: color 0.3s, font-size 0.3s ease;
     }
 
-    nav ul li a::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;
-      background: #00ff88;
-      left: 0;
-      bottom: -5px;
-      transition: width 0.3s;
-    }
-
     nav ul li a:hover {
       color: #00ff88;
-    }
-
-    nav ul li a:hover::after {
-      width: 100%;
     }
 
     /* Shrink Effect for Navbar on Scroll */
@@ -115,46 +116,49 @@
       font-size: 14px;
     }
 
-    /* Mobile Navigation Adjustments */
     @media (max-width: 768px) {
-      .nav-container {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 20px;
-      }
-
-      .nav-logo {
-        justify-content: center;
-        margin-bottom: 10px;
-        gap: 15px;
-      }
-
-      .nav-logo h1 {
-        font-size: 18px;
-      }
-
-      .nav-logo img {
-        height: 40px;
-      }
-
-      nav ul {
-        flex-direction: row;
-        gap: 15px;
-        text-align: center;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-
-      nav ul li a {
-        font-size: 14px;
-        padding: 5px 0;
+      .hamburger {
         display: block;
       }
 
-      nav {
-        padding: 15px 0;
+      nav ul {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: linear-gradient(90deg, #1A5C38, #0052B4);
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+        transition: 0.3s;
       }
 
+      nav ul.active {
+        left: 0;
+      }
+
+      nav ul li {
+        margin: 15px 0;
+      }
+
+      nav ul li a {
+        font-size: 18px;
+      }
+
+      .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      .hamburger.active span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+
+      /* Mobile Shrink Effect */
       nav.shrunk {
         padding: 5px 0;
       }
@@ -778,6 +782,11 @@
         </a>
         <h1>STEM Model African Union</h1>
       </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -823,13 +832,13 @@
     <div class="about-content">
       <div class="about-image-container">
         <img src="./about picture.jpg" alt="Students in a STEM MAU committee session">
-        <p class="caption">Students engaging in a STEM MAU conference 2024</p>
+        <p class="caption">Students engaging in a STEM MAU committee session</p>
       </div>
       <div class="about-text">
         <p>
-          STEM MAU (Model African Union) is an educational initiative founded in Egypt’s STEM Schools to foster
+          STEM MAU (Model African Union) is an educational initiative founded in Egypt's STEM Schools to foster
           diplomacy, leadership, and critical thinking among high school students. It simulates the African Union (AU),
-          engaging students in research, negotiation, and collaborative problem-solving to address Africa’s political,
+          engaging students in research, negotiation, and collaborative problem-solving to address Africa's political,
           economic, and social challenges. Through public speaking, policymaking, and teamwork, STEM MAU equips students
           with essential skills for leadership and innovation, aiming to inspire the next generation to drive positive
           change across the continent.
@@ -866,17 +875,17 @@
   <!-- Events Section -->
   <section id="events">
     <div class="stars"></div>
-    <h2>Conferences</h2>
+    <h2>Upcoming Events</h2>
     <div class="events-grid">
       <div class="event-card">
         <h3>STEM MAU 2025</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos nobis iure similique eum quas, quae minima rerum, error veritatis veniam dolor impedit animi consectetur. Odit voluptatem eum dignissimos tenetur quasi.
+        <p>Join our continental conference to debate STEM-driven solutions in simulated AU councils. Date: June 2025.
         </p>
         <a href="#">Learn More</a>
       </div>
       <div class="event-card">
-        <h3>STEM MAU 2024</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto assumenda omnis nobis voluptatibus necessitatibus harum autem hic. Delectus excepturi eius sapiente officia animi, similique corporis. Tempora maxime labore deserunt officiis.</p>
+        <h3>Diplomacy Workshop</h3>
+        <p>Sharpen your debate and resolution-writing skills in interactive sessions. Date: April 2025.</p>
         <a href="#">Learn More</a>
       </div>
     </div>
@@ -909,6 +918,31 @@
 
   <!-- JavaScript -->
   <script>
+    // Hamburger Menu Toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('nav ul');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking on a link
+    document.querySelectorAll('nav ul li a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+
     // Typewriter Effect for Hero Subtitle
     const typewriterText = "BUILD A BETTER AFRICA";
     let i = 0;
