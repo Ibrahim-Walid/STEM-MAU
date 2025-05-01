@@ -15,9 +15,8 @@
 
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
 
-    body {
-      background: #f4f4f9;
-      color: #333;
+    html, body {
+      width: 100%;
       overflow-x: hidden;
     }
 
@@ -31,6 +30,7 @@
       padding: 10px 0;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
       z-index: 50;
+      transition: padding 0.3s ease;
     }
 
     .nav-container {
@@ -40,6 +40,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 0 20px;
+      transition: padding 0.3s ease;
     }
 
     .nav-logo {
@@ -50,11 +51,13 @@
 
     .nav-logo img {
       height: 50px;
+      transition: height 0.3s ease;
     }
 
     .nav-logo h1 {
       font-size: 22px;
       font-weight: 800;
+      transition: font-size 0.3s ease;
     }
 
     nav ul {
@@ -68,7 +71,7 @@
       text-decoration: none;
       font-weight: 600;
       position: relative;
-      transition: color 0.3s;
+      transition: color 0.3s, font-size 0.3s ease;
     }
 
     nav ul li a::after {
@@ -90,6 +93,27 @@
       width: 100%;
     }
 
+    /* Shrink Effect for Navbar on Scroll */
+    nav.shrunk {
+      padding: 5px 0;
+    }
+
+    nav.shrunk .nav-container {
+      padding: 0 15px;
+    }
+
+    nav.shrunk .nav-logo img {
+      height: 30px;
+    }
+
+    nav.shrunk .nav-logo h1 {
+      font-size: 16px;
+    }
+
+    nav.shrunk ul li a {
+      font-size: 14px;
+    }
+
     /* Mobile Navigation Adjustments */
     @media (max-width: 768px) {
       .nav-container {
@@ -101,6 +125,7 @@
       .nav-logo {
         justify-content: center;
         margin-bottom: 10px;
+        gap: 15px;
       }
 
       .nav-logo h1 {
@@ -128,11 +153,31 @@
       nav {
         padding: 15px 0;
       }
+
+      nav.shrunk {
+        padding: 5px 0;
+      }
+
+      nav.shrunk .nav-container {
+        padding: 5px 15px;
+      }
+
+      nav.shrunk .nav-logo img {
+        height: 30px;
+      }
+
+      nav.shrunk .nav-logo h1 {
+        font-size: 14px;
+      }
+
+      nav.shrunk ul li a {
+        font-size: 12px;
+      }
     }
 
     /* Hero Section */
     #home {
-      height: 100vh;
+      min-height: 100vh;
       position: relative;
       display: flex;
       align-items: center;
@@ -141,6 +186,9 @@
       color: white;
       background: linear-gradient(135deg, #1A5C38, #0052B4);
       overflow: hidden;
+      width: 100%;
+      max-width: 100vw;
+      padding: 100px 0 40px; /* Increased top padding to account for navbar */
     }
 
     .hero-bg {
@@ -148,6 +196,7 @@
       top: 0;
       left: 0;
       width: 100%;
+      max-width: 100%;
       height: 100%;
       background: url('https://images.unsplash.com/photo-1622474030937-4f8d8a2a0a1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
       opacity: 0.6;
@@ -159,8 +208,10 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 80%;
-      max-width: 600px;
+      max-width: 80%;
+      max-height: 80%;
+      width: auto;
+      height: auto;
       opacity: 0.2;
       z-index: 0;
     }
@@ -168,6 +219,15 @@
     .hero-content {
       position: relative;
       z-index: 1;
+      width: 100%;
+      max-width: 100%;
+      padding: 0 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100%;
     }
 
     .hero-content h1 {
@@ -175,32 +235,142 @@
       font-weight: 800;
       margin-bottom: 20px;
       text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+      word-wrap: break-word;
+      width: 100%;
+      max-width: 100%;
+      line-height: 1.1;
+      overflow-wrap: break-word;
     }
 
     .hero-content p {
       font-size: 24px;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
+      word-wrap: break-word;
+      width: 100%;
+      max-width: 100%;
     }
 
-    .hero-content a {
-      background: #00ff88;
-      color: #1A5C38;
-      padding: 15px 30px;
-      text-decoration: none;
+    /* Stats Cards */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+
+    .stats-card {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .stats-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .stats-card h3 {
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      color: #00ff88;
+    }
+
+    .stats-card p {
+      font-size: 16px;
       font-weight: 600;
-      border-radius: 50px;
-      transition: transform 0.3s, box-shadow 0.3s;
     }
 
-    .hero-content a:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+    @media (max-width: 768px) {
+      #home {
+        padding: 120px 0 60px; /* Adjusted top padding for mobile */
+      }
+
+      .hero-content {
+        padding: 0 15px;
+      }
+
+      .hero-content h1 {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+      }
+
+      .hero-content p {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+        padding: 0 5px;
+        width: 100%;
+      }
+
+      .stats-card {
+        padding: 10px;
+      }
+
+      .stats-card h3 {
+        font-size: 24px;
+      }
+
+      .stats-card p {
+        font-size: 12px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #home {
+        padding: 140px 0 80px; /* Further adjusted top padding for very small screens */
+      }
+
+      .hero-content h1 {
+        font-size: 28px;
+        line-height: 1.3;
+        margin-bottom: 10px;
+      }
+
+      .hero-content p {
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        width: 100%;
+      }
+
+      .stats-card {
+        padding: 8px;
+      }
+
+      .stats-card h3 {
+        font-size: 20px;
+      }
+
+      .stats-card p {
+        font-size: 10px;
+      }
     }
 
     /* Aurora Effect */
     .aurora {
       position: absolute;
       width: 100%;
+      max-width: 100%;
       height: 100%;
       background: linear-gradient(45deg, rgba(0, 255, 136, 0.2), rgba(0, 82, 180, 0.2));
       animation: aurora 10s infinite;
@@ -417,22 +587,6 @@
     footer p {
       margin-bottom: 10px;
     }
-
-    /* Responsive Adjustments for Hero Section */
-    @media (max-width: 768px) {
-      .hero-content h1 {
-        font-size: 40px;
-      }
-
-      .hero-content p {
-        font-size: 18px;
-      }
-
-      .hero-content a {
-        padding: 10px 20px;
-        font-size: 14px;
-      }
-    }
   </style>
 </head>
 
@@ -463,7 +617,24 @@
     <div class="hero-content">
       <h1>STEM Model African Union</h1>
       <p id="typewriter"></p>
-      <a href="#about">Discover More</a>
+      <div class="stats-grid">
+        <div class="stats-card">
+          <h3 id="members-count" data-target="500">0</h3>
+          <p>Members</p>
+        </div>
+        <div class="stats-card">
+          <h3 id="sessions-count" data-target="300">0</h3>
+          <p>Sessions</p>
+        </div>
+        <div class="stats-card">
+          <h3 id="tracks-count" data-target="7">0</h3>
+          <p>Tracks</p>
+        </div>
+        <div class="stats-card">
+          <h3 id="conferences-count" data-target="5">0</h3>
+          <p>Conferences</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -492,17 +663,16 @@
   <!-- Events Section -->
   <section id="events">
     <div class="stars"></div>
-    <h2>conferences</h2>
+    <h2>Upcoming Events</h2>
     <div class="events-grid">
       <div class="event-card">
         <h3>STEM MAU 2025</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque esse distinctio tenetur. Modi, ea illum quo doloribus voluptate incidunt qui praesentium corporis, voluptatibus non saepe dolorem. A velit nisi numquam!
-        </p>
+        <p>Join our continental conference to debate STEM-driven solutions in simulated AU councils. Date: June 2025.</p>
         <a href="#">Learn More</a>
       </div>
       <div class="event-card">
         <h3>Diplomacy Workshop</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis iusto velit magnam fugiat cupiditate similique provident recusandae dolore ipsam dolores id autem, quisquam repudiandae iure culpa! Accusamus quibusdam qui expedita?</p>
+        <p>Sharpen your debate and resolution-writing skills in interactive sessions. Date: April 2025.</p>
         <a href="#">Learn More</a>
       </div>
     </div>
@@ -536,13 +706,13 @@
   <!-- JavaScript -->
   <script>
     // Typewriter Effect for Hero Subtitle
-    const typewriterText = "Nurturing Diplomacy, Leadership, and STEM Innovation in Africa";
+    const typewriterText = "BUILD A BETTER AFRICA";
     let i = 0;
     const speed = 100;
 
     function typeWriter() {
       if (i === 0) {
-        document.getElementById("typewriter").innerHTML = ""; // Clear previous content when starting
+        document.getElementById("typewriter").innerHTML = "";
       }
       if (i < typewriterText.length) {
         document.getElementById("typewriter").innerHTML += typewriterText.charAt(i);
@@ -579,6 +749,56 @@
       card.addEventListener('mouseleave', () => {
         card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
       });
+    });
+
+    // Number Counting Animation for Stats
+    const counters = document.querySelectorAll('.stats-card h3');
+    const speedCount = 200;
+
+    function countUp(element) {
+      const target = +element.getAttribute('data-target');
+      const increment = target / speedCount;
+      let count = 0;
+
+      const updateCount = () => {
+        count += increment;
+        if (count < target) {
+          element.textContent = Math.ceil(count) + (target > 10 ? '+' : '');
+          setTimeout(updateCount, 10);
+        } else {
+          element.textContent = target + (target > 10 ? '+' : '');
+        }
+      };
+
+      updateCount();
+    }
+
+    // Intersection Observer to trigger counting when stats are in view
+    const statsSection = document.querySelector('.stats-grid');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          counters.forEach(counter => {
+            if (counter.getAttribute('data-animated') !== 'true') {
+              counter.setAttribute('data-animated', 'true');
+              countUp(counter);
+            }
+          });
+          observer.unobserve(statsSection);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    observer.observe(statsSection);
+
+    // Navbar Shrink on Scroll
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 50) {
+        nav.classList.add('shrunk');
+      } else {
+        nav.classList.remove('shrunk');
+      }
     });
   </script>
 </body>
