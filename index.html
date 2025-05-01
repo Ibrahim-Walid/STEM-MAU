@@ -295,7 +295,8 @@
     @media (max-width: 768px) {
       #home {
         min-height: 85vh;
-        padding: 100px 0 10px;
+        padding: 95px 0 10px;
+        /* Reduced top padding to decrease space above title */
       }
 
       .hero-content {
@@ -306,20 +307,58 @@
         font-size: 32px;
         line-height: 1.2;
         margin-bottom: 5px;
-        /* Reduced to minimize empty space */
       }
 
       .hero-content p {
         font-size: 18px;
         margin-bottom: 10px;
-        /* Reduced to minimize empty space */
       }
 
       .stats-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 5px;
-        /* Reduced gap to minimize empty space */
+        gap: 8px;
+        /* Increased gap to add more distance between cards */
         padding: 0 5px;
+        width: 100%;
+      }
+
+      .stats-card {
+        padding: 15px;
+        /* Increased padding to increase height */
+      }
+
+      .stats-card h3 {
+        font-size: 28px;
+        margin-bottom: 5px;
+      }
+
+      .stats-card p {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #home {
+        min-height: 90vh;
+        padding: 100px 0 10px;
+        /* Reduced top padding to decrease space above title */
+      }
+
+      .hero-content h1 {
+        font-size: 28px;
+        line-height: 1.3;
+        margin-bottom: 3px;
+      }
+
+      .hero-content p {
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 5px;
+        /* Increased gap to add more distance between cards */
         width: 100%;
       }
 
@@ -329,57 +368,12 @@
       }
 
       .stats-card h3 {
-        font-size: 28px;
-        /* Increased font size */
-        margin-bottom: 5px;
-      }
-
-      .stats-card p {
-        font-size: 14px;
-        /* Increased font size */
-      }
-    }
-
-    @media (max-width: 480px) {
-      #home {
-        min-height: 90vh;
-        padding: 110px 0 10px;
-      }
-
-      .hero-content h1 {
-        font-size: 28px;
-        line-height: 1.3;
-        margin-bottom: 3px;
-        /* Further reduced */
-      }
-
-      .hero-content p {
-        font-size: 16px;
-        margin-bottom: 8px;
-        /* Further reduced */
-      }
-
-      .stats-grid {
-        grid-template-columns: 1fr;
-        gap: 3px;
-        /* Further reduced gap */
-        width: 100%;
-      }
-
-      .stats-card {
-        padding: 10px;
-        /* Slightly increased padding */
-      }
-
-      .stats-card h3 {
         font-size: 24px;
-        /* Increased font size */
         margin-bottom: 4px;
       }
 
       .stats-card p {
         font-size: 12px;
-        /* Increased font size */
       }
     }
 
