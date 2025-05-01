@@ -294,18 +294,18 @@
     .stats-card {
       background: rgba(255, 255, 255, 0.2);
       backdrop-filter: blur(10px);
-      padding: 15px;
+      padding: 10px;
       border-radius: 15px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s;
       width: 100%;
       box-sizing: border-box;
-      text-align: center;
+      height: 100px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 120px;
+      gap: 5px;
     }
 
     .stats-card:hover {
@@ -316,9 +316,11 @@
       font-size: 36px;
       font-weight: 800;
       margin: 0;
+      padding: 0;
       color: #00ff88;
       text-align: center;
       line-height: 1;
+      display: block;
     }
 
     .stats-card p {
@@ -326,7 +328,9 @@
       font-weight: 600;
       text-align: center;
       margin: 0;
+      padding: 0;
       line-height: 1;
+      display: block;
     }
 
     @media (max-width: 768px) {
@@ -362,23 +366,22 @@
       }
 
       .stats-card {
-        padding: 10px;
-        min-height: 100px; /* Decreased height */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        height: 90px;
+        padding: 5px;
+        gap: 8px;
       }
 
       .stats-card h3 {
-        font-size: 52px; /* Increased font size */
+        font-size: 52px;
         margin: 0;
+        padding: 0;
         line-height: 1;
       }
 
       .stats-card p {
-        font-size: 24px; /* Increased font size */
+        font-size: 24px;
         margin: 0;
+        padding: 0;
         line-height: 1;
       }
     }
