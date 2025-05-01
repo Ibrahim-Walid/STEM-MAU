@@ -968,10 +968,12 @@
     window.addEventListener('load', () => {
       const preloader = document.querySelector('.preloader');
       if (preloader) {
-        preloader.classList.add('fade-out');
         setTimeout(() => {
-          preloader.style.display = 'none';
-        }, 500);
+          preloader.classList.add('fade-out');
+          setTimeout(() => {
+            preloader.style.display = 'none';
+          }, 500);
+        }, 1500);
       }
     });
 
@@ -1018,7 +1020,9 @@
       }
     }
 
-    window.addEventListener('load', typeWriter);
+    window.addEventListener('load', () => {
+      setTimeout(typeWriter, 2500);
+    });
 
     // Smooth Scroll for Navigation Links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -1080,12 +1084,14 @@
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            counters.forEach(counter => {
-              if (counter.getAttribute('data-animated') !== 'true') {
-                counter.setAttribute('data-animated', 'true');
-                countUp(counter);
-              }
-            });
+            setTimeout(() => {
+              counters.forEach(counter => {
+                if (counter.getAttribute('data-animated') !== 'true') {
+                  counter.setAttribute('data-animated', 'true');
+                  countUp(counter);
+                }
+              });
+            }, 2500);
             observer.unobserve(statsSection);
           }
         });
@@ -1093,6 +1099,11 @@
 
       observer.observe(statsSection);
     }
+
+    // Add delay to fade-in animations for sections
+    document.querySelectorAll('section').forEach(section => {
+      section.style.animationDelay = '2.5s';
+    });
 
     // Navbar Shrink on Scroll
     window.addEventListener('scroll', () => {
