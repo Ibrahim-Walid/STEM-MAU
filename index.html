@@ -19,6 +19,8 @@
     body {
       width: 100%;
       overflow-x: hidden;
+      margin: 0;
+      min-height: 100vh;
     }
 
     /* Navigation Bar */
@@ -187,7 +189,8 @@
 
     /* Hero Section */
     #home {
-      min-height: 100vh;
+      min-height: calc(100vh + 20px);
+      height: calc(100vh + 20px);
       position: relative;
       display: flex;
       align-items: center;
@@ -198,7 +201,21 @@
       overflow: hidden;
       width: 100%;
       max-width: 100vw;
-      padding: 80px 0 10px;
+      padding: 0;
+      margin: 0;
+    }
+
+    /* Hide all sections except home initially */
+    section:not(#home) {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+
+    /* Show sections after preloader */
+    body.loaded section:not(#home) {
+      opacity: 1;
+      visibility: visible;
     }
 
     .hero-bg {
@@ -230,13 +247,14 @@
       z-index: 1;
       width: 100%;
       max-width: 100%;
-      padding: 0 20px;
+      padding: 0 120px;
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       min-height: 100%;
+      margin-top: 70px; /* Account for nav height */
     }
 
     .hero-content h1 {
@@ -781,7 +799,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
+      height: 100vh;
       background: linear-gradient(135deg, #1A5C38, #0052B4);
       display: flex;
       justify-content: center;
@@ -964,12 +982,19 @@
 
   <!-- JavaScript -->
   <script>
+    // Ensure page starts at top on reload
+    window.onbeforeunload = function() {
+      window.scrollTo(0, 0);
+    };
+
     // Preloader
     window.addEventListener('load', () => {
+      window.scrollTo(0, 0);
       const preloader = document.querySelector('.preloader');
       if (preloader) {
         setTimeout(() => {
           preloader.classList.add('fade-out');
+          document.body.classList.add('loaded');
           setTimeout(() => {
             preloader.style.display = 'none';
           }, 500);
@@ -1102,7 +1127,7 @@
 
     // Add delay to fade-in animations for sections
     document.querySelectorAll('section').forEach(section => {
-      section.style.animationDelay = '2s';
+      section.style.animationDelay = '1.7s';
     });
 
     // Navbar Shrink on Scroll
