@@ -318,6 +318,7 @@
       margin: 0;
       color: #00ff88;
       text-align: center;
+      line-height: 1;
     }
 
     .stats-card p {
@@ -325,6 +326,7 @@
       font-weight: 600;
       text-align: center;
       margin: 0;
+      line-height: 1;
     }
 
     @media (max-width: 768px) {
@@ -360,18 +362,24 @@
       }
 
       .stats-card {
-        padding: 15px;
-        min-height: 120px; /* Same height as desktop */
+        padding: 10px;
+        min-height: 100px; /* Decreased height */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
       }
 
       .stats-card h3 {
-        font-size: 48px;
+        font-size: 52px; /* Increased font size */
         margin: 0;
+        line-height: 1;
       }
 
       .stats-card p {
-        font-size: 22px;
+        font-size: 24px; /* Increased font size */
         margin: 0;
+        line-height: 1;
       }
     }
 
