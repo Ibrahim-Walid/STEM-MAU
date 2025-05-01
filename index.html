@@ -294,7 +294,7 @@
     @media (max-width: 768px) {
       #home {
         min-height: 90vh;
-        padding: 85px 0 10px;
+        padding: 117px 0 10px; /* Increased top padding by 32px (saved space) */
       }
 
       .hero-content {
@@ -309,23 +309,23 @@
 
       .hero-content p {
         font-size: 18px;
-        margin-bottom: 40px; /* Increased to add more space between slogan and stats cards */
+        margin-bottom: 40px;
       }
 
       .stats-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 12px; /* Increased gap between stats cards */
+        gap: 12px;
         padding: 0 5px;
         width: 100%;
       }
 
       .stats-card {
-        padding: 18px;
+        padding: 10px; /* Reduced padding to decrease height */
       }
 
       .stats-card h3 {
         font-size: 32px;
-        margin-bottom: 5px;
+        margin-bottom: 3px; /* Reduced margin to decrease height */
       }
 
       .stats-card p {
@@ -336,7 +336,7 @@
     @media (max-width: 480px) {
       #home {
         min-height: 95vh;
-        padding: 88px 0 10px;
+        padding: 132px 0 10px; /* Increased top padding by 44px (saved space) */
       }
 
       .hero-content h1 {
@@ -347,22 +347,22 @@
 
       .hero-content p {
         font-size: 16px;
-        margin-bottom: 35px; /* Increased to add more space between slogan and stats cards */
+        margin-bottom: 35px;
       }
 
       .stats-grid {
         grid-template-columns: 1fr;
-        gap: 8px; /* Increased gap between stats cards */
+        gap: 8px;
         width: 100%;
       }
 
       .stats-card {
-        padding: 15px;
+        padding: 8px; /* Reduced padding to decrease height */
       }
 
       .stats-card h3 {
         font-size: 26px;
-        margin-bottom: 4px;
+        margin-bottom: 2px; /* Reduced margin to decrease height */
       }
 
       .stats-card p {
@@ -532,6 +532,148 @@
     }
 
     /* Contact Section */
+    #contact {
+      padding: 80px 20px;
+      background: #fff;
+      text-align: center;
+    }
+
+    #contact h2 {
+      font-size: 40px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      color: #1A5C38;
+    }
+
+    #contact p {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .social-links a {
+      transition: transform 0.3s;
+    }
+
+    .social-links a:hover {
+      transform: scale(1.2);
+    }
+
+    .social-links img {
+      width: 32px;
+      height: 32px;
+    }
+
+    /* Footer */
+    footer {
+      background: #1A5C38;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="#home">
+          <img src="./logo-removebg-preview.png" alt="STEM Model African Union Logo">
+        </a>
+        <h1>STEM Model African Union</h1>
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home">
+    <div class="hero-bg"></div>
+    <div class="aurora"></div>
+    <img src="./logo.jpg" alt="STEM Model African Union Logo Background" class="hero-logo-bg">
+    <div class="hero-content">
+      <h1>STEM Model African Union</h1>
+      <p id="typewriter"></p>
+      <div class="stats-grid">
+        <div class="stats-card">
+          <h3 id="members-count" data-target="500">0</h3>
+          <p>Members</p>
+        </div>
+        <div class="stats-card">
+          <h3 id="sessions-count" data-target="300">0</h3>
+          <p>Sessions</p>
+        </div>
+        <div class="stats-card">
+          <h3 id="tracks-count" data-target="7">0</h3>
+          <p>Tracks</p>
+        </div>
+        <div class="stats-card">
+          <h3 id="conferences-count" data-target="5">0</h3>
+          <p>Conferences</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About STEM Model African Union</h2>
+    <p>
+      STEM MAU (Model African Union) is a flagship educational venture formed in Egypt’s STEM Schools aimed at nurturing diplomacy, leadership abilities, and critical thinking skills of outstanding STEM high school students. In an attempt to broaden issue areas for discussion and acceptable differences for different perspectives, we simultaneously strive to understand and solve Africa’s contemporary political, economic, and social problems through diplomacy. STEM MAU simulates the African Union (AU), allowing participants to hold high-level engagements. Students are allocated to different specialized committees where they conduct in-depth research, innovative negotiations, and collaborative interactions in developing solutions to problems using real practices of the African Union. Members of STEM MAU are exposed to intensive training and hands-on experience, in addition to participation in public speaking, negotiation, policymaking, and teamwork, which builds strong and sharpened STEM skills necessary for the conferences. STEM’s mission focuses on creating positive change and impact in the communities requiring its aspects to ignite the new generation while expertly guiding and preparing them to ethically lead, motivated by policies that shape them.
+    </p>
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>Diplomacy</h3>
+        <p>Master negotiation and policy-making in an African context.</p>
+      </div>
+      <div class="about-card">
+        <h3>STEM Innovation</h3>
+        <p>Apply science and technology to solve African challenges.</p>
+      </div>
+      <div class="about-card">
+        <h3>Youth Leadership</h3>
+        <p>Build confidence and skills for Africa's future.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section id="events">
+    <div class="stars"></div>
+    <h2>Upcoming Events</h2>
+    <div class="events-grid">
+      <div class="event-card">
+        <h3>STEM MAU 2025</h3>
+        <p>Join our continental conference to debate STEM-driven solutions in simulated AU councils. Date: June 2025.</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="event-card">
+        <h3>Diplomacy Workshop</h3>
+        <p>Sharpen your debate and resolution-writing skills in interactive sessions. Date: April 2025.</p>
+        <a href="#">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  /* Contact Section */
     #contact {
       padding: 80px 20px;
       background: #fff;
