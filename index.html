@@ -124,14 +124,15 @@
       nav ul {
         position: fixed;
         top: 70px;
-        left: -100%;
-        width: 100%;
+        left: -66.67%;
+        width: 66.67%;
         height: calc(100vh - 70px);
         background: linear-gradient(90deg, #1A5C38, #0052B4);
         flex-direction: column;
         align-items: center;
         padding: 40px 0;
         transition: 0.3s;
+        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
       }
 
       nav ul.active {
@@ -140,10 +141,14 @@
 
       nav ul li {
         margin: 15px 0;
+        width: 80%;
+        text-align: center;
       }
 
       nav ul li a {
         font-size: 18px;
+        display: block;
+        padding: 10px 0;
       }
 
       .hamburger.active span:nth-child(1) {
