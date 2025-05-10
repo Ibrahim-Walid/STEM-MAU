@@ -434,6 +434,7 @@ section {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeIn 1s forwards;
+  scroll-margin-top: 80px;
 }
 
 @keyframes fadeIn {
@@ -568,8 +569,8 @@ section {
 .goals-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
-  max-width: 1300px;
+  gap: 30px;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -577,18 +578,18 @@ section {
 
 .goal-card {
   background: rgba(255, 255, 255, 0.1);
-  padding: 40px 20px;
+  padding: 30px 20px;
   border-radius: 25px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   transition: transform 0.4s ease, background-color 0.4s ease;
   text-align: center;
   backdrop-filter: blur(5px);
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 320px;
+  justify-content: flex-start;
+  min-height: auto;
 }
 
 .goal-card:hover {
@@ -600,7 +601,7 @@ section {
 .goal-card .icon {
   font-size: 48px;
   color: #00ff88;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   display: block;
   text-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
   animation: float 4s ease-in-out infinite;
@@ -609,15 +610,14 @@ section {
 .goal-card h3 {
   font-size: 24px;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   color: #00ff88;
 }
 
 .goal-card p {
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.5;
   color: rgba(255, 255, 255, 0.9);
-  flex-grow: 1;
 }
 
 @media (max-width: 768px) {
@@ -631,7 +631,7 @@ section {
   }
 
   .goal-card {
-    padding: 30px 20px;
+    padding: 25px 15px;
   }
 
   .goal-card .icon {
@@ -1018,5 +1018,185 @@ footer p {
 
   .faq-item.active .faq-answer {
     padding: 15px;
+  }
+}
+/* Vision and Mission Section */
+#vision-mission {
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+}
+
+#vision-mission::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./particles-bg.jpg') center center;
+  background-size: cover;
+  opacity: 0.05;
+  z-index: -2;
+}
+
+/* Decorative top border with gradient */
+#vision-mission::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #1A5C38, #0052B4, #1A5C38);
+  z-index: 1;
+}
+
+#vision-mission h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #1A5C38;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+#vision-mission h2 i {
+  font-size: 2rem;
+  animation: rotate-globe 8s linear infinite;
+  color: #0052B4;
+  filter: drop-shadow(0 0 5px rgba(0, 82, 180, 0.5));
+}
+
+@keyframes rotate-globe {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.vision-mission-content {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.vision-mission-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Large decorative quotation mark */
+.vision-mission-content::before {
+  content: '"';
+  position: absolute;
+  top: -20px;
+  right: 30px;
+  font-size: 150px;
+  color: rgba(26, 92, 56, 0.06);
+  font-family: Georgia, serif;
+  z-index: 0;
+}
+
+.vision-mission-content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  color: #333;
+  font-size: 1.05rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Replace green highlights with subtle text effects */
+.vision-highlight {
+  position: relative;
+  font-weight: 600;
+  color: #0052B4;
+  transition: color 0.3s ease;
+}
+
+.vision-highlight:hover {
+  color: #1A5C38;
+}
+
+/* Special highlighted box with shine animation */
+.highlight-box {
+  background: linear-gradient(135deg, rgba(26, 92, 56, 0.05), rgba(0, 82, 180, 0.05));
+  border-left: 3px solid #0052B4;
+  padding: 15px 20px;
+  margin: 25px 0;
+  border-radius: 0 5px 5px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.highlight-box::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(45deg);
+  animation: shine 6s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
+}
+
+.highlight-box p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #vision-mission {
+    padding: 60px 15px;
+  }
+  
+  #vision-mission h2 {
+    font-size: 2rem;
+  }
+  
+  .vision-mission-content {
+    padding: 25px;
+  }
+  
+  .vision-mission-content p {
+    font-size: 1rem;
+  }
+  
+  .highlight-box {
+    padding: 12px 15px;
+    margin: 20px 0;
   }
 }

@@ -42,11 +42,12 @@
         <span></span>
       </div>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#home">Home</a></li>
         <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#vision-mission">Vision & Mission</a></li>
         <li><a href="index.html#goals">Our Goals</a></li>
         <li><a href="events.html">Events</a></li>
-        <li><a href="highboard.html">High Board</a></li>
+        <li><a href="highboard.html" class="active">High Board</a></li>
         <li><a href="index.html#contact">Contact</a></li>
       </ul>
     </div>
@@ -323,6 +324,16 @@
 
   <script src="script.js"></script>
   <script src="highboard.js"></script>
+  <script>
+    document.querySelectorAll('a[href^="index.html#"]').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const sectionId = this.getAttribute('href').split('#')[1];
+        localStorage.setItem('scrollToSection', sectionId);
+        window.location.href = 'index.html#' + sectionId;
+      });
+    });
+  </script>
 </body>
 
 </html> 

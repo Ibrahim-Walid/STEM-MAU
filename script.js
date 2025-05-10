@@ -31,7 +31,10 @@ window.addEventListener('load', () => {
           const targetSection = document.getElementById(scrollToSection);
           if (targetSection) {
             setTimeout(() => {
-              targetSection.scrollIntoView({ behavior: 'smooth' });
+              window.scrollTo({
+                top: targetSection.offsetTop - 70,
+                behavior: 'smooth'
+              });
             }, 100);
             localStorage.removeItem('scrollToSection');
           }
@@ -41,7 +44,10 @@ window.addEventListener('load', () => {
           const targetElement = document.getElementById(targetId);
           if (targetElement) {
             setTimeout(() => {
-              targetElement.scrollIntoView({ behavior: 'smooth' });
+              window.scrollTo({
+                top: targetElement.offsetTop - 70,
+                behavior: 'smooth'
+              });
             }, 100);
           }
         }
@@ -103,9 +109,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       hamburger.classList.remove('active');
       navMenu.classList.remove('active');
 
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+      window.scrollTo({
+        top: target.offsetTop - 70,
+        behavior: 'smooth'
       });
 
       history.pushState(null, null, '#' + targetId);
@@ -202,5 +208,18 @@ backToTopButton.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
+  });
+});
+
+// Add hover effect to vision-highlight elements
+document.addEventListener('DOMContentLoaded', function() {
+  const highlights = document.querySelectorAll('.vision-highlight');
+  highlights.forEach(highlight => {
+    highlight.addEventListener('mouseenter', function() {
+      this.style.textShadow = '0 0 10px rgba(0, 82, 180, 0.5)';
+    });
+    highlight.addEventListener('mouseleave', function() {
+      this.style.textShadow = 'none';
+    });
   });
 });
