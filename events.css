@@ -818,3 +818,47 @@ nav ul li a.active::after {
             -15px -60px 0 -15px transparent;
     }
 }
+
+/* Remove gallery styles since we're now using carousels */
+.outing-gallery, 
+.gallery-grid,
+.gallery-item,
+.image-modal {
+    display: none;
+}
+
+/* Add specific styles for the outings carousel */
+.outings-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    perspective: 1000px;
+}
+
+@media (max-width: 768px) {
+    /* ... existing media queries ... */
+    
+    .outings-carousel {
+        height: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* ... existing media queries ... */
+    
+    .outings-carousel {
+        height: 300px;
+    }
+}
+
+@media (min-width: 992px) {
+    /* ... existing media queries ... */
+    
+    .outings-carousel .carousel {
+        height: 600px;
+    }
+}

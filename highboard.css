@@ -1,0 +1,444 @@
+/* highboard.css */
+
+#highboard {
+  padding: 120px 20px 40px;
+  background: linear-gradient(135deg, #1A5C38, #0052B4);
+  color: white;
+  min-height: 100vh;
+}
+
+#highboard h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+#highboard h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0 1rem;
+  color: white;
+}
+
+#highboard > p {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.highboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.member-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 2.5rem 1.5rem 1.5rem;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+}
+
+.member-card::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.member-card:hover::after {
+  opacity: 0;
+}
+
+.member-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.member-card:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
+}
+
+.member-card h3 {
+  margin: 1.5rem 0 0.5rem;
+  font-size: 1.4rem;
+}
+
+.member-card p {
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.member-card a {
+  display: inline-block;
+  margin: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.member-card a img {
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  border: none;
+  margin: 0;
+}
+
+.member-card a:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  #highboard {
+    padding: 100px 15px 30px;
+  }
+  
+  #highboard h2 {
+    font-size: 2rem;
+  }
+  
+  #highboard h3 {
+    font-size: 1.6rem;
+  }
+  
+  .highboard-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .member-card {
+    padding: 3rem 1rem 1rem;
+  }
+  
+  .member-card img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .member-card h3 {
+    margin-top: 2rem;
+  }
+  
+  .role-label {
+    font-size: 0.8rem;
+    padding: 0.3rem 0;
+  }
+}
+
+.track-section {
+  margin: 3rem 0;
+  padding: 1.5rem;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.track-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(0, 255, 136, 0.05), transparent);
+  z-index: -1;
+}
+
+.track-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.track-section:hover .track-icon {
+  color: #00ff88;
+  transform: scale(1.1);
+}
+
+.track-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.track-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #00ff88, transparent);
+}
+
+.head-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.track-icon {
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #1A5C38, #0052B4);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.member-pair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.role-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  padding: 0.4rem 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: rgba(0, 255, 136, 0.2);
+  color: #00ff88;
+}
+
+.head-label {
+  background: linear-gradient(90deg, rgba(0, 204, 102, 0.3), rgba(0, 204, 102, 0.5));
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.vice-label {
+  background: linear-gradient(90deg, rgba(0, 119, 255, 0.3), rgba(0, 119, 255, 0.5));
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .track-section {
+    padding: 1rem;
+    margin: 2rem 0;
+  }
+  
+  .track-title {
+    font-size: 1.5rem;
+  }
+  
+  .head-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Special styling for management board */
+.management-card {
+  position: relative;
+  overflow: visible;
+  transform-style: preserve-3d;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.management-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border: 4px solid transparent;
+}
+
+.president-card::before {
+  border-image: linear-gradient(45deg, #FFD700, #FFA500, #FFD700) 1;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.president-card {
+  transform: scale(1.05);
+}
+
+.vice-president-card::before {
+  border-image: linear-gradient(45deg, #C0C0C0, #E8E8E8, #C0C0C0) 1;
+  box-shadow: 0 0 15px rgba(192, 192, 192, 0.3);
+}
+
+.secretary-card::before {
+  border-image: linear-gradient(45deg, #CD7F32, #DAA06D, #CD7F32) 1;
+  box-shadow: 0 0 15px rgba(205, 127, 50, 0.3);
+}
+
+.badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.badge-president {
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  color: #000;
+}
+
+.badge-vice {
+  background: linear-gradient(135deg, #C0C0C0, #E8E8E8);
+  color: #000;
+}
+
+.badge-secretary {
+  background: linear-gradient(135deg, #CD7F32, #DAA06D);
+  color: #000;
+}
+
+/* Track head cards */
+.track-head-card {
+  position: relative;
+}
+
+.track-head-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 2px solid;
+  border-image: linear-gradient(45deg, rgba(0, 255, 136, 0.5), transparent) 1;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.track-title {
+  margin-top: 0.5rem;
+}
+
+.track-section:hover .member-card {
+  transform: translateY(-3px);
+}
+
+/* Special ribbons for management board */
+.ribbon-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.ribbon {
+  position: absolute;
+  top: 40px;
+  right: -50px;
+  width: 200px;
+  padding: 8px 0;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  transform: rotate(45deg);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  z-index: 10;
+}
+
+.ribbon::before,
+.ribbon::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  border-style: solid;
+  border-width: 5px;
+}
+
+.ribbon::before {
+  left: 0;
+}
+
+.ribbon::after {
+  right: 0;
+}
+
+.ribbon-president {
+  background: linear-gradient(45deg, #FFD700, #FFA500);
+  color: #000;
+}
+
+.ribbon-president::before,
+.ribbon-president::after {
+  border-color: #b07e00 transparent transparent transparent;
+}
+
+.ribbon-vice {
+  background: linear-gradient(45deg, #C0C0C0, #E8E8E8);
+  color: #000;
+}
+
+.ribbon-vice::before,
+.ribbon-vice::after {
+  border-color: #919191 transparent transparent transparent;
+}
+
+.ribbon-secretary {
+  background: linear-gradient(45deg, #CD7F32, #DAA06D);
+  color: #000;
+}
+
+.ribbon-secretary::before,
+.ribbon-secretary::after {
+  border-color: #9c5f25 transparent transparent transparent;
+}
+
+@media (max-width: 768px) {
+  .ribbon {
+    font-size: 0.6rem;
+    padding: 6px 0;
+    top: 35px;
+    right: -55px;
+  }
+} 

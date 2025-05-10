@@ -176,7 +176,8 @@ nav.shrunk ul li a {
 
   /* Remove font size change for nav links on mobile */
   nav.shrunk ul li a {
-    font-size: 18px; /* Keep same as non-shrunk size */
+    font-size: 18px;
+    /* Keep same as non-shrunk size */
   }
 }
 
@@ -873,11 +874,11 @@ footer p {
   0% {
     transform: translateY(0);
   }
-  
+
   50% {
     transform: translateY(-10px);
   }
-  
+
   100% {
     transform: translateY(0);
   }

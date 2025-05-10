@@ -12,8 +12,16 @@ const interviewImages = [
     'interview/IMG-20250510-WA0031.jpg'
 ];
 
+const outingImages = [
+    './Outing/WhatsApp Image 2025-05-10 at 13.24.52_61a85bb6.jpg',
+    './Outing/WhatsApp Image 2025-05-10 at 13.24.52_793fcaa3.jpg',
+    './Outing/WhatsApp Image 2025-05-10 at 13.24.52_8ed4f527.jpg'
+];
+
 document.addEventListener('DOMContentLoaded', function () {
-    initCarousel();
+    initCarousel('.carousel-track', '.carousel-indicators', '.prev-btn', '.next-btn', interviewImages, 'interviews');
+    initCarousel('.outings-carousel .carousel-track', '.outings-carousel .carousel-indicators', 
+                '.outings-carousel .prev-btn', '.outings-carousel .next-btn', outingImages, 'outings');
     animateOnScroll();
     handleSectionHighlighting();
 
@@ -50,13 +58,15 @@ document.addEventListener('DOMContentLoaded', function () {
     document.head.appendChild(style);
 });
 
-function initCarousel() {
-    const carouselTrack = document.querySelector('.carousel-track');
-    const indicators = document.querySelector('.carousel-indicators');
-    const prevButton = document.querySelector('.prev-btn');
-    const nextButton = document.querySelector('.next-btn');
+function initCarousel(trackSelector, indicatorsSelector, prevButtonSelector, nextButtonSelector, images, type) {
+    const carouselTrack = document.querySelector(trackSelector);
+    const indicators = document.querySelector(indicatorsSelector);
+    const prevButton = document.querySelector(prevButtonSelector);
+    const nextButton = document.querySelector(nextButtonSelector);
+    
+    if (!carouselTrack || !indicators || !prevButton || !nextButton) return;
 
-    interviewImages.forEach((image, index) => {
+    images.forEach((image, index) => {
         const slide = document.createElement('div');
         slide.className = 'carousel-slide';
         slide.setAttribute('data-index', index);
@@ -66,17 +76,20 @@ function initCarousel() {
         img.loading = "lazy";
 
         if (index === 0) {
-            img.alt = 'STEM MAU High Board Members';
+            img.alt = type === 'interviews' ? 'STEM MAU High Board Members' : 'STEM MAU Outing';
             slide.classList.add('special-slide');
 
-            const ribbon = document.createElement('div');
-            ribbon.className = 'ribbon';
-            ribbon.textContent = 'High Board';
-
-            slide.appendChild(img);
-            slide.appendChild(ribbon);
+            if (type === 'interviews') {
+                const ribbon = document.createElement('div');
+                ribbon.className = 'ribbon';
+                ribbon.textContent = 'High Board';
+                slide.appendChild(img);
+                slide.appendChild(ribbon);
+            } else {
+                slide.appendChild(img);
+            }
         } else {
-            img.alt = `STEM MAU Interview Session ${index}`;
+            img.alt = type === 'interviews' ? `STEM MAU Interview Session ${index}` : `STEM MAU Outing Photo ${index}`;
             slide.appendChild(img);
         }
 
@@ -94,8 +107,8 @@ function initCarousel() {
     });
 
     let currentSlide = 0;
-    const slides = document.querySelectorAll('.carousel-slide');
-    const indicatorDots = document.querySelectorAll('.indicator');
+    const slides = carouselTrack.querySelectorAll('.carousel-slide');
+    const indicatorDots = indicators.querySelectorAll('.indicator');
 
     let slideInterval;
     let isCarouselVisible = false;
@@ -126,7 +139,7 @@ function initCarousel() {
     let touchStartX = 0;
     let touchEndX = 0;
 
-    const carousel = document.querySelector('.carousel');
+    const carousel = carouselTrack.closest('.carousel');
 
     carousel.addEventListener('touchstart', (e) => {
         touchStartX = e.changedTouches[0].screenX;
@@ -182,7 +195,7 @@ function initCarousel() {
         const isLooping = (currentSlide === 0 && carouselTrack.style.transform &&
             carouselTrack.style.transform.includes(`-${(slides.length - 1) * 100}%`));
 
-        const carouselContainer = document.querySelector('.carousel-container');
+        const carouselContainer = carouselTrack.closest('.carousel-container');
 
         if (isLooping) {
             carouselContainer.classList.add('loop-transition');
@@ -222,16 +235,16 @@ function initCarousel() {
 }
 
 function fixSvgPaths() {
-    const prevSvgPath = document.querySelector('.prev-btn svg path');
-    const nextSvgPath = document.querySelector('.next-btn svg path');
+    const prevSvgPaths = document.querySelectorAll('.prev-btn svg path');
+    const nextSvgPaths = document.querySelectorAll('.next-btn svg path');
 
-    if (prevSvgPath) {
-        prevSvgPath.setAttribute('d', 'M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z');
-    }
+    prevSvgPaths.forEach(path => {
+        path.setAttribute('d', 'M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z');
+    });
 
-    if (nextSvgPath) {
-        nextSvgPath.setAttribute('d', 'M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12l-4.58 4.59z');
-    }
+    nextSvgPaths.forEach(path => {
+        path.setAttribute('d', 'M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12l-4.58 4.59z');
+    });
 }
 
 function animateOnScroll() {
@@ -313,7 +326,7 @@ function handleSectionHighlighting() {
             if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
                 entry.target.classList.add('active-section');
 
-                if (entry.target.id === 'interviews') {
+                if (entry.target.id === 'interviews' || entry.target.id === 'outings') {
                     const carousel = entry.target.querySelector('.carousel-container');
                     if (carousel && !carousel.classList.contains('highlighted')) {
                         carousel.classList.add('highlighted');
