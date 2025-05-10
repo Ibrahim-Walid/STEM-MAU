@@ -819,7 +819,6 @@ nav ul li a.active::after {
     }
 }
 
-/* Remove gallery styles since we're now using carousels */
 .outing-gallery, 
 .gallery-grid,
 .gallery-item,
@@ -827,7 +826,6 @@ nav ul li a.active::after {
     display: none;
 }
 
-/* Add specific styles for the outings carousel */
 .outings-carousel {
     position: relative;
     width: 100%;
@@ -840,24 +838,18 @@ nav ul li a.active::after {
 }
 
 @media (max-width: 768px) {
-    /* ... existing media queries ... */
-    
     .outings-carousel {
         height: 350px;
     }
 }
 
 @media (max-width: 576px) {
-    /* ... existing media queries ... */
-    
     .outings-carousel {
         height: 300px;
     }
 }
 
 @media (min-width: 992px) {
-    /* ... existing media queries ... */
-    
     .outings-carousel .carousel {
         height: 600px;
     }

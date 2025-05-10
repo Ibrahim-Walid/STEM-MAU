@@ -1,6 +1,3 @@
-// highboard.js
-
-// Preloader
 window.addEventListener('load', () => {
   const preloader = document.querySelector('.preloader');
   if (preloader) {
@@ -14,7 +11,6 @@ window.addEventListener('load', () => {
   }
 });
 
-// Navigation menu toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('nav ul');
 
@@ -37,7 +33,6 @@ document.addEventListener('click', (e) => {
   }
 });
 
-// Navbar shrink effect on scroll
 window.addEventListener('scroll', () => {
   const nav = document.querySelector('nav');
   if (nav) {
@@ -49,7 +44,6 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Back to top button
 const backToTopButton = document.querySelector('.back-to-top');
 if (backToTopButton) {
   window.addEventListener('scroll', () => {
@@ -68,7 +62,6 @@ if (backToTopButton) {
   });
 }
 
-// Add smooth animation to member cards
 document.addEventListener('DOMContentLoaded', () => {
   const memberCards = document.querySelectorAll('.member-card');
   
@@ -83,7 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 200 + (index * 100));
   });
 
-  // Animate track sections
   const trackSections = document.querySelectorAll('.track-section');
   
   const observerOptions = {
@@ -107,7 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
     sectionObserver.observe(section);
   });
   
-  // Add track-section-visible class to actually trigger the animation
   document.addEventListener('scroll', () => {
     trackSections.forEach(section => {
       const sectionTop = section.getBoundingClientRect().top;
@@ -120,7 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, { passive: true });
   
-  // Add hover effects to track icons
   const trackIcons = document.querySelectorAll('.track-icon');
   
   trackIcons.forEach(icon => {
@@ -134,7 +124,6 @@ document.addEventListener('DOMContentLoaded', () => {
       icon.style.color = '';
     });
     
-    // Set up the transition
     icon.style.transition = 'transform 0.3s ease, color 0.3s ease';
   });
 }); 

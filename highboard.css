@@ -29,6 +29,72 @@
   font-size: 1.1rem;
 }
 
+.welcome-highlight {
+  display: inline-block;
+  font-weight: bold;
+  color: #00ff88;
+  position: relative;
+  padding: 0 5px;
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+  animation: glow-text 2s ease-in-out infinite;
+}
+
+@keyframes glow-text {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(0, 255, 136, 0.8), 0 0 30px rgba(0, 255, 136, 0.4);
+  }
+}
+
+.welcome-box {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 2rem auto;
+  max-width: 800px;
+  border: 1px solid rgba(0, 255, 136, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 255, 136, 0.1) inset;
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-box::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 255, 136, 0) 0%,
+    rgba(0, 255, 136, 0.1) 50%,
+    rgba(0, 255, 136, 0) 100%
+  );
+  animation: shine 3s ease-in-out infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
+}
+
+.welcome-box p {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
 .highboard-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
