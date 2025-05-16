@@ -263,7 +263,7 @@ body.loaded section:not(#home) {
 
 .hero-content p {
   font-size: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   word-wrap: break-word;
   width: 100%;
   max-width: 100%;
@@ -278,7 +278,7 @@ body.loaded section:not(#home) {
   margin: 0 auto;
   position: relative;
   z-index: 1;
-  padding: 0 10px;
+  padding: 0 10px 10px;
   box-sizing: border-box;
 }
 
@@ -335,12 +335,13 @@ body.loaded section:not(#home) {
 
   .hero-content p {
     font-size: 18px;
-    margin-bottom: 0;
+    margin-bottom: 15px;
   }
 
   .stats-grid {
-    margin-top: 20px;
+    margin-top: 15px;
     gap: 15px;
+    padding-bottom: 5px;
   }
 
   .stats-card {
@@ -384,12 +385,13 @@ body.loaded section:not(#home) {
 
   .hero-content p {
     font-size: 16px;
-    margin-bottom: 35px;
+    margin-bottom: 10px;
   }
 
   .stats-grid {
-    margin-top: 15px;
+    margin-top: 10px;
     gap: 10px;
+    padding-bottom: 0;
   }
 
   .stats-card {
