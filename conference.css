@@ -20,7 +20,7 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(135deg, rgba(26, 92, 56, 0.9), rgba(0, 82, 180, 0.9)),
-        url('./Conference/IMG-20250501-WA0015.jpg') center/cover no-repeat;
+        url('./conference/IMG-20250501-WA0015.jpg') center/cover no-repeat;
     z-index: 0;
     animation: subtle-zoom 30s infinite alternate ease-in-out;
     transform-style: preserve-3d;
@@ -632,15 +632,19 @@ section h2::after {
     }
     
     section h2 {
-        font-size: 32px;
+        font-size: 24px;
         margin-bottom: 40px;
+    }
+    
+    #join-conference h2 {
+        font-size: 32px;
     }
     
     section h2::before,
     section h2::after {
-        width: 8px;
-        height: 8px;
-        margin: 0 10px;
+        width: 6px;
+        height: 6px;
+        margin: 0 8px;
     }
     
     .conference-text {
@@ -1819,4 +1823,24 @@ section.visible {
     border-color: rgba(255, 255, 255, 0.7);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     animation: pulse-white 1.5s infinite;
+}
+
+.stay-tuned {
+    color: #00ff88;
+    font-weight: 800;
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+    animation: glow-pulse 2s infinite alternate;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+@keyframes glow-pulse {
+    0% {
+        text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+    }
+    100% {
+        text-shadow: 0 0 20px rgba(0, 255, 136, 0.8),
+                     0 0 30px rgba(0, 255, 136, 0.6),
+                     0 0 40px rgba(0, 255, 136, 0.4);
+    }
 } 
