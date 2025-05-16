@@ -71,7 +71,6 @@ function initCarousel(trackSelector, indicatorsSelector, prevButtonSelector, nex
         slide.className = 'carousel-slide';
         slide.setAttribute('data-index', index);
 
-        // Create blurred background
         const slideBg = document.createElement('div');
         slideBg.className = 'carousel-slide-bg';
         slideBg.style.backgroundImage = `url(${image})`;

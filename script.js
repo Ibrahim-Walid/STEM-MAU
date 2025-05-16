@@ -211,7 +211,6 @@ backToTopButton.addEventListener('click', () => {
   });
 });
 
-// Add hover effect to vision-highlight elements
 document.addEventListener('DOMContentLoaded', function() {
   const highlights = document.querySelectorAll('.vision-highlight');
   highlights.forEach(highlight => {

@@ -34,10 +34,9 @@ const galleryImages = [
     }
 ];
 
-// Typewriter effect function
 function typeWriterEffect(element, text, speed = 100) {
     let i = 0;
-    element.innerHTML = ''; // Ensure element is empty
+    element.innerHTML = ''; 
     
     function type() {
         if (i < text.length) {
@@ -50,16 +49,13 @@ function typeWriterEffect(element, text, speed = 100) {
     type();
 }
 
-// Conference page JavaScript
 document.addEventListener('DOMContentLoaded', function() {
-    // Preloader
     const preloader = document.querySelector('.preloader');
     if (preloader) {
         window.addEventListener('load', function() {
             preloader.style.opacity = '0';
             setTimeout(() => {
                 preloader.style.display = 'none';
-                // Start typewriter effect after preloader is hidden
                 const diplomacyText = document.querySelector('.header-content h1');
                 if (diplomacyText) {
                     typeWriterEffect(diplomacyText, "STEM MAU Conference", 100);
@@ -68,28 +64,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Initialize certificate carousel
     initCertificateCarousel();
     
-    // Add animation on scroll for sections
     initScrollAnimations();
     
-    // Set active link in navigation
     const conferenceLink = document.querySelector('nav ul li a[href="conference.html"]');
     if (conferenceLink) {
         conferenceLink.classList.add('active');
     }
     
-    // Initialize menu tabs
     initMenuTabs();
     
-    // Initialize gallery carousel
     initGalleryCarousel();
-    
-    // Add enhanced scroll animation functionality
+
     setupScrollReveal();
     
-    // Force all tabs to be closed on mobile
     if (window.innerWidth <= 768) {
         const menuTabs = document.querySelectorAll('.menu-tab');
         const menuItems = document.querySelectorAll('.menu-item');
@@ -102,7 +91,6 @@ document.addEventListener('DOMContentLoaded', function() {
             item.classList.remove('active');
         });
     }
-    // Ensure at least one tab is active on desktop
     else {
         const firstTab = document.querySelector('.menu-tab');
         const firstItem = document.querySelector('.menu-item');
@@ -113,17 +101,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Certificate Carousel Functionality
 function initCertificateCarousel() {
     const wrapper = document.querySelector('.certificate-wrapper');
     const prevBtn = document.querySelector('.certificate-prev');
     const nextBtn = document.querySelector('.certificate-next');
     const indicatorsContainer = document.querySelector('.certificate-indicators');
     
-    // Clear existing content and create slides with backgrounds
     wrapper.innerHTML = '';
     
-    // Get all certificate images
     const certificateImages = [
         './Conference/Certificate/IMG-20250501-WA0006.jpg',
         './Conference/Certificate/IMG-20250501-WA0005.jpg',
@@ -132,17 +117,14 @@ function initCertificateCarousel() {
         './Conference/Certificate/IMG-20250501-WA0002.jpg'
     ];
     
-    // Create slides with blurred backgrounds
     certificateImages.forEach((imgSrc, index) => {
         const slide = document.createElement('div');
         slide.className = 'certificate-slide';
         
-        // Create blurred background
         const slideBg = document.createElement('div');
         slideBg.className = 'certificate-slide-bg';
         slideBg.style.backgroundImage = `url(${imgSrc})`;
         
-        // Create image
         const img = document.createElement('img');
         img.src = imgSrc;
         img.alt = "STEM MAU Conference Certificate";
@@ -150,7 +132,6 @@ function initCertificateCarousel() {
             img.classList.add('active');
         }
         
-        // Append elements
         slide.appendChild(slideBg);
         slide.appendChild(img);
         wrapper.appendChild(slide);
@@ -159,10 +140,8 @@ function initCertificateCarousel() {
     const certificates = wrapper.querySelectorAll('img');
     let currentIndex = 0;
     
-    // Clear existing indicators
     indicatorsContainer.innerHTML = '';
     
-    // Create indicators
     certificates.forEach((_, index) => {
         const indicator = document.createElement('div');
         indicator.classList.add('indicator');
@@ -176,34 +155,29 @@ function initCertificateCarousel() {
     });
     
     const indicators = document.querySelectorAll('.certificate-indicators .indicator');
-    
-    // Function to go to a specific slide
+
     function goToSlide(index) {
         currentIndex = index;
         updateCarousel();
     }
     
-    // Previous slide button
     prevBtn.addEventListener('click', () => {
         currentIndex = (currentIndex - 1 + certificates.length) % certificates.length;
         updateCarousel();
         resetSlideTimer();
     });
     
-    // Next slide button
     nextBtn.addEventListener('click', () => {
         currentIndex = (currentIndex + 1) % certificates.length;
         updateCarousel();
         resetSlideTimer();
     });
-    
-    // Update carousel position
+
     function updateCarousel() {
         const isLooping = (currentIndex === 0 && wrapper.style.transform && 
             wrapper.style.transform.includes(`-${(certificates.length - 1) * 100}%`));
         
         if (isLooping) {
-            // Create a smooth transition when looping from last to first slide
             wrapper.style.transition = 'opacity 0.3s ease';
             wrapper.style.opacity = '0';
             
@@ -222,7 +196,6 @@ function initCertificateCarousel() {
             wrapper.style.opacity = '1';
         }
         
-        // Update indicators
         indicators.forEach((indicator, index) => {
             if (index === currentIndex) {
                 indicator.classList.add('active');
@@ -231,7 +204,6 @@ function initCertificateCarousel() {
             }
         });
         
-        // Make sure images are properly sized
         certificates.forEach((img, index) => {
             if (index === currentIndex) {
                 img.style.maxHeight = '100%';
@@ -240,7 +212,6 @@ function initCertificateCarousel() {
         });
     }
     
-    // Auto-rotate slides every 5 seconds
     let slideInterval;
     
     function resetSlideTimer() {
@@ -251,7 +222,6 @@ function initCertificateCarousel() {
         }, 5000);
     }
     
-    // Pause auto-rotation when hovering over the carousel
     wrapper.addEventListener('mouseenter', () => {
         clearInterval(slideInterval);
     });
@@ -260,7 +230,6 @@ function initCertificateCarousel() {
         resetSlideTimer();
     });
     
-    // Touch swipe functionality
     let touchStartX = 0;
     let touchEndX = 0;
 
@@ -288,11 +257,9 @@ function initCertificateCarousel() {
         }
     }
     
-    // Initialize
     updateCarousel();
     resetSlideTimer();
     
-    // Check visibility with Intersection Observer
     const carouselObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -308,7 +275,6 @@ function initCertificateCarousel() {
     carouselObserver.observe(wrapper.closest('.certificate-carousel'));
 }
 
-// Animation on scroll functionality
 function initScrollAnimations() {
     const sections = document.querySelectorAll('section');
     
@@ -317,7 +283,6 @@ function initScrollAnimations() {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
                 
-                // Animate highlight items when they come into view
                 if (entry.target.id === 'conference-overview') {
                     const items = entry.target.querySelectorAll('.highlight-item');
                     items.forEach((item, index) => {
@@ -327,7 +292,6 @@ function initScrollAnimations() {
                     });
                 }
                 
-                // Animate gallery items when they come into view
                 if (entry.target.id === 'conference-gallery') {
                     const items = entry.target.querySelectorAll('.carousel-slide');
                     items.forEach((item, index) => {
@@ -347,44 +311,36 @@ function initScrollAnimations() {
     });
 }
 
-// Menu tabs functionality
 function initMenuTabs() {
     const menuTabs = document.querySelectorAll('.menu-tab');
     const menuItems = document.querySelectorAll('.menu-item');
     const menuTabArrows = document.querySelectorAll('.menu-tab-arrow');
     const spacer = document.getElementById('mobile-menu-spacer');
     
-    // Function to check if we're on a mobile device
     function isMobileView() {
         return window.innerWidth <= 768;
     }
     
-    // Function to handle tab clicks
     function handleTabClick(e) {
         const tab = e.currentTarget;
         const tabId = tab.getAttribute('data-tab');
         const targetItem = document.getElementById(tabId);
         
         if (isMobileView()) {
-            // MOBILE BEHAVIOR
-            
-            // If the tab is already active (open), close it
+
             if (tab.classList.contains('active')) {
                 tab.classList.remove('active');
                 targetItem.classList.remove('active');
                 
-                // Reset menu item styling
                 targetItem.style.maxHeight = '0';
                 targetItem.style.opacity = '0';
                 targetItem.style.transform = 'translateY(-10px)';
                 
-                // Immediately start reducing the spacer height
                 spacer.style.height = '0';
                 
                 return;
             }
             
-            // Close all tabs first
             menuTabs.forEach(t => {
                 t.classList.remove('active');
             });
@@ -396,22 +352,17 @@ function initMenuTabs() {
                 item.style.transform = 'translateY(-10px)';
             });
             
-            // Open the clicked tab
             tab.classList.add('active');
             targetItem.classList.add('active');
             
-            // Measure the content height before animation
             const contentHeight = targetItem.scrollHeight;
             
-            // Set the height and opacity for animation
             targetItem.style.maxHeight = contentHeight + 'px';
             targetItem.style.opacity = '1';
             targetItem.style.transform = 'translateY(0)';
             
-            // Immediately adjust the spacer to make room for the content
             spacer.style.height = (contentHeight + 50) + 'px';
             
-            // Scroll to show the opened tab - slight delay to allow for visual updates
             setTimeout(() => {
                 const tabRect = tab.getBoundingClientRect();
                 const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -421,36 +372,28 @@ function initMenuTabs() {
                 });
             }, 50);
         } else {
-            // DESKTOP BEHAVIOR - traditional tabs
             
-            // Close all tabs first
             menuTabs.forEach(t => t.classList.remove('active'));
             menuItems.forEach(item => {
                 item.classList.remove('active');
-                // Clear any inline styles that might have been applied on mobile
                 item.style.maxHeight = '';
                 item.style.opacity = '';
                 item.style.transform = '';
             });
             
-            // Open the clicked tab
             tab.classList.add('active');
             targetItem.classList.add('active');
             
-            // Reset spacer on desktop (just in case)
             if (spacer) spacer.style.height = '0';
         }
     }
     
-    // Add click event to all tabs
     menuTabs.forEach(tab => {
         tab.addEventListener('click', handleTabClick);
     });
     
-    // Setup initial layout based on screen size
     function setupLayout() {
         if (isMobileView()) {
-            // Mobile layout - initially all tabs are closed
             menuTabs.forEach(tab => {
                 tab.classList.remove('active');
             });
@@ -461,15 +404,12 @@ function initMenuTabs() {
                 item.style.opacity = '0';
             });
             
-            // Show arrows on mobile
             menuTabArrows.forEach(arrow => {
                 arrow.style.display = 'inline-block';
             });
             
-            // Reset spacer
             if (spacer) spacer.style.height = '0';
         } else {
-            // Desktop layout - ensure at least one tab is active
             const activeTab = document.querySelector('.menu-tab.active');
             const activeItem = document.querySelector('.menu-item.active');
             
@@ -478,37 +418,31 @@ function initMenuTabs() {
                 menuItems[0].classList.add('active');
             }
             
-            // Hide arrows on desktop
             menuTabArrows.forEach(arrow => {
                 arrow.style.display = 'none';
             });
             
-            // Clear any inline styles from mobile view
             menuItems.forEach(item => {
                 item.style.maxHeight = '';
                 item.style.opacity = '';
                 item.style.transform = '';
             });
             
-            // Reset spacer
             if (spacer) spacer.style.height = '0';
         }
     }
     
-    // Initial setup
     setupLayout();
     
-    // Handle window resize
     let resizeTimer;
     window.addEventListener('resize', function() {
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(function() {
             setupLayout();
-        }, 250); // Debounce resize events
+        }, 250); 
     });
 }
 
-// Gallery carousel initialization
 function initGalleryCarousel() {
     const carousel = document.querySelector('.conference-carousel');
     const track = carousel.querySelector('.carousel-track');
@@ -519,7 +453,6 @@ function initGalleryCarousel() {
     let autoRotateInterval;
     let isAutoRotating = true;
 
-    // Create intersection observer
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -556,10 +489,8 @@ function initGalleryCarousel() {
         startAutoRotate();
     }
 
-    // Clear existing content
     track.innerHTML = '';
 
-    // Create slides
     galleryImages.forEach((image, index) => {
         const slide = document.createElement('div');
         slide.className = 'carousel-slide';
@@ -580,10 +511,8 @@ function initGalleryCarousel() {
     
     const slides = track.querySelectorAll('.carousel-slide');
     
-    // Clear existing indicators
     indicatorsContainer.innerHTML = '';
     
-    // Create indicators
     slides.forEach((_, index) => {
         const indicator = document.createElement('div');
         indicator.className = 'indicator';
@@ -598,25 +527,21 @@ function initGalleryCarousel() {
     
     const indicators = indicatorsContainer.querySelectorAll('.indicator');
     
-    // Previous slide button
     prevButton.addEventListener('click', () => {
         currentIndex = (currentIndex - 1 + slides.length) % slides.length;
         updateCarousel();
         resetAutoRotate();
     });
 
-    // Next slide button
     nextButton.addEventListener('click', () => {
         currentIndex = (currentIndex + 1) % slides.length;
         updateCarousel();
         resetAutoRotate();
     });
     
-    // Update carousel position
     function updateCarousel() {
         track.style.transform = `translateX(-${currentIndex * 100}%)`;
         
-        // Update indicators
         indicators.forEach((indicator, index) => {
             if (index === currentIndex) {
                 indicator.classList.add('active');
@@ -626,7 +551,6 @@ function initGalleryCarousel() {
         });
     }
     
-    // Touch swipe functionality
     let touchStartX = 0;
     let touchEndX = 0;
     
@@ -645,10 +569,8 @@ function initGalleryCarousel() {
         
         if (Math.abs(diff) > swipeThreshold) {
             if (diff > 0) {
-                // Swipe left
                 currentIndex = (currentIndex + 1) % slides.length;
-        } else {
-                // Swipe right
+            } else {
                 currentIndex = (currentIndex - 1 + slides.length) % slides.length;
             }
             updateCarousel();
@@ -656,12 +578,10 @@ function initGalleryCarousel() {
         }
     }
 
-    // Initialize the carousel
     updateCarousel();
     startAutoRotate();
 }
 
-// Add styling for the lightbox component
 const style = document.createElement('style');
 style.textContent = `
 .lightbox {
@@ -766,7 +686,6 @@ section.visible {
 
 document.head.appendChild(style);
 
-// Lightbox functionality for gallery images
 document.addEventListener('click', function(e) {
     const carouselSlide = e.target.closest('.carousel-slide');
     if (carouselSlide) {
@@ -774,7 +693,6 @@ document.addEventListener('click', function(e) {
         const title = carouselSlide.querySelector('.overlay-content h3').textContent;
         const description = carouselSlide.querySelector('.overlay-content p').textContent;
         
-        // Create lightbox elements
         const lightbox = document.createElement('div');
         lightbox.classList.add('lightbox');
         
@@ -796,7 +714,6 @@ document.addEventListener('click', function(e) {
             document.body.style.overflow = 'auto';
         });
         
-        // Add elements to the DOM
         content.appendChild(img);
         content.appendChild(info);
         content.appendChild(closeBtn);
@@ -804,7 +721,6 @@ document.addEventListener('click', function(e) {
         document.body.appendChild(lightbox);
         document.body.style.overflow = 'hidden';
         
-        // Close lightbox when clicking outside content
         lightbox.addEventListener('click', function(e) {
             if (e.target === this) {
                 document.body.removeChild(lightbox);
@@ -814,16 +730,13 @@ document.addEventListener('click', function(e) {
     }
 });
 
-// Setup scroll reveal animations
 function setupScrollReveal() {
-    // Add the scroll-reveal class to elements we want to animate
     const elementsToAnimate = document.querySelectorAll('.conference-description, .conference-highlights, .highlight-item, .gallery-grid, section h2');
     
     elementsToAnimate.forEach(element => {
         element.classList.add('scroll-reveal');
     });
     
-    // Function to check if an element is in viewport
     function isInViewport(element) {
         const rect = element.getBoundingClientRect();
         return (
@@ -831,7 +744,6 @@ function setupScrollReveal() {
         );
     }
     
-    // Function to handle scroll events
     function handleScroll() {
         const revealElements = document.querySelectorAll('.scroll-reveal');
         revealElements.forEach(element => {
@@ -841,7 +753,6 @@ function setupScrollReveal() {
         });
     }
     
-    // Initial check and add scroll event listener
     handleScroll();
     window.addEventListener('scroll', handleScroll);
 } 

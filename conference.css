@@ -27,7 +27,6 @@
     box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.5);
 }
 
-/* Add subtle light particles effect */
 .header-bg::after {
     content: '';
     position: absolute;
@@ -103,7 +102,6 @@ main {
     padding: 70px 40px;
 }
 
-/* Add more breathing room between sections */
 section + section {
     margin-top: 20px;
 }
@@ -223,7 +221,6 @@ section h2::after {
     margin-bottom: 0;
 }
 
-/* Conference Highlights */
 .conference-highlights {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
@@ -325,7 +322,6 @@ section h2::after {
     line-height: 1.8;
 }
 
-/* Gallery Grid */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -420,7 +416,6 @@ section h2::after {
     opacity: 1;
 }
 
-/* Certificates Section */
 #certificates {
     background: linear-gradient(135deg, rgba(26, 92, 56, 0.05), rgba(0, 82, 180, 0.05));
     position: relative;
@@ -468,7 +463,6 @@ section h2::after {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Certificate Carousel - Updated with blurred background */
 .certificate-carousel {
     position: relative;
     width: 100%;
@@ -727,7 +721,6 @@ section h2::after {
         right: 10px;
     }
     
-    /* Make the section grow to accommodate the accordion */
     #conference-overview {
         height: auto;
         min-height: 400px;
@@ -739,7 +732,6 @@ section h2::after {
         padding-bottom: 120px;
     }
     
-    /* Mobile accordion container */
     .mobile-accordion {
         margin: 40px auto 0;
         box-shadow: none;
@@ -749,13 +741,11 @@ section h2::after {
         clear: both;
     }
     
-    /* Make the tab container static flow to prevent overflow */
     .mobile-accordion .menu-tabs {
         position: static !important;
         overflow: visible !important;
     }
     
-    /* Fix the conference gallery positioning */
     #conference-gallery {
         position: relative;
         clear: both;
@@ -763,14 +753,12 @@ section h2::after {
         padding-top: 30px;
     }
     
-    /* Mobile menu spacer for dynamic height adjustment */
     #mobile-menu-spacer {
         display: block;
         clear: both;
         width: 100%;
     }
     
-    /* Fix icon positioning for mobile */
     .mobile-accordion .menu-icon {
         width: 70px;
         height: 70px;
@@ -782,12 +770,11 @@ section h2::after {
         z-index: 150;
     }
     
-    /* Ensure proper spacing for menu items */
     .mobile-accordion .menu-item.active {
         opacity: 1;
         transform: translateY(0);
         max-height: 1000px;
-        padding: 70px 15px 25px 15px; /* Adjusted top padding to accommodate icon */
+        padding: 70px 15px 25px 15px;
         background: #f9f9f9;
         margin-bottom: 10px;
         text-align: center;
@@ -796,7 +783,6 @@ section h2::after {
         align-items: center;
     }
     
-    /* Center the text and ensure proper spacing */
     .mobile-accordion .menu-item h3 {
         font-size: 22px;
         margin-top: 5px;
@@ -814,7 +800,6 @@ section h2::after {
         width: 100%;
     }
     
-    /* Fix the gap below paragraphs */
     .mobile-accordion .menu-item::after {
         content: '';
         display: block;
@@ -822,7 +807,6 @@ section h2::after {
         width: 100%;
     }
     
-    /* Tab arrow indicator */
     .mobile-accordion .menu-tab-arrow {
         display: inline-block;
         position: absolute;
@@ -837,7 +821,6 @@ section h2::after {
         transform: translateY(-50%) rotate(180deg);
     }
     
-    /* Icon styles */
     .mobile-accordion .menu-icon i {
         font-size: 28px;
         color: white;
@@ -845,7 +828,6 @@ section h2::after {
     }
 }
 
-/* CTA Section */
 #join-conference {
     background: linear-gradient(135deg, #1A5C38, #0052B4);
     padding: 120px 40px;
@@ -999,7 +981,6 @@ section h2::after {
     margin: 0;
 }
 
-/* Custom lightbox styles */
 .lightbox {
     display: none;
 }
@@ -1058,12 +1039,10 @@ section.visible {
     transform: translateY(0);
 }
 
-/* General menu container styles (for both mobile and desktop) */
 .menu-container {
-    display: none; /* Hide completely instead of styling */
+    display: none;
 }
 
-/* Desktop menu tabs - hide completely */
 .menu-tabs {
     display: none;
 }
@@ -1124,24 +1103,19 @@ section.visible {
     display: none;
 }
 
-/* Hide mobile-only elements on desktop */
 .menu-tab-arrow, #mobile-menu-spacer {
     display: none;
 }
 
-/* Mobile-specific styles with completely new card-based design */
 @media (max-width: 768px) {
-    /* Hide original menu container and show mobile cards instead */
     .menu-container {
         display: none;
     }
     
-    /* Mobile cards container */
     .mobile-cards-container {
         display: none;
     }
     
-    /* Individual cards */
     .mobile-card {
         display: none;
     }
@@ -1150,17 +1124,14 @@ section.visible {
         display: none;
     }
     
-    /* Card header */
     .mobile-card-header {
         display: none;
     }
     
-    /* Card body */
     .mobile-card-body {
         display: none;
     }
     
-    /* Card icon */
     .mobile-card-icon {
         display: none;
     }
@@ -1169,7 +1140,6 @@ section.visible {
         display: none;
     }
     
-    /* Card content */
     .mobile-card-body h3 {
         display: none;
     }
@@ -1179,7 +1149,6 @@ section.visible {
     }
 }
 
-/* Mobile menu styles that apply at all screen sizes */
 .mobile-accordion {
     display: none;
 }
@@ -1196,13 +1165,11 @@ section.visible {
     display: none;
 }
 
-/* Mobile menu spacer for dynamic height adjustment */
 #mobile-menu-spacer {
     display: none;
 }
 
 @media (max-width: 768px) {
-    /* Mobile menu tab styles */
     .mobile-accordion .menu-tab {
         display: none;
     }
@@ -1211,7 +1178,6 @@ section.visible {
         display: none;
     }
     
-    /* Menu item styles with faster animations */
     .mobile-accordion .menu-item {
         display: none;
     }
@@ -1220,12 +1186,10 @@ section.visible {
         display: none;
     }
     
-    /* Fixed icon positioning */
     .mobile-accordion .menu-icon {
         display: none;
     }
     
-    /* Center the text and ensure proper spacing */
     .mobile-accordion .menu-item h3 {
         display: none;
     }
@@ -1234,13 +1198,11 @@ section.visible {
         display: none;
     }
     
-    /* Ensure the tab is properly positioned */
     .mobile-accordion .menu-tab.active + .menu-item .menu-icon {
         display: none;
     }
 }
 
-/* Animation for desktop menu items */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -1252,13 +1214,10 @@ section.visible {
     }
 }
 
-/* Remove the conflicting rule for desktop menu content */
-/* Restore rules for desktop menu content */
 .menu-content {
     display: none;
 }
 
-/* Carousel styles for gallery with blurred background */
 .carousel-container {
     position: relative;
     width: 100%;
@@ -1400,7 +1359,6 @@ section.visible {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-/* Certificate Menu Styles */
 .certificates-menu .menu-content {
     padding: 0;
 }
@@ -1486,7 +1444,6 @@ section.visible {
     }
 }
 
-/* Menu tab arrow styles */
 .menu-tab-arrow {
     display: none;
 }
@@ -1557,7 +1514,6 @@ section.visible {
     }
 }
 
-/* Mobile menu styles that apply at all screen sizes */
 .mobile-accordion {
     margin-bottom: 20px;
     position: relative;
@@ -1589,7 +1545,6 @@ section.visible {
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Mobile menu spacer for dynamic height adjustment */
 #mobile-menu-spacer {
     display: block;
     clear: both;
@@ -1707,7 +1662,6 @@ section.visible {
     background: white;
 }
 
-/* Add modern scroll animations */
 .scroll-reveal {
     opacity: 0;
     transform: translateY(30px);
@@ -1719,7 +1673,6 @@ section.visible {
     transform: translateY(0);
 }
 
-/* Improved certificate display */
 .certificate-display {
     margin-top: 30px;
     border-radius: 15px;
@@ -1749,7 +1702,6 @@ section.visible {
     transform: scale(1.05);
 }
 
-/* Enhance certificate carousel controls */
 .certificate-prev,
 .certificate-next {
     width: 50px;
@@ -1789,7 +1741,6 @@ section.visible {
     transform: translateX(3px);
 }
 
-/* Ensure images properly fill the space */
 .carousel-slide img, 
 .certificate-wrapper img {
     max-height: 100%;
