@@ -157,12 +157,12 @@
   .member-card a {
     display: inline-block;
     margin: 0.5rem;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     padding: 8px;
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    transition: transform 0.3s ease;
   }
   
   .member-card a img {
@@ -177,34 +177,7 @@
   }
   
   .member-card a:hover {
-    transform: translateY(-5px);
-  }
-  
-  .member-card a::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 50%;
-    background: linear-gradient(45deg, transparent, rgba(0, 255, 136, 0.2), transparent);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .member-card a:hover::after {
-    opacity: 1;
-    animation: icon-shine 1.5s infinite;
-  }
-  
-  @keyframes icon-shine {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+    transform: scale(1.1);
   }
   
   @media (max-width: 768px) {
