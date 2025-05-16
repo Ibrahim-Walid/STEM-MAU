@@ -1,41 +1,73 @@
 // Gallery images array with titles and descriptions
 const galleryImages = [
     {
-        src: './conference/IMG-20250501-WA0016.jpg',
+        src: './Conference/IMG-20250501-WA0016.jpg',
         alt: 'STEM MAU Conference session'
     },
     {
-        src: './conference/IMG-20250501-WA0015.jpg',
+        src: './Conference/IMG-20250501-WA0015.jpg',
         alt: 'STEM MAU Conference delegates'
     },
     {
-        src: './conference/IMG-20250501-WA0014.jpg',
+        src: './Conference/IMG-20250501-WA0014.jpg',
         alt: 'STEM MAU Conference discussion'
     },
     {
-        src: './conference/IMG-20250501-WA0013.jpg',
+        src: './Conference/IMG-20250501-WA0013.jpg',
         alt: 'STEM MAU Conference presentation'
     },
     {
-        src: './conference/IMG-20250501-WA0012.jpg',
+        src: './Conference/IMG-20250501-WA0012.jpg',
         alt: 'STEM MAU Conference team'
     },
     {
-        src: './conference/IMG-20250501-WA0011.jpg',
+        src: './Conference/IMG-20250501-WA0011.jpg',
         alt: 'STEM MAU Conference debate'
     },
     {
-        src: './conference/IMG-20250501-WA0010.jpg',
+        src: './Conference/IMG-20250501-WA0010.jpg',
         alt: 'STEM MAU Conference meeting'
     },
     {
-        src: './conference/IMG-20250501-WA0009.jpg',
+        src: './Conference/IMG-20250501-WA0009.jpg',
         alt: 'STEM MAU Conference participants'
     }
 ];
 
+// Typewriter effect function
+function typeWriterEffect(element, text, speed = 100) {
+    let i = 0;
+    element.innerHTML = ''; // Ensure element is empty
+    
+    function type() {
+        if (i < text.length) {
+            element.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+        }
+    }
+    
+    type();
+}
+
 // Conference page JavaScript
 document.addEventListener('DOMContentLoaded', function() {
+    // Preloader
+    const preloader = document.querySelector('.preloader');
+    if (preloader) {
+        window.addEventListener('load', function() {
+            preloader.style.opacity = '0';
+            setTimeout(() => {
+                preloader.style.display = 'none';
+                // Start typewriter effect after preloader is hidden
+                const diplomacyText = document.querySelector('.header-content h1');
+                if (diplomacyText) {
+                    typeWriterEffect(diplomacyText, "STEM MAU Conference", 100);
+                }
+            }, 500);
+        });
+    }
+
     // Initialize certificate carousel
     initCertificateCarousel();
     
@@ -526,13 +558,13 @@ function initGalleryCarousel() {
 
     // Clear existing content
     track.innerHTML = '';
-    
+
     // Create slides
     galleryImages.forEach((image, index) => {
         const slide = document.createElement('div');
         slide.className = 'carousel-slide';
         slide.setAttribute('data-index', index);
-        
+
         const slideBg = document.createElement('div');
         slideBg.className = 'carousel-slide-bg';
         slideBg.style.backgroundImage = `url(${image.src})`;
@@ -572,7 +604,7 @@ function initGalleryCarousel() {
         updateCarousel();
         resetAutoRotate();
     });
-    
+
     // Next slide button
     nextButton.addEventListener('click', () => {
         currentIndex = (currentIndex + 1) % slides.length;
@@ -615,7 +647,7 @@ function initGalleryCarousel() {
             if (diff > 0) {
                 // Swipe left
                 currentIndex = (currentIndex + 1) % slides.length;
-            } else {
+        } else {
                 // Swipe right
                 currentIndex = (currentIndex - 1 + slides.length) % slides.length;
             }
@@ -623,7 +655,7 @@ function initGalleryCarousel() {
             resetAutoRotate();
         }
     }
-    
+
     // Initialize the carousel
     updateCarousel();
     startAutoRotate();
