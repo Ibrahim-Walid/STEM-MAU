@@ -183,8 +183,8 @@ nav.shrunk ul li a {
 
 /* Hero Section */
 #home {
-  min-height: calc(100vh - 20px);
-  height: calc(100vh - 20px);
+  min-height: calc(100vh + 20px);
+  height: calc(100vh + 20px);
   position: relative;
   display: flex;
   align-items: center;
@@ -263,7 +263,7 @@ body.loaded section:not(#home) {
 
 .hero-content p {
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   word-wrap: break-word;
   width: 100%;
   max-width: 100%;
@@ -278,7 +278,7 @@ body.loaded section:not(#home) {
   margin: 0 auto;
   position: relative;
   z-index: 1;
-  padding: 0 10px 10px;
+  padding: 0 10px;
   box-sizing: border-box;
 }
 
@@ -316,15 +316,15 @@ body.loaded section:not(#home) {
 
 @media (max-width: 768px) {
   #home {
-    min-height: calc(100vh - 40px);
-    height: calc(100vh - 40px);
-    padding: 20px 0;
+    min-height: 100vh;
+    height: 100vh;
+    padding: 0;
   }
 
   .hero-content {
-    padding: 0 20px;
-    justify-content: flex-start;
-    margin-top: 60px;
+    padding: 0 15px;
+    margin-top: 10px;
+    gap: 15px;
   }
 
   .hero-content h1 {
@@ -335,13 +335,15 @@ body.loaded section:not(#home) {
 
   .hero-content p {
     font-size: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 0;
   }
 
   .stats-grid {
-    margin-top: 15px;
-    gap: 15px;
-    padding-bottom: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 0 5px 15px;
+    width: 100%;
+    margin-top: 5px;
   }
 
   .stats-card {
@@ -367,14 +369,8 @@ body.loaded section:not(#home) {
 
 @media (max-width: 480px) {
   #home {
-    min-height: calc(100vh - 60px);
-    height: calc(100vh - 60px);
-    padding: 15px 0;
-  }
-
-  .hero-content {
-    padding: 0 15px;
-    margin-top: 50px;
+    min-height: 95vh;
+    padding: 132px 0 10px;
   }
 
   .hero-content h1 {
@@ -385,13 +381,13 @@ body.loaded section:not(#home) {
 
   .hero-content p {
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 35px;
   }
 
   .stats-grid {
-    margin-top: 10px;
-    gap: 10px;
-    padding-bottom: 0;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    width: 100%;
   }
 
   .stats-card {
