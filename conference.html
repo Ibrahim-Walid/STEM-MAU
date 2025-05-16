@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEM MAU Conference</title>
+    <meta name="description"
+        content="Explore the STEM Model African Union Conference - our flagship event where students showcase their diplomatic skills through policy debates and structured negotiations.">
+    <meta name="keywords"
+        content="STEM, Model African Union, MAU, conference, diplomacy, leadership, education, simulation, Africa">
+
+    <meta property="og:title" content="STEM MAU Conference">
+    <meta property="og:description"
+        content="Explore the STEM Model African Union Conference - our flagship event showcasing diplomacy and leadership skills.">
+    <meta property="og:image" content="./conference/IMG-20250501-WA0016.jpg">
+    <meta property="og:url" content="https://stemmau.org/conference">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="./logo-removebg-preview.png" type="image/png">
+    <link rel="apple-touch-icon" href="./logo-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="conference.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <img src="./africa.gif" alt="Loading...">
+    </div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="nav-home-link">
+                    <img src="./logo-removebg-preview.png" alt="STEM Model African Union Logo">
+                </a>
+                <h1>STEM Model African Union</h1>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="index.html#home" class="main-page-link" data-section="home">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="conference.html" class="active">Conference</a></li>
+                <li><a href="highboard.html">High Board</a></li>
+                <li><a href="index.html#contact" class="main-page-link" data-section="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="conference-header">
+        <div class="header-bg"></div>
+        <div class="header-content">
+            <h1>STEM MAU Conference</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="conference-overview">
+            <div class="section-container">
+                <h2>Conference <span class="highlight">Overview</span></h2>
+                <div class="conference-description">
+                    <div class="conference-text">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt itaque rem repellat qui accusamus natus similique. Placeat, esse atque ipsam corrupti veniam dolorum architecto accusamus voluptas delectus nobis natus dolorem!
+                        </p>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic blanditiis numquam ducimus veritatis perferendis ex dolores nihil culpa sapiente quas reiciendis quae quo amet assumenda at, animi, omnis sed maxime.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="menu-container mobile-accordion">
+                    <div class="menu-tabs" style="height: auto !important; overflow: visible !important;">
+                        <div class="menu-tab" data-tab="committees" style="display: block !important; position: relative;">
+                            Diverse Committees
+                            <span class="menu-tab-arrow">&#9662;</span>
+                        </div>
+                        <div class="menu-tab" data-tab="resolutions" style="display: block !important; position: relative;">
+                            Resolution Drafting
+                            <span class="menu-tab-arrow">&#9662;</span>
+                        </div>
+                        <div class="menu-tab" data-tab="skills" style="display: block !important; position: relative;">
+                            Diplomatic Skills
+                            <span class="menu-tab-arrow">&#9662;</span>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-content">
+                        <div class="menu-item" id="committees">
+                            <div class="menu-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Diverse Committees</h3>
+                            <p>Specialized committees focusing on different aspects of African affairs including peace and security, economic development, and social issues. Each committee addresses specific challenges and opportunities facing the continent, allowing delegates to develop expertise in particular policy areas.</p>
+                        </div>
+                        
+                        <div class="menu-item" id="resolutions">
+                            <div class="menu-icon">
+                                <i class="fas fa-file-signature"></i>
+                            </div>
+                            <h3>Resolution Drafting</h3>
+                            <p>Students collaborate to develop comprehensive resolutions addressing pressing challenges facing the African continent. Through careful research and negotiation, delegates craft policy documents that propose innovative solutions to complex problems, balancing national interests with continental priorities.</p>
+                        </div>
+                        
+                        <div class="menu-item" id="skills">
+                            <div class="menu-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h3>Diplomatic Skills</h3>
+                            <p>Delegates practice negotiation, public speaking, and strategic thinking in a professional diplomatic environment. These essential skills are developed through structured debates, informal caucuses, and coalition-building exercises that mirror real-world diplomatic processes at the African Union.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add a spacer div that will only be used in mobile view -->
+                <div id="mobile-menu-spacer" style="height: 0; transition: height 0.3s ease-in-out;"></div>
+            </div>
+        </section>
+
+        <section id="conference-gallery">
+            <div class="section-container">
+                <h2>Conference <span class="highlight">Gallery</span></h2>
+                <div class="carousel-container conference-carousel">
+                    <div class="carousel">
+                        <div class="carousel-track">
+                            <!-- The carousel slides will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev-btn" aria-label="Previous slide">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path>
+                        </svg>
+                    </button>
+                    <button class="carousel-btn next-btn" aria-label="Next slide">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12l-4.58 4.59z"></path>
+                        </svg>
+                    </button>
+                    <div class="carousel-indicators"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificates">
+            <div class="section-container">
+                <h2><span class="highlight">Certificates</span></h2>
+                <div class="certificate-description">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, provident. Nulla placeat quos maxime illum magni laudantium distinctio eos odio, tempore officia enim vel rerum! Tenetur quas quaerat molestias debitis?
+                    </p>
+                </div>
+
+                <div class="certificate-carousel">
+                    <div class="certificate-wrapper">
+                        <img src="./conference/Certificate/IMG-20250501-WA0006.jpg" alt="STEM MAU Conference Certificate" class="active">
+                        <img src="./conference/Certificate/IMG-20250501-WA0005.jpg" alt="STEM MAU Conference Certificate">
+                        <img src="./conference/Certificate/IMG-20250501-WA0004.jpg" alt="STEM MAU Conference Certificate">
+                        <img src="./conference/Certificate/IMG-20250501-WA0003.jpg" alt="STEM MAU Conference Certificate">
+                        <img src="./conference/Certificate/IMG-20250501-WA0002.jpg" alt="STEM MAU Conference Certificate">
+                    </div>
+                    <div class="certificate-controls">
+                        <button class="certificate-prev" aria-label="Previous certificate">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="certificate-next" aria-label="Next certificate">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="certificate-indicators"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="join-conference">
+            <div class="cta-container">
+                <h2>Join Our Next Conference</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="index.html#contact" class="cta-button" id="contactButton">Contact For Information</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 STEM Model African Union. All rights reserved.</p>
+        <p>نظام الأمم المتحدة في أفريقيا: المحاكاة العلمية للشباب الأفريقي</p>
+    </footer>
+
+    <div class="back-to-top">
+        <svg viewBox="0 0 24 24">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path>
+        </svg>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="conference.js"></script>
+    <script>
+        document.querySelectorAll('.main-page-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const sectionId = this.getAttribute('data-section');
+                localStorage.setItem('scrollToSection', sectionId);
+                window.location.href = 'index.html#' + sectionId;
+            });
+        });
+
+        document.querySelector('.nav-home-link').addEventListener('click', function (e) {
+            e.preventDefault();
+            localStorage.setItem('scrollToSection', 'home');
+            window.location.href = 'index.html';
+        });
+
+        document.getElementById('contactButton').addEventListener('click', function (e) {
+            e.preventDefault();
+            localStorage.setItem('scrollToSection', 'contact');
+            window.location.href = 'index.html#contact';
+        });
+    </script>
+</body>
+
+</html> 

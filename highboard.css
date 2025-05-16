@@ -366,8 +366,8 @@
   }
   
   .secretary-card::before {
-    border-image: linear-gradient(45deg, #CD7F32, #DAA06D, #CD7F32) 1;
-    box-shadow: 0 0 15px rgba(205, 127, 50, 0.3);
+    border-image: linear-gradient(45deg, #C0C0C0, #E8E8E8, #C0C0C0) 1;
+    box-shadow: 0 0 15px rgba(192, 192, 192, 0.3);
   }
   
   .badge {
@@ -397,7 +397,7 @@
   }
   
   .badge-secretary {
-    background: linear-gradient(135deg, #CD7F32, #DAA06D);
+    background: linear-gradient(135deg, #C0C0C0, #E8E8E8);
     color: #000;
   }
   
@@ -491,13 +491,13 @@
   }
   
   .ribbon-secretary {
-    background: linear-gradient(45deg, #CD7F32, #DAA06D);
+    background: linear-gradient(45deg, #C0C0C0, #E8E8E8);
     color: #000;
   }
   
   .ribbon-secretary::before,
   .ribbon-secretary::after {
-    border-color: #9c5f25 transparent transparent transparent;
+    border-color: #919191 transparent transparent transparent;
   }
   
   @media (max-width: 768px) {

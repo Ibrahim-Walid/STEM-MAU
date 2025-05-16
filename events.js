@@ -71,6 +71,11 @@ function initCarousel(trackSelector, indicatorsSelector, prevButtonSelector, nex
         slide.className = 'carousel-slide';
         slide.setAttribute('data-index', index);
 
+        // Create blurred background
+        const slideBg = document.createElement('div');
+        slideBg.className = 'carousel-slide-bg';
+        slideBg.style.backgroundImage = `url(${image})`;
+        
         const img = document.createElement('img');
         img.src = image;
         img.loading = "lazy";
@@ -83,13 +88,16 @@ function initCarousel(trackSelector, indicatorsSelector, prevButtonSelector, nex
                 const ribbon = document.createElement('div');
                 ribbon.className = 'ribbon';
                 ribbon.textContent = 'High Board';
+                slide.appendChild(slideBg);
                 slide.appendChild(img);
                 slide.appendChild(ribbon);
             } else {
+                slide.appendChild(slideBg);
                 slide.appendChild(img);
             }
         } else {
             img.alt = type === 'interviews' ? `STEM MAU Interview Session ${index}` : `STEM MAU Outing Photo ${index}`;
+            slide.appendChild(slideBg);
             slide.appendChild(img);
         }
 

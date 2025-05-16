@@ -149,11 +149,26 @@ section h2::after {
     backface-visibility: hidden;
 }
 
+.carousel-slide-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(20px);
+    opacity: 0.7;
+    transform: scale(1.1); /* Scale up to avoid blur edges */
+}
+
 .carousel-slide img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     transition: transform 0.5s ease;
+    position: relative;
+    z-index: 2; /* Place above the blurred background */
 }
 
 .carousel-slide[data-index="0"] img {
@@ -443,9 +458,7 @@ nav ul li a.active::after {
         padding: 12px 25px;
         font-size: 14px;
     }
-}
-
-@media (min-width: 992px) {
+}@media (min-width: 992px) {
     .carousel {
         height: 600px;
     }
@@ -466,6 +479,8 @@ nav ul li a.active::after {
 .special-slide {
     position: relative;
     overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    border: 3px solid rgba(0, 255, 136, 0.5);
 }
 
 .special-slide::before {
@@ -475,29 +490,30 @@ nav ul li a.active::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, transparent 70%, rgba(26, 92, 56, 0.9) 100%);
-    z-index: 2;
+    background: radial-gradient(
+        circle at center,
+        rgba(0, 255, 136, 0.2),
+        transparent 70%
+    );
+    z-index: 3;
     pointer-events: none;
 }
 
 .special-slide .ribbon {
     position: absolute;
-    top: 25px;
+    top: 20px;
     right: -35px;
-    width: 140px;
-    height: 30px;
-    background: linear-gradient(to right, #00ff88, #1A5C38, #00ff88);
-    background-size: 200% 100%;
-    background-position: left bottom;
+    width: 150px;
+    padding: 8px 0;
+    background: linear-gradient(45deg, #1A5C38, #0052B4);
     color: white;
-    font-weight: bold;
-    font-size: 15px;
     text-align: center;
-    line-height: 30px;
     transform: rotate(45deg);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
     z-index: 4;
-    transition: background-position 1.5s ease;
 }
 
 .special-slide:hover .ribbon {
@@ -792,7 +808,6 @@ nav ul li a.active::after {
         opacity: 0;
     }
 }
-
 @keyframes particles {
     0% {
         box-shadow:
@@ -854,3 +869,5 @@ nav ul li a.active::after {
         height: 600px;
     }
 }
+
+
