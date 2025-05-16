@@ -336,6 +336,7 @@ body.loaded section:not(#home) {
   .hero-content p {
     font-size: 18px;
     margin-bottom: 0;
+    padding: 0 5px;
   }
 
   .stats-grid {
@@ -382,6 +383,7 @@ body.loaded section:not(#home) {
   .hero-content p {
     font-size: 16px;
     margin-bottom: 35px;
+    padding: 0;
   }
 
   .stats-grid {
