@@ -125,11 +125,11 @@ function initCertificateCarousel() {
     
     // Get all certificate images
     const certificateImages = [
-        './conference/Certificate/IMG-20250501-WA0006.jpg',
-        './conference/Certificate/IMG-20250501-WA0005.jpg',
-        './conference/Certificate/IMG-20250501-WA0004.jpg',
-        './conference/Certificate/IMG-20250501-WA0003.jpg',
-        './conference/Certificate/IMG-20250501-WA0002.jpg'
+        './Conference/Certificate/IMG-20250501-WA0006.jpg',
+        './Conference/Certificate/IMG-20250501-WA0005.jpg',
+        './Conference/Certificate/IMG-20250501-WA0004.jpg',
+        './Conference/Certificate/IMG-20250501-WA0003.jpg',
+        './Conference/Certificate/IMG-20250501-WA0002.jpg'
     ];
     
     // Create slides with blurred backgrounds
