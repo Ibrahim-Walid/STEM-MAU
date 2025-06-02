@@ -18,10 +18,24 @@ const outingImages = [
     './Outing/WhatsApp Image 2025-05-10 at 13.24.52_8ed4f527.jpg'
 ];
 
+const bestMemberImages = [
+    'Members of the month/Academics.jpg',
+    'Members of the month/Content Writing.jpg',
+    'Members of the month/Graphic Design.jpg',
+    'Members of the month/HR.jpg',
+    'Members of the month/IT.jpg',
+    'Members of the month/Logistics.jpg',
+    'Members of the month/Marketing .jpg',
+    'Members of the month/PR.jpg'
+];
+
 document.addEventListener('DOMContentLoaded', function () {
-    initCarousel('.carousel-track', '.carousel-indicators', '.prev-btn', '.next-btn', interviewImages, 'interviews');
+    initCarousel('#interviews .carousel-track', '#interviews .carousel-indicators', 
+                '#interviews .prev-btn', '#interviews .next-btn', interviewImages, 'interviews');
     initCarousel('.outings-carousel .carousel-track', '.outings-carousel .carousel-indicators', 
                 '.outings-carousel .prev-btn', '.outings-carousel .next-btn', outingImages, 'outings');
+    initCarousel('#best-members .carousel-track', '#best-members .carousel-indicators',
+                '#best-members .prev-btn', '#best-members .next-btn', bestMemberImages, 'best-members');
     animateOnScroll();
     handleSectionHighlighting();
 
@@ -80,22 +94,33 @@ function initCarousel(trackSelector, indicatorsSelector, prevButtonSelector, nex
         img.loading = "lazy";
 
         if (index === 0) {
-            img.alt = type === 'interviews' ? 'STEM MAU High Board Members' : 'STEM MAU Outing';
-            slide.classList.add('special-slide');
-
             if (type === 'interviews') {
+                img.alt = 'STEM MAU High Board Members';
+                slide.classList.add('special-slide');
                 const ribbon = document.createElement('div');
                 ribbon.className = 'ribbon';
                 ribbon.textContent = 'High Board';
                 slide.appendChild(slideBg);
                 slide.appendChild(img);
                 slide.appendChild(ribbon);
+            } else if (type === 'best-members') {
+                img.alt = 'STEM MAU Best Member - Academics';
+                slide.appendChild(slideBg);
+                slide.appendChild(img);
             } else {
+                img.alt = 'STEM MAU Outing';
                 slide.appendChild(slideBg);
                 slide.appendChild(img);
             }
         } else {
-            img.alt = type === 'interviews' ? `STEM MAU Interview Session ${index}` : `STEM MAU Outing Photo ${index}`;
+            if (type === 'interviews') {
+                img.alt = `STEM MAU Interview Session ${index}`;
+            } else if (type === 'best-members') {
+                const departments = ['Academics', 'Content Writing', 'Graphic Design', 'HR', 'IT', 'Logistics', 'Marketing', 'PR'];
+                img.alt = `STEM MAU Best Member - ${departments[index]}`;
+            } else {
+                img.alt = `STEM MAU Outing Photo ${index}`;
+            }
             slide.appendChild(slideBg);
             slide.appendChild(img);
         }
@@ -375,3 +400,110 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+function initBestMembers() {
+    const menuItems = document.querySelectorAll('.menu-item');
+    
+    menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const department = item.getAttribute('data-department');
+            const imagePath = `Members of the month/${department}.jpg`;
+            
+            // Create modal
+            const modal = document.createElement('div');
+            modal.className = 'member-modal';
+            
+            // Create modal content
+            const modalContent = document.createElement('div');
+            modalContent.className = 'modal-content';
+            
+            // Create image
+            const img = document.createElement('img');
+            img.src = imagePath;
+            img.alt = `${department} Best Member`;
+            
+            // Create close button
+            const closeBtn = document.createElement('button');
+            closeBtn.className = 'modal-close';
+            closeBtn.innerHTML = '&times;';
+            
+            // Add elements to modal
+            modalContent.appendChild(closeBtn);
+            modalContent.appendChild(img);
+            modal.appendChild(modalContent);
+            
+            // Add modal to body
+            document.body.appendChild(modal);
+            
+            // Add styles
+            const style = document.createElement('style');
+            style.textContent = `
+                .member-modal {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.9);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 1000;
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                }
+                
+                .member-modal.active {
+                    opacity: 1;
+                }
+                
+                .modal-content {
+                    position: relative;
+                    max-width: 90%;
+                    max-height: 90vh;
+                }
+                
+                .modal-content img {
+                    max-width: 100%;
+                    max-height: 90vh;
+                    object-fit: contain;
+                    border-radius: 10px;
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+                }
+                
+                .modal-close {
+                    position: absolute;
+                    top: -40px;
+                    right: 0;
+                    background: none;
+                    border: none;
+                    color: white;
+                    font-size: 30px;
+                    cursor: pointer;
+                    padding: 5px 10px;
+                    transition: transform 0.3s ease;
+                }
+                
+                .modal-close:hover {
+                    transform: scale(1.2);
+                }
+            `;
+            document.head.appendChild(style);
+            
+            // Show modal
+            setTimeout(() => {
+                modal.classList.add('active');
+            }, 10);
+            
+            // Close modal on click
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal || e.target === closeBtn) {
+                    modal.classList.remove('active');
+                    setTimeout(() => {
+                        modal.remove();
+                    }, 300);
+                }
+            });
+        });
+    });
+}
