@@ -900,6 +900,22 @@ nav ul li a.active::after {
     }
 }
 
+#outings {
+    position: relative;
+    background: linear-gradient(135deg, rgba(26, 92, 56, 0.9), rgba(0, 82, 180, 0.9)),
+        url('./Outing/WhatsApp Image 2025-05-10 at 13.24.52_61a85bb6.jpg') center/cover no-repeat fixed;
+    color: white;
+    padding: 80px 0;
+}
+
+#outings h2 {
+    color: white;
+}
+
+#outings .event-text p {
+    color: white;
+}
+
 #interviews {
     position: relative;
     background: linear-gradient(135deg, rgba(26, 92, 56, 0.9), rgba(0, 82, 180, 0.9)),
