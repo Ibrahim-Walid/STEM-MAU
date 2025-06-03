@@ -1,0 +1,282 @@
+.alumni-header {
+    position: relative;
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    padding: 0;
+    margin-top: -70px; /* Offset for the fixed navigation */
+}
+
+.header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1a237e, #0d47a1);
+    z-index: -2;
+}
+
+.particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-size: 30px 30px;
+    z-index: -1;
+    animation: particleFloat 20s linear infinite;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 1;
+    padding: 70px 2rem 2rem 2rem; /* Adjusted padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.header-content h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.header-content p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.hero-message {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: clamp(1.5rem, 3vw, 2rem);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 800px;
+    margin: 0 auto;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.hero-message:hover {
+    transform: translateY(-5px);
+}
+
+.hero-message p {
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    line-height: 1.6;
+    margin: 0;
+}
+
+#alumni-stories {
+    padding: 5rem 0;
+    background: #f8f9fa;
+}
+
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.section-container h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #1a237e;
+}
+
+.alumni-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.alumni-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-container {
+    position: relative;
+    height: 250px;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.university-badge {
+    position: absolute;
+    bottom: -40px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.university-badge img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.card-content {
+    padding: 3rem 2rem 2rem 2rem;
+    background: #fff;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #1a237e;
+}
+
+.university {
+    color: #0d47a1;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.major {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.story {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #444;
+}
+
+#join-alumni {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #1a237e, #0d47a1);
+    color: #fff;
+}
+
+.cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.cta-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.highlight-text {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.join-message {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: #fff;
+    color: #1a237e;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+@keyframes particleFloat {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 30px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .alumni-header {
+        padding: 0;
+    }
+
+    .header-content {
+        padding: 60px 1rem 1rem 1rem;
+    }
+
+    .hero-message {
+        margin: 0 1rem;
+    }
+
+    .section-container h2 {
+        font-size: 2rem;
+    }
+
+    .alumni-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-container h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-height: 700px) {
+    .alumni-header {
+        min-height: 700px;
+    }
+    
+    .header-content {
+        padding: 60px 1rem 1rem 1rem;
+    }
+}
+
+.alumni-card:hover {
+    transform: translateY(-10px);
+}
+
+.alumni-card:hover .university-badge {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.alumni-card:hover .university-badge img {
+    transform: scale(1.1);
+} 
