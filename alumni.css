@@ -71,9 +71,10 @@
 
 #alumni-stories {
     padding: 5rem 0;
-    background: linear-gradient(135deg, rgba(26, 92, 56, 0.9), rgba(0, 82, 180, 0.9));
+    background: linear-gradient(135deg, rgba(20, 85, 100, 0.9), rgba(5, 80, 160, 0.9));
     position: relative;
     overflow: hidden;
+    z-index: 0;
 }
 
 #alumni-stories::before {
@@ -83,13 +84,19 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: 
+    background:
         radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 0.1%, transparent 0.2%) 0 0 / 15px 15px,
         radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.07) 0.1%, transparent 0.2%) 0 0 / 25px 25px,
         radial-gradient(circle at 70% 80%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 0.1%, transparent 0.2%) 0 0 / 20px 20px;
     opacity: 0.8;
     animation: particle-move 15s linear infinite;
     pointer-events: none;
+    z-index: 1;
+}
+
+/* Ensure no other pseudo-elements are interfering */
+#alumni-stories::after {
+    display: none;
 }
 
 @keyframes particle-move {
@@ -103,7 +110,7 @@
 
 .section-container {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px 20px;
@@ -116,6 +123,7 @@
     text-align: center;
     margin-bottom: 30px;
     position: relative;
+    z-index: 1;
 }
 
 .section-container h2::before,
@@ -144,11 +152,13 @@
 }
 
 .alumni-card {
-    background: #fff;
+    background: #003366;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    border: 2px solid #1A5C38;
+    position: relative;
 }
 
 .image-container {
@@ -186,9 +196,9 @@
 }
 
 .card-content {
-    padding: 3rem 2rem 2rem 2rem;
-    background: #fff;
-    margin-top: 20px;
+    padding: 3rem 2rem 4rem 2rem;
+    background: #003366;
+    margin-top: 0;
     position: relative;
     z-index: 1;
 }
@@ -196,24 +206,24 @@
 .card-content h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    color: #1A5C38;
+    color: #ffffff;
 }
 
 .university {
-    color: #0052B4;
+    color: #00ff88;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
 .major {
-    color: #333;
+    color: #cccccc;
     margin-bottom: 1rem;
 }
 
 .story {
     font-size: 0.95rem;
     line-height: 1.5;
-    color: #333;
+    color: #ffffff;
 }
 
 .alumni-card:hover {
@@ -388,4 +398,24 @@
     .join-message {
         font-size: 1rem;
     }
+}
+
+/* Add styles for the team logo */
+.team-logo {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    z-index: 20;
+    pointer-events: none;
+    background: transparent;
+}
+
+.team-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    opacity: 1;
 } 
