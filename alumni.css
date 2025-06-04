@@ -161,6 +161,16 @@
     position: relative;
 }
 
+/* Add special style for founder's card */
+.alumni-card.founder {
+    border: 3px solid #FFD700; /* Golden border */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 215, 0, 0.3); /* Golden glow */
+}
+
+.alumni-card.founder:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 215, 0, 0.4); /* Enhanced golden glow on hover */
+}
+
 .image-container {
     position: relative;
     height: 300px;
