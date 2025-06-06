@@ -1859,7 +1859,6 @@ section.visible {
     line-height: 1.6;
     color: black;
 }
-/*
 .wrap {
 	display: flex;
 	flex-wrap: nowrap;
@@ -1921,7 +1920,7 @@ section.visible {
 	background-size: cover;
 	transition: 0.3s ease-in-out;
 	/* border: 1px solid green; */
-}/*
+}
 .inset {
 	max-width: 50%;
 	margin: 0.25em 1em 1em 0;
