@@ -1798,8 +1798,6 @@ section.visible {
 /* Add styles for Topics section */
 #conference-topics {
     padding: 0 20px;
-    background-color: #1A5C38;
-    color: white;
     text-align: center;
 }
 
@@ -1807,7 +1805,7 @@ section.visible {
     font-size: 42px;
     font-weight: 800;
     margin-bottom: 40px;
-    color: white;
+    color: #1A5C38;
     position: relative;
     display: inline-block;
 }
