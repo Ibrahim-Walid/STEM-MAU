@@ -1857,9 +1857,9 @@ section.visible {
 .topic-item p {
     font-size: 16px;
     line-height: 1.6;
-    color: rgba(255, 255, 255, 0.9);
+    color: black;
 }
-
+/*
 .wrap {
 	display: flex;
 	flex-wrap: nowrap;
@@ -1921,8 +1921,7 @@ section.visible {
 	background-size: cover;
 	transition: 0.3s ease-in-out;
 	/* border: 1px solid green; */
-}
-
+}/*
 .inset {
 	max-width: 50%;
 	margin: 0.25em 1em 1em 0;
@@ -1981,13 +1980,13 @@ section.visible {
 	background: white;
 }
 
-/* Animations and timing delays */
+/* Animations and timing delays *//*
 .animate {
 	animation-duration: 0.7s;
 	animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
 	animation-fill-mode: backwards;
 }
-/* Pop In */
+/* Pop In *//*
 .pop {
 	animation-name: pop;
 }
@@ -2002,7 +2001,7 @@ section.visible {
 	}
 }
 
-/* Slide In */
+/* Slide In *//*
 .slide {
 	animation-name: slide;
 }
@@ -2017,7 +2016,7 @@ section.visible {
 	}
 }
 
-/* Slide Left */
+/* Slide Left *//*
 .slide-left {
 	animation-name: slide-left;
 }
@@ -2070,6 +2069,8 @@ section.visible {
 .delay-8 {
 	animation-delay: 2.4s;
 }
+
+*/
 
 /* Add styles for Delegates section */
 #conference-delegates {
