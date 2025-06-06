@@ -1798,7 +1798,7 @@ section.visible {
 /* Add styles for Topics section */
 #conference-topics {
     padding: 0 20px;
-    background: linear-gradient(to top, #155F01, #1A6707, #1E710E, #227813, #28821A);
+    background: linear-gradient(to bottom, #1A6707, #145F01);
     color: white;
     text-align: center;
 }
@@ -1865,7 +1865,7 @@ section.visible {
 /* Add styles for Delegates section */
 #conference-delegates {
     padding: 0 20px;
-    background: linear-gradient(to top, #155F01, #1A6707, #1E710E, #227813, #28821A);
+    background: linear-gradient(to bottom, #1A6707, #145F01);
     color: white;
     text-align: center;
 }
