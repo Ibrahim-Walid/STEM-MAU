@@ -844,8 +844,7 @@ footer p {
   padding: 80px 20px;
   position: relative;
   overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(8px);
+  background: linear-gradient(135deg, #1A5C38, #0a4828);
 }
 
 #vision-mission::before {
@@ -875,7 +874,7 @@ footer p {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #1A5C38;
+  color: white;
   position: relative;
   z-index: 1;
   display: flex;
@@ -903,14 +902,16 @@ footer p {
 .vision-mission-content {
   max-width: 900px;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
   padding: 40px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   position: relative;
   z-index: 1;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .vision-mission-content:hover {
@@ -932,7 +933,7 @@ footer p {
 .vision-mission-content p {
   margin-bottom: 1.5rem;
   line-height: 1.8;
-  color: #333;
+  color: rgba(255, 255, 255, 0.9);
   font-size: 1.05rem;
   position: relative;
   z-index: 1;
@@ -941,22 +942,24 @@ footer p {
 .vision-highlight {
   position: relative;
   font-weight: 600;
-  color: #0052B4;
+  color: #00ff88;
   transition: color 0.3s ease;
 }
 
 .vision-highlight:hover {
-  color: #1A5C38;
+  color: #0052B4;
 }
 
 .highlight-box {
-  background: linear-gradient(135deg, rgba(26, 92, 56, 0.05), rgba(0, 82, 180, 0.05));
-  border-left: 3px solid #0052B4;
+  background: rgba(255, 255, 255, 0.15);
+  border-left: 3px solid #00ff88;
   padding: 15px 20px;
   margin: 25px 0;
   border-radius: 0 5px 5px 0;
   position: relative;
   overflow: hidden;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .highlight-box::after {
@@ -990,6 +993,7 @@ footer p {
   position: relative;
   z-index: 1;
   margin: 0;
+  color: white;
 }
 
 @media (max-width: 768px) {
