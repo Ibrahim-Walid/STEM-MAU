@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subscriber List</title>
+    <title>Subscriber List - Admin</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -67,20 +67,74 @@
             background-color: #d4edda;
             color: #155724;
         }
+        #loginForm {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        #loginForm input[type="email"],
+        #loginForm input[type="password"] {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        #loginForm button {
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #loginForm button:hover {
+            background-color: #218838;
+        }
+        #loginError {
+            color: red;
+            text-align: center;
+        }
+        #logoutButton {
+            background-color: #dc3545;
+            margin-top: 20px;
+        }
+        #logoutButton:hover {
+            background-color: #c82333;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Subscribed Emails</h1>
-        <ul id="emailList">
-            <!-- Emails will be loaded here -->
-        </ul>
-        <button class="copy-button" id="copyEmailsButton">Copy All Emails</button>
-        <div id="copyMessage" class="message"></div>
+        <div id="loginSection">
+            <h1>Admin Login</h1>
+            <form id="loginForm">
+                <input type="email" id="loginEmail" placeholder="Email" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p id="loginError" style="color: red;"></p>
+            </form>
+        </div>
+
+        <div id="contentSection" style="display: none;">
+            <h1>Subscribed Emails</h1>
+            <ul id="emailList">
+                <!-- Emails will be loaded here -->
+            </ul>
+            <button class="copy-button" id="copyEmailsButton">Copy All Emails</button>
+            <div id="copyMessage" class="message"></div>
+            <button class="copy-button" id="logoutButton">Logout</button>
+        </div>
     </div>
 
     <!-- Firebase SDKs -->
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics-compat.js"></script>
 
