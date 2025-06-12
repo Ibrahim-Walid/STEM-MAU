@@ -568,12 +568,17 @@ nav.shrunk ul li a {
 
 @media (max-width: 768px) {
   #goals {
-    padding: 80px 0;
+    padding: 60px 15px;
   }
 
   #goals h2 {
     font-size: 32px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+  }
+
+  .goals-grid {
+    padding: 0 15px;
+    gap: 20px;
   }
 
   .goal-card {
@@ -592,6 +597,21 @@ nav.shrunk ul li a {
 
   .goal-card p {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  #goals {
+    padding: 50px 10px;
+  }
+
+  .goals-grid {
+    padding: 0 10px;
+    gap: 15px;
+  }
+
+  .goal-card {
+    padding: 20px 12px;
   }
 }
 
@@ -719,17 +739,59 @@ nav.shrunk ul li a {
 
 @media (max-width: 768px) {
   #contact {
-    padding: 80px 0;
+    padding: 60px 15px;
   }
 
   #contact h2 {
     font-size: 32px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   #contact p {
     font-size: 16px;
     margin-bottom: 30px;
+    padding: 0 15px;
+  }
+
+  .social-links {
+    gap: 15px;
+    padding: 0 15px;
+  }
+
+  .social-links a {
+    width: 50px;
+    height: 50px;
+  }
+
+  .social-links img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact {
+    padding: 50px 10px;
+  }
+
+  #contact p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .social-links {
+    gap: 12px;
+    padding: 0 10px;
+  }
+
+  .social-links a {
+    width: 45px;
+    height: 45px;
+  }
+
+  .social-links img {
+    width: 24px;
+    height: 24px;
   }
 }
 
