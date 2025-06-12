@@ -193,6 +193,17 @@
         <img src="./whatsapp logo.png" alt="Whatsapp Logo" loading="lazy">
       </a>
     </div>
+
+    <div class="subscription-form">
+      <p>Subscribe to our newsletter for updates on events, opportunities, and STEM MAU news!</p>
+      <form id="emailSubscriptionForm">
+        <div class="email-input-group">
+          <input type="email" class="email-input" placeholder="Enter your email address" required>
+          <button type="submit" class="subscribe-btn">Subscribe</button>
+        </div>
+        <div class="subscription-message"></div>
+      </form>
+    </div>
   </section>
 
   <footer>
@@ -208,6 +219,12 @@
 
   <script src="script.js"></script>
   <script src="hero-particles.js"></script>
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="subscription.js"></script>
   <script>
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
