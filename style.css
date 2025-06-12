@@ -115,7 +115,7 @@ nav.shrunk .nav-logo h1 {
 }
 
 nav.shrunk ul li a {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 @media (max-width: 768px) {
