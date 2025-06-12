@@ -222,3 +222,90 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+function initHeroParticles() {
+    const heroSection = document.querySelector('#home');
+    if (!heroSection) return;
+
+    // Create particles container
+    const particlesContainer = document.createElement('div');
+    particlesContainer.className = 'hero-particles';
+    heroSection.appendChild(particlesContainer);
+
+    // Create particles
+    for (let i = 0; i < 50; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'hero-particle';
+        
+        // Random size between 2px and 4px
+        const size = Math.random() * 2 + 2;
+        
+        // Random position
+        const posX = Math.random() * 100;
+        const posY = Math.random() * 100;
+        
+        // Random animation duration between 15s and 30s
+        const duration = Math.random() * 15 + 15;
+        
+        // Random delay between 0s and 15s
+        const delay = Math.random() * 15;
+        
+        particle.style.cssText = `
+            position: absolute;
+            width: ${size}px;
+            height: ${size}px;
+            background: rgba(255, 255, 255, ${Math.random() * 0.5 + 0.2});
+            border-radius: 50%;
+            top: ${posY}%;
+            left: ${posX}%;
+            animation: floatParticle ${duration}s linear infinite;
+            animation-delay: -${delay}s;
+            pointer-events: none;
+        `;
+        
+        particlesContainer.appendChild(particle);
+    }
+
+    // Add the floating animation
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes floatParticle {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(100px, 50px);
+            }
+            50% {
+                transform: translate(50px, 100px);
+            }
+            75% {
+                transform: translate(-50px, 50px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+        
+        .hero-particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .hero-particle {
+            will-change: transform;
+        }
+    `;
+    document.head.appendChild(style);
+}
+
+// Call the function when the DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    initHeroParticles();
+    // ... existing code ...
+});
