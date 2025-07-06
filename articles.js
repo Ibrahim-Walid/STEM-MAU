@@ -85,8 +85,8 @@ function formatArticleBody(body) {
       html += `<p style='text-indent:2em; margin:0 0 10px 0;'>${trimmed.replace(/\n/g, '<br>')}</p>`;
     }
   }
-  // Add author signature at the end
-  html += "<div class='article-author-signature'>By Tyam Mohamed</div>";
+  // Add author signature at the end, left-aligned
+  html += "<div class='article-author-signature' style='text-align:left;'>By: Tyam Mohamed</div>";
   return html;
 }
 
