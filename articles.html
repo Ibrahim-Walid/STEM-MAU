@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles</title>
+  <meta name="description" content="Explore in-depth articles on African and global issues, written by Tyam Mohamed. Read modern, well-researched content with a beautiful, responsive design.">
+  <meta property="og:title" content="Articles - STEM MAU">
+  <meta property="og:description" content="Explore in-depth articles on African and global issues, written by Tyam Mohamed. Read modern, well-researched content with a beautiful, responsive design.">
+  <meta property="og:image" content="./logo.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://stemmau.org/articles">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://stemmau.org/articles" />
+  <link rel="icon" type="image/jpeg" sizes="32x32" href="./logo.jpg">
+  <link rel="icon" type="image/jpeg" sizes="16x16" href="./logo.jpg">
+  <link rel="shortcut icon" type="image/jpeg" href="./logo.jpg">
+  <link rel="apple-touch-icon" sizes="180x180" href="./logo.jpg">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="articles.css">
+</head>
+<body>
+  <div class="articles-center-wrapper">
+    <h1 class="articles-title">Articles</h1>
+    <div class="articles-grid">
+      <div class="article-card" data-article="1">
+        <div class="article-image" style="background-image: url('./Article/Sudanese Civil War.png');"></div>
+        <div class="article-info">
+          <h2 class="article-title">The Sudanese Civil War</h2>
+          <p class="article-author">By Tyam Mohamed</p>
+        </div>
+      </div>
+      <!-- Add more articles here as you add more images -->
+    </div>
+  </div>
+
+  <!-- Article Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-content" id="modalContent">
+      <span class="modal-close" id="modalClose">&times;</span>
+      <div class="modal-header-row">
+        <div class="modal-article-image" id="modalArticleImage"></div>
+        <div class="modal-title-author">
+          <h2 class="modal-article-title" id="modalArticleTitle"></h2>
+          <p class="modal-article-author" id="modalArticleAuthor"></p>
+        </div>
+      </div>
+      <div class="modal-article-body" id="modalArticleBody"></div>
+    </div>
+  </div>
+
+  <script src="articles.js"></script>
+</body>
+</html> 
