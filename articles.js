@@ -105,26 +105,29 @@ function closeModal() {
   document.body.style.overflow = '';
 }
 
-// Open modal on card click
-const cards = document.querySelectorAll('.article-card');
-cards.forEach(card => {
-  card.addEventListener('click', () => {
-    const id = parseInt(card.getAttribute('data-article'), 10);
-    openModal(id);
+document.addEventListener('DOMContentLoaded', function() {
+  // Open modal on card click
+  const cards = document.querySelectorAll('.article-card');
+  cards.forEach(card => {
+    card.addEventListener('click', (event) => {
+      event.stopPropagation();
+      const id = parseInt(card.getAttribute('data-article'), 10);
+      openModal(id);
+    });
   });
-});
 
-// Close modal on close button
-modalClose.addEventListener('click', closeModal);
+  // Close modal on close button
+  modalClose.addEventListener('click', closeModal);
 
-// Close modal on overlay click (but not modal content)
-modalOverlay.addEventListener('click', (e) => {
-  if (e.target === modalOverlay) closeModal();
-});
+  // Close modal on overlay click (but not modal content)
+  modalOverlay.addEventListener('click', (e) => {
+    if (e.target === modalOverlay) closeModal();
+  });
 
-// Close modal on Escape key
-window.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
-    closeModal();
-  }
+  // Close modal on Escape key
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
+      closeModal();
+    }
+  });
 }); 

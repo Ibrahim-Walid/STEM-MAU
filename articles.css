@@ -27,7 +27,7 @@ html, body {
   justify-content: center;
   position: relative;
   z-index: 1;
-  padding: 0 0 48px 0;
+  padding: 80px 0 48px 0;
 }
 
 .articles-title {
@@ -140,12 +140,14 @@ html, body {
   display: none;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
+  z-index: 9999;
   transition: background 0.3s;
 }
 
 .modal-overlay.active {
   display: flex;
+  z-index: 9999;
+  pointer-events: auto;
 }
 
 .modal-content {
@@ -377,6 +379,18 @@ html, body {
     box-shadow: 0 4px 18px #00ff8833;
     background-color: #e0e7ef;
     align-self: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .articles-center-wrapper {
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .articles-center-wrapper {
+    padding-top: 40px;
   }
 }
 
