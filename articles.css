@@ -120,6 +120,15 @@ html, body {
   opacity: 0.85;
 }
 
+.article-author-signature {
+  text-align: center;
+  color: #888;
+  font-size: 1.08rem;
+  margin-top: 24px;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
 /* Modal Styles */
 .modal-overlay {
   position: fixed;

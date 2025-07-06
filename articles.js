@@ -47,24 +47,47 @@ function formatArticleBody(body) {
     'How civilians are affected by the war',
     'International involvements to stop war'
   ];
+
+  // Handle lists: convert bullet points to <ul><li>...</li></ul>
   // Split by double newlines for paragraphs
-  return body.split(/\n\n+/).map(paragraph => {
-    let trimmed = paragraph.trim();
+  let paragraphs = body.split(/\n\n+/);
+  let html = '';
+  let inList = false;
+  let listItems = [];
+
+  for (let i = 0; i < paragraphs.length; i++) {
+    let trimmed = paragraphs[i].trim();
+    // Check if this paragraph is a list (starts with • or contains multiple •)
+    if (trimmed.startsWith('•')) {
+      // Split into lines and filter out empty ones
+      let items = trimmed.split(/\n/).filter(line => line.trim().startsWith('•'));
+      listItems = items.map(line => line.replace(/^•\s*/, '').trim());
+      // Add a small margin before the list
+      html += `<ul class='article-list'>${listItems.map(item => `<li>${item}</li>`).join('')}</ul>`;
+      continue;
+    }
     // Check if paragraph starts with a title
+    let isTitle = false;
     for (const title of titles) {
       if (trimmed.startsWith(title)) {
         // Split title and the rest of the paragraph
         const rest = trimmed.slice(title.length).trim();
-        let html = `<strong style='display:block;margin-bottom:2px;'>${title}</strong>`;
+        html += `<strong style='display:block;margin-bottom:2px;'>${title}</strong>`;
         if (rest) {
           html += `<p style='text-indent:2em; margin:0 0 10px 0;'>${rest.replace(/\n/g, '<br>')}</p>`;
         }
-        return html;
+        isTitle = true;
+        break;
       }
     }
-    // Indent every normal paragraph
-    return `<p style='text-indent:2em; margin:0 0 10px 0;'>${trimmed.replace(/\n/g, '<br>')}</p>`;
-  }).join('');
+    if (!isTitle) {
+      // Indent every normal paragraph
+      html += `<p style='text-indent:2em; margin:0 0 10px 0;'>${trimmed.replace(/\n/g, '<br>')}</p>`;
+    }
+  }
+  // Add author signature at the end
+  html += "<div class='article-author-signature'>By Tyam Mohamed</div>";
+  return html;
 }
 
 function openModal(articleId) {
@@ -72,7 +95,6 @@ function openModal(articleId) {
   if (!article) return;
   modalArticleImage.style.backgroundImage = `url('${article.image}')`;
   modalArticleTitle.textContent = article.title;
-  modalArticleAuthor.textContent = `By ${article.author}`;
   modalArticleBody.innerHTML = formatArticleBody(article.body);
   modalOverlay.classList.add('active');
   document.body.style.overflow = 'hidden';
