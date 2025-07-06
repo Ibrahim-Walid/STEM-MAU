@@ -86,7 +86,7 @@ function formatArticleBody(body) {
     }
   }
   // Add author signature at the end, left-aligned
-  html += "<div class='article-author-signature' style='text-align:left;'>By: Tyam Mohamed</div>";
+  html += "<div class='article-author-signature' style='text-align:left;'>Written by: Tyam Mohamed</div>";
   return html;
 }
 
