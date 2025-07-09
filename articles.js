@@ -28,6 +28,16 @@ After the war erupted, global attention was grabbed by the United Nations after 
 • Ensuring that all people operate under the instructions of the armed forces and the RSF abide by International Humanitarian Law.
 • Prioritize talks to reach a short-term ceasefire to ease the delivery of urgent humanitarian aid and restore essential services, and commit to scheduling more expanded discussions to reach a permanent end to hostilities.
 However, all these statements were broken only 48 hours after signing this treaty, after the RSF started shooting again in the capital of Khartoum`
+  },
+  {
+    id: 2,
+    title: 'South Sudan: A Human Tragedy',
+    author: 'Jana Waleed',
+    image: './Article/South Sudan.png',
+    body: `Imagine waking up every day not knowing if you find food to eat, clean water to drink, or a safe place to sleep. For millions of people in South Soudan this is their reality. South Soudan, gained independence in 2011 with great hope, but that hope quickly faded as the country descended into violence and political struggles that left entire communities shattered. Million people depend on humanitarian aid just to stay alive. Hunger, violence, poverty, and illiteracy have become part of daily life for many families in South Soudan. Entire generations are being lost due to ongoing wars. This crisis is more than a political dispute; it is a human tragedy that continues to destroy lives. So we should know the real causes of the crisis, and why we should pay attention, not just for political reasons, but also for suffering people
+The crisis in South Soudan is caused by several deep and rooted factors. One of the main causes is the conflict between political leaders, especially the dispute that occurred in 2013 between President Salva Kiir Mayardit, who belongs to the Dinka tribe, and his deputy Riek Macher, who is from the Nuer tribe. This led to a civil war that turned into a conflict between the Dinka and Nuer. Also, the weakness of government systems and political instability are important reasons that made it hard to keep order and protect national unity. In addition, the poor education and the spread of ignorance and illiteracy made it hard for people to know and ask for their rights, which made them less able to help build their society. All of these interconnected factors have led to violence, displacement, and suffering, which continue to affect millions of people across the country.
+One of the saddest parts of the South Soudan crisis is the use of children in the war. Thousands of children, have been forced to fight, spy, or transport weapons. This is a serious violation of human rights, it takes away their childhood and education. It also causes them psychological trauma that is hard to treat. Despite the efforts made by international organizations to improve the situation, this is still happening in some areas. We should remember that there is a refugee crisis both inside and outside the country. Many people live in very hard conditions in camps that don’t have enough food, health care, or education. Because of this, thousands have escaped outside the country, looking for safety and a better life in nearby countries like Uganda, Kenya, and Ethiopia. This crisis does not only hurt the lives of these people, but also puts pressure on the countries that host them, which are already facing economic problems.
+Finally, the crisis in South Soudan is not only a political problem, but also a big human tragedy. Many people are suffering because of fighting between leaders, tribal problems, weak government, and poor education. Children are losing their future, families are broken, and people live in fear and poverty. We must care about the people of South Soudan and know what happens to them. The world needs to work together to bring peace, give support, and help the people live better lives again.`
   }
 ];
 
@@ -38,7 +48,7 @@ const modalArticleTitle = document.getElementById('modalArticleTitle');
 const modalArticleAuthor = document.getElementById('modalArticleAuthor');
 const modalArticleBody = document.getElementById('modalArticleBody');
 
-function formatArticleBody(body) {
+function formatArticleBody(body, author) {
   // Titles to bold
   const titles = [
     'What are the origins of the Sudanese Civil war?',
@@ -86,7 +96,7 @@ function formatArticleBody(body) {
     }
   }
   // Add author signature at the end, left-aligned
-  html += "<div class='article-author-signature' style='text-align:left;'>Written by: Tyam Mohamed</div>";
+  html += `<div class='article-author-signature' style='text-align:left;'>Written by: ${author}</div>`;
   return html;
 }
 
@@ -95,7 +105,7 @@ function openModal(articleId) {
   if (!article) return;
   modalArticleImage.style.backgroundImage = `url('${article.image}')`;
   modalArticleTitle.textContent = article.title;
-  modalArticleBody.innerHTML = formatArticleBody(article.body);
+  modalArticleBody.innerHTML = formatArticleBody(article.body, article.author);
   modalOverlay.classList.add('active');
   document.body.style.overflow = 'hidden';
 }
