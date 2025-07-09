@@ -31,7 +31,7 @@ However, all these statements were broken only 48 hours after signing this treat
   },
   {
     id: 2,
-    title: 'South Sudan: A Human Tragedy',
+    title: 'South Sudan',
     author: 'Jana Waleed',
     image: './Article/South Sudan.png',
     body: `Imagine waking up every day not knowing if you find food to eat, clean water to drink, or a safe place to sleep. For millions of people in South Soudan this is their reality. South Soudan, gained independence in 2011 with great hope, but that hope quickly faded as the country descended into violence and political struggles that left entire communities shattered. Million people depend on humanitarian aid just to stay alive. Hunger, violence, poverty, and illiteracy have become part of daily life for many families in South Soudan. Entire generations are being lost due to ongoing wars. This crisis is more than a political dispute; it is a human tragedy that continues to destroy lives. So we should know the real causes of the crisis, and why we should pay attention, not just for political reasons, but also for suffering people
