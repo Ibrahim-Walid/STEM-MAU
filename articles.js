@@ -30,6 +30,13 @@ After the war erupted, global attention was grabbed by the United Nations after 
 However, all these statements were broken only 48 hours after signing this treaty, after the RSF started shooting again in the capital of Khartoum`
   },
   {
+    id: 3,
+    title: 'Rowanda and Democratic Republic of The Congo Issues',
+    author: 'Fatma Hussain',
+    image: './Article/Rowanda.png',
+    body: `Essay coming soon.`
+  },
+  {
     id: 2,
     title: 'South Sudan: A Human Tragedy',
     author: 'Jana Waleed',
