@@ -32,7 +32,7 @@ However, all these statements were broken only 48 hours after signing this treat
   {
     id: 3,
     title: 'Rowanda and Democratic Republic of The Congo Issues',
-    author: 'Fatma Hussain',
+    author: 'Fatma Hussien',
     image: './Article/Rowanda.png',
     body: `For decades, the lives of the Central Africans have been threatened by violence, instability, and conflict. Congo-Rwanda crisis is not merely a border war; it is actually a war that escalated when the Democratic Republic of Congo (DRC) accused the Rwandan government of supporting the notorious rebel group M23, which has been causing severe security and humanitarian problems throughout the entire eastern region of the DRC. Those accusations were rejected, and in response, Rwanda has blamed the DRC for sheltering the militias responsible for the 1994 genocide. As both countries trade blame, civilians continue to suffer, and the conflict is likely to continue.
 
