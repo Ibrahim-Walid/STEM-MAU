@@ -398,27 +398,7 @@ nav ul li a.active::after {
     66% { transform: translateY(-5px) scale(0.9) rotate(240deg); }
 }
 
-@keyframes sparkle-1 {
-    0%, 100% { transform: translateY(0px) scale(1) opacity: 0.6; }
-    50% { transform: translateY(-20px) scale(1.4) opacity: 1; }
-}
-
-@keyframes sparkle-2 {
-    0%, 100% { transform: translateY(0px) scale(1) opacity: 0.5; }
-    50% { transform: translateY(-15px) scale(1.3) opacity: 0.8; }
-}
-
-@keyframes wave-float {
-    0%, 100% { transform: translateX(-50%) translateY(0px) scale(1); }
-    50% { transform: translateX(-50%) translateY(-8px) scale(1.1); }
-}
-
-@keyframes arrow-bounce {
-    0%, 100% { transform: translateY(0px) scale(1); }
-    50% { transform: translateY(-10px) scale(1.2); }
-}
-
-/* Clean hero section with many stars and dots evenly distributed */
+/* Enhanced hero section with logo integration and creative elements */
 
 .header-content p {
     font-size: clamp(18px, 3vw, 22px);
@@ -1938,6 +1918,71 @@ nav ul li a.active::after {
     padding: 0 20px;
 }
 
+/* ENHANCED HERO SECTION WITH LOGO INTEGRATION */
+
+/* Logo floating element - Top center */
+.header-content::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background: url('./logo-removebg-preview.png') no-repeat center center;
+    background-size: contain;
+    animation: float-logo 8s ease-in-out infinite;
+    z-index: 1;
+    filter: drop-shadow(0 0 20px rgba(0, 255, 136, 0.6));
+}
+
+/* Logo floating element - Bottom center */
+.header-content::after {
+    content: '';
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background: url('./logo-removebg-preview.png') no-repeat center center;
+    background-size: contain;
+    animation: float-logo-reverse 10s ease-in-out infinite;
+    z-index: 1;
+    filter: drop-shadow(0 0 15px rgba(0, 255, 136, 0.5));
+}
+
+/* Additional logo elements for branding */
+.partners-header .header-bg::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    width: 40px;
+    height: 40px;
+    background: url('./logo-removebg-preview.png') no-repeat center center;
+    background-size: contain;
+    animation: float-logo-left 12s ease-in-out infinite;
+    z-index: 1;
+    filter: drop-shadow(0 0 15px rgba(0, 255, 136, 0.4));
+    opacity: 0.7;
+}
+
+.partners-header .header-bg::after {
+    content: '';
+    position: absolute;
+    top: 75%;
+    right: 10%;
+    width: 45px;
+    height: 45px;
+    background: url('./logo-removebg-preview.png') no-repeat center center;
+    background-size: contain;
+    animation: float-logo-right 14s ease-in-out infinite;
+    z-index: 1;
+    filter: drop-shadow(0 0 18px rgba(0, 255, 136, 0.45));
+    opacity: 0.8;
+}
+
 .hero-message {
     background: rgba(255, 255, 255, 0.1);
     padding: 2.5rem;
@@ -1984,7 +2029,7 @@ nav ul li a.active::after {
 }
 
 /* More left side stars */
-.partners-header .header-bg::before {
+.partners-header .particles::before {
     content: '✦';
     position: absolute;
     top: 45%;
@@ -1995,7 +2040,7 @@ nav ul li a.active::after {
     z-index: 1;
 }
 
-.partners-header .header-bg::after {
+.partners-header .particles::after {
     content: '✦';
     position: absolute;
     top: 62%;
@@ -2007,7 +2052,7 @@ nav ul li a.active::after {
 }
 
 /* Additional left side stars */
-.partners-header .particles::before {
+.partners-header .header-bg::before {
     content: '✦';
     position: absolute;
     top: 78%;
@@ -2018,7 +2063,7 @@ nav ul li a.active::after {
     z-index: 1;
 }
 
-.partners-header .particles::after {
+.partners-header .header-bg::after {
     content: '✦';
     position: absolute;
     top: 35%;
@@ -2029,33 +2074,8 @@ nav ul li a.active::after {
     z-index: 1;
 }
 
-/* CENTER AREA STARS */
-.header-content::before {
-    content: '✦';
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 2rem;
-    color: rgba(0, 255, 136, 0.5);
-    animation: float-star-center-1 5s ease-in-out infinite;
-    z-index: 1;
-}
-
-.header-content::after {
-    content: '✦';
-    position: absolute;
-    bottom: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1.7rem;
-    color: rgba(0, 255, 136, 0.4);
-    animation: float-star-center-2 8s ease-in-out infinite;
-    z-index: 1;
-}
-
 /* RIGHT SIDE STARS - Multiple rows */
-.partners-header .header-bg::before {
+.partners-header .particles::before {
     content: '✦';
     position: absolute;
     top: 18%;
@@ -2066,7 +2086,7 @@ nav ul li a.active::after {
     z-index: 1;
 }
 
-.partners-header .header-bg::after {
+.partners-header .particles::after {
     content: '✦';
     position: absolute;
     top: 38%;
@@ -2078,7 +2098,7 @@ nav ul li a.active::after {
 }
 
 /* More right side stars */
-.partners-header .particles::before {
+.partners-header .header-bg::before {
     content: '✦';
     position: absolute;
     top: 58%;
@@ -2089,7 +2109,7 @@ nav ul li a.active::after {
     z-index: 1;
 }
 
-.partners-header .particles::after {
+.partners-header .header-bg::after {
     content: '✦';
     position: absolute;
     top: 75%;
@@ -2101,7 +2121,7 @@ nav ul li a.active::after {
 }
 
 /* ADDITIONAL STARS FOR BETTER COVERAGE */
-.partners-header .header-bg::before {
+.partners-header .particles::before {
     content: '✦';
     position: absolute;
     top: 52%;
@@ -2112,7 +2132,7 @@ nav ul li a.active::after {
     z-index: 1;
 }
 
-.partners-header .header-bg::after {
+.partners-header .particles::after {
     content: '✦';
     position: absolute;
     top: 68%;
@@ -2120,6 +2140,123 @@ nav ul li a.active::after {
     font-size: 1.2rem;
     color: rgba(0, 255, 136, 0.4);
     animation: float-star-extra-2 13s ease-in-out infinite;
+    z-index: 1;
+}
+
+/* EXTRA LEFT SIDE STARS - Better Coverage */
+.partners-header .header-bg::before {
+    content: '✦';
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    font-size: 1.3rem;
+    color: rgba(0, 255, 136, 0.4);
+    animation: float-star-left-extra-1 9s ease-in-out infinite;
+    z-index: 1;
+}
+
+.partners-header .header-bg::after {
+    content: '✦';
+    position: absolute;
+    top: 33%;
+    left: 18%;
+    font-size: 1rem;
+    color: rgba(0, 255, 136, 0.35);
+    animation: float-star-left-extra-2 11s ease-in-out infinite;
+    z-index: 1;
+}
+
+/* More left side stars */
+.partners-header .particles::before {
+    content: '✦';
+    position: absolute;
+    top: 48%;
+    left: 8%;
+    font-size: 1.5rem;
+    color: rgba(0, 255, 136, 0.45);
+    animation: float-star-left-extra-3 10s ease-in-out infinite;
+    z-index: 1;
+}
+
+.partners-header .particles::after {
+    content: '✦';
+    position: absolute;
+    top: 58%;
+    left: 22%;
+    font-size: 1.1rem;
+    color: rgba(0, 255, 136, 0.4);
+    animation: float-star-left-extra-4 12s ease-in-out infinite;
+    z-index: 1;
+}
+
+/* EXTRA BOTTOM STARS - Better Coverage */
+.partners-header .header-bg::before {
+    content: '✦';
+    position: absolute;
+    top: 82%;
+    left: 12%;
+    font-size: 1.4rem;
+    color: rgba(0, 255, 136, 0.4);
+    animation: float-star-bottom-1 13s ease-in-out infinite;
+    z-index: 1;
+}
+
+.partners-header .header-bg::after {
+    content: '✦';
+    position: absolute;
+    top: 88%;
+    left: 25%;
+    font-size: 1rem;
+    color: rgba(0, 255, 136, 0.35);
+    animation: float-star-bottom-2 14s ease-in-out infinite;
+    z-index: 1;
+}
+
+/* More bottom stars */
+.partners-header .particles::before {
+    content: '✦';
+    position: absolute;
+    top: 85%;
+    left: 35%;
+    font-size: 1.2rem;
+    color: rgba(0, 255, 136, 0.4);
+    animation: float-star-bottom-3 15s ease-in-out infinite;
+    z-index: 1;
+}
+
+.partners-header .particles::after {
+    content: '✦';
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    font-size: 0.9rem;
+    color: rgba(0, 255, 136, 0.3);
+    animation: float-star-bottom-4 16s ease-in-out infinite;
+    z-index: 1;
+}
+
+/* Additional bottom center stars */
+.partners-header .header-bg::before {
+    content: '✦';
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.3rem;
+    color: rgba(0, 255, 136, 0.4);
+    animation: float-star-bottom-center-1 17s ease-in-out infinite;
+    z-index: 1;
+}
+
+.partners-header .header-bg::after {
+    content: '✦';
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    color: rgba(0, 255, 136, 0.35);
+    animation: float-star-bottom-center-2 18s ease-in-out infinite;
     z-index: 1;
 }
 
@@ -2172,7 +2309,7 @@ nav ul li a.active::after {
 }
 
 /* CENTER AREA DOTS */
-.header-content .particles::before {
+.partners-header .particles::before {
     content: '●';
     position: absolute;
     top: 50%;
@@ -2184,7 +2321,7 @@ nav ul li a.active::after {
     z-index: 1;
 }
 
-.header-content .particles::after {
+.partners-header .particles::after {
     content: '●';
     position: absolute;
     top: 65%;
@@ -2197,7 +2334,7 @@ nav ul li a.active::after {
 }
 
 /* RIGHT SIDE DOTS */
-.partners-header .particles::before {
+.partners-header .header-bg::before {
     content: '●';
     position: absolute;
     top: 32%;
@@ -2208,7 +2345,7 @@ nav ul li a.active::after {
     z-index: 1;
 }
 
-.partners-header .particles::after {
+.partners-header .header-bg::after {
     content: '●';
     position: absolute;
     top: 48%;
@@ -2220,7 +2357,7 @@ nav ul li a.active::after {
 }
 
 /* ADDITIONAL DOTS FOR BETTER COVERAGE */
-.partners-header .header-bg::before {
+.partners-header .particles::before {
     content: '●';
     position: absolute;
     top: 82%;
@@ -2231,7 +2368,7 @@ nav ul li a.active::after {
     z-index: 1;
 }
 
-.partners-header .header-bg::after {
+.partners-header .particles::after {
     content: '●';
     position: absolute;
     top: 15%;
@@ -2243,7 +2380,28 @@ nav ul li a.active::after {
     z-index: 1;
 }
 
-/* ANIMATION KEYFRAMES FOR ALL STARS AND DOTS */
+/* ANIMATION KEYFRAMES FOR LOGO AND ALL STARS AND DOTS */
+
+/* Logo animations */
+@keyframes float-logo {
+    0%, 100% { transform: translateX(-50%) translateY(0px) scale(1) rotate(0deg); }
+    50% { transform: translateX(-50%) translateY(-15px) scale(1.1) rotate(5deg); }
+}
+
+@keyframes float-logo-reverse {
+    0%, 100% { transform: translateX(-50%) translateY(0px) scale(1) rotate(0deg); }
+    50% { transform: translateX(-50%) translateY(-12px) scale(0.95) rotate(-3deg); }
+}
+
+@keyframes float-logo-left {
+    0%, 100% { transform: translateY(0px) scale(1) rotate(0deg); }
+    50% { transform: translateY(-18px) scale(1.05) rotate(8deg); }
+}
+
+@keyframes float-logo-right {
+    0%, 100% { transform: translateY(0px) scale(1) rotate(0deg); }
+    50% { transform: translateY(-20px) scale(1.1) rotate(-5deg); }
+}
 
 /* Left side star animations */
 @keyframes float-star-left-1 {
@@ -2274,17 +2432,6 @@ nav ul li a.active::after {
 @keyframes float-star-left-6 {
     0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
     50% { transform: translateY(-7px) rotate(60deg) scale(1.15); }
-}
-
-/* Center star animations */
-@keyframes float-star-center-1 {
-    0%, 100% { transform: translateX(-50%) translateY(0px) rotate(0deg) scale(1); }
-    50% { transform: translateX(-50%) translateY(-10px) rotate(180deg) scale(1.1); }
-}
-
-@keyframes float-star-center-2 {
-    0%, 100% { transform: translateX(-50%) translateY(0px) rotate(0deg) scale(1); }
-    50% { transform: translateX(-50%) translateY(-8px) rotate(90deg) scale(0.9); }
 }
 
 /* Right side star animations */
@@ -2371,6 +2518,59 @@ nav ul li a.active::after {
 @keyframes float-dot-extra-2 {
     0%, 100% { transform: translateX(-50%) scale(1); }
     50% { transform: translateX(-50%) translateY(-8px) scale(1.2); }
+}
+
+/* Extra left side star animations */
+@keyframes float-star-left-extra-1 {
+    0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
+    50% { transform: translateY(-14px) rotate(90deg) scale(1.15); }
+}
+
+@keyframes float-star-left-extra-2 {
+    0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
+    50% { transform: translateY(-9px) rotate(180deg) scale(0.95); }
+}
+
+@keyframes float-star-left-extra-3 {
+    0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
+    50% { transform: translateY(-17px) rotate(270deg) scale(1.2); }
+}
+
+@keyframes float-star-left-extra-4 {
+    0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
+    50% { transform: translateY(-11px) rotate(120deg) scale(1.05); }
+}
+
+/* Bottom star animations */
+@keyframes float-star-bottom-1 {
+    0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
+    50% { transform: translateY(-13px) rotate(240deg) scale(1.1); }
+}
+
+@keyframes float-star-bottom-2 {
+    0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
+    50% { transform: translateY(-8px) rotate(60deg) scale(0.9); }
+}
+
+@keyframes float-star-bottom-3 {
+    0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
+    50% { transform: translateY(-15px) rotate(300deg) scale(1.15); }
+}
+
+@keyframes float-star-bottom-4 {
+    0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
+    50% { transform: translateY(-10px) rotate(150deg) scale(1.05); }
+}
+
+/* Bottom center star animations */
+@keyframes float-star-bottom-center-1 {
+    0%, 100% { transform: translateX(-50%) translateY(0px) rotate(0deg) scale(1); }
+    50% { transform: translateX(-50%) translateY(-12px) rotate(180deg) scale(1.1); }
+}
+
+@keyframes float-star-bottom-center-2 {
+    0%, 100% { transform: translateX(-50%) translateY(0px) rotate(0deg) scale(1); }
+    50% { transform: translateX(-50%) translateY(-7px) rotate(90deg) scale(0.95); }
 }
 
 
