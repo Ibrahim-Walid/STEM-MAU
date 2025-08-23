@@ -98,6 +98,28 @@ nav ul li a:hover {
   color: #00ff88;
 }
 
+/* Navigation active state - applies to all pages */
+body nav ul li a.active,
+body nav ul li a.active:hover {
+  color: #00ff88 !important;
+  position: relative !important;
+}
+
+body nav ul li a.active::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: -5px !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 2px !important;
+  background: #00ff88 !important;
+  border-radius: 2px !important;
+}
+
+
+
+
+
 nav.shrunk {
   padding: 5px 0;
 }

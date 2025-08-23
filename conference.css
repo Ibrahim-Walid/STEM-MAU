@@ -1,3 +1,22 @@
+/* Active Navigation Styles for Conference Page */
+nav ul li a.active {
+    color: #00ff88 !important;
+    position: relative !important;
+}
+
+nav ul li a.active::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -5px !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 2px !important;
+    background: #00ff88 !important;
+    border-radius: 2px !important;
+}
+
+
+
 /* Enhanced Conference Page Styles */
 .conference-header {
     height: 100vh;

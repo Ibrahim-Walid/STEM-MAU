@@ -1,3 +1,22 @@
+/* Active Navigation Styles for High Board Page */
+nav ul li a.active {
+    color: #00ff88 !important;
+    position: relative !important;
+}
+
+nav ul li a.active::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -5px !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 2px !important;
+    background: #00ff88 !important;
+    border-radius: 2px !important;
+}
+
+
+
 #highboard {
     padding: 120px 20px 40px;
     background: linear-gradient(135deg, #1A5C38, #0052B4);
