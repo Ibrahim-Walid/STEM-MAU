@@ -45,6 +45,8 @@ Mujahideen Youth Movement committed the worst crimes that can cross your mind. I
 The second important militant is ISIS. Although it has less impact than the Mujahideen Youth Movement, which focuses on northern places in Somalia, ISIS has attacked a lot of political and important people. ISIS also destroyed a lot of holy places, killing people in villages to spread fear and decrease the dominance of the governorate. Also, on 7 March 2021, A car bomb exploded, killing 20 people and injuring dozens. In addition, on 25 October 2020, there was an attempt to storm the prison in Mogadishu. 
 
 
+Efforts to stop terrorism
+
 There were many African Union missions to Somalia to stop these movements in a very difficult environment. Furthermore, it works to deepen the political side in Somalia as it will deter this movement from the country in general. 
 
 Despite huge losses that AU missions had, AU missions succeeded in expelling armed forces following these movements during August 2011. Moreover, it succeeded in protecting two governments in Somalia, creating a political area for leaders in Somalia to address their internal problems. 
@@ -108,7 +110,8 @@ function formatArticleBody(body, author) {
     'The RSF',
     'The Civil War',
     'How civilians are affected by the war',
-    'International involvements to stop war'
+    'International involvements to stop war',
+    'Efforts to stop terrorism'
   ];
 
   // Handle lists: convert bullet points to <ul><li>...</li></ul>
