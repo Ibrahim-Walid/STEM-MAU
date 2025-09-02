@@ -30,6 +30,30 @@ After the war erupted, global attention was grabbed by the United Nations after 
 However, all these statements were broken only 48 hours after signing this treaty, after the RSF started shooting again in the capital of Khartoum`
   },
   {
+    id: 4,
+    title: 'Terrorism in Somalia',
+    author: 'Mariam Atif',
+    image: './Article/Terrorism in Somalia .jpg',
+    body: `Death surrounds you wherever you are, and danger always threatens you at any time. You can be attacked without any reason, just because of living in a fragmented state. This describes the current situation in Somalia. 
+
+Terrorism in Somalia started with the collapse of the state in 1991 and the fall of Mohamed Siad Barre’s regime. Somalia slid for two decades into successive cycles of conflict and violence among various competing clans and militias. Also, foreign interventions have turned the lives in Somalia into a tragedy and a living hell. 
+
+Mujahideen Youth Movement was established in 2002 and took the Salahuddin Camp in Mogadishu as its headquarters, but when the Islamic Courts Union (ICU) controlled power in the south of Somalia in 2006, the Mujahideen Youth Movement was the right hand for ICU. Moreover, one of the important factors that led to the spread of this movement was that the Transitional Federal Government requested Ethiopia’s intervention to expel ICU from the capital, Mogadishu. 
+
+Mujahideen Youth Movement committed the worst crimes that can cross your mind. In 2009, it attacked an African Union peacekeeping mission, which led to the killing of 20 people. In addition, in January 2022, this movement committed a big attack with a car bomb on vehicles belonging to Fula Fula, a security company that works on behalf of the United Nations, which led to the killing of 12 people. 
+
+The second important militant is ISIS. Although it has less impact than the Mujahideen Youth Movement, which focuses on northern places in Somalia, ISIS has attacked a lot of political and important people. ISIS also destroyed a lot of holy places, killing people in villages to spread fear and decrease the dominance of the governorate. Also, on 7 March 2021, A car bomb exploded, killing 20 people and injuring dozens. In addition, on 25 October 2020, there was an attempt to storm the prison in Mogadishu. 
+
+
+There were many African Union missions to Somalia to stop these movements in a very difficult environment. Furthermore, it works to deepen the political side in Somalia as it will deter this movement from the country in general. 
+
+Despite huge losses that AU missions had, AU missions succeeded in expelling armed forces following these movements during August 2011. Moreover, it succeeded in protecting two governments in Somalia, creating a political area for leaders in Somalia to address their internal problems. 
+
+Along with these efforts, Somali Federal forces always seek to eliminate all loopholes in terrorists’ bases. On 12 May 2025, Somali Federal forces carried out an airstrike southeast of Bosaso city in the Bari district of Puntland State to eliminate ISIS elements. Somali Federal forces raided ISIS hideouts in the mountains of Somalia’s northeastern Puntland region.  During 24 hours of combat, at least 57 militants were killed, according to Brigadier General Mohamud Mohamed Ahmed, Puntland’s spokesperson for security operations. 
+
+To sum up, we call on the world to eradicate terrorism in Somalia. It not only affects Somalia, but it also wants to spread throughout Africa; the terrorism works on controlling more and more land, killing people. So that real action has to be taken by governorates is essential, like deals, working with each other to stop it, people in Somalia deserve to live in a safe place, they deserve to do their daily routine like other people.`
+  },
+  {
     id: 3,
     title: 'Rowanda and Democratic Republic of The Congo Issues',
     author: 'Fatma Hussien',
