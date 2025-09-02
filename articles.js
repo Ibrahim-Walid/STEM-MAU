@@ -32,7 +32,7 @@ However, all these statements were broken only 48 hours after signing this treat
   {
     id: 4,
     title: 'Terrorism in Somalia',
-    author: 'Mariam Atif',
+    author: 'Mariam Atef',
     image: './Article/Terrorism in Somalia .jpg',
     body: `Death surrounds you wherever you are, and danger always threatens you at any time. You can be attacked without any reason, just because of living in a fragmented state. This describes the current situation in Somalia. 
 
