@@ -14,7 +14,6 @@ const interviewImages = [
 
 const outingImages = [
     './Outing/WhatsApp Image 2025-05-10 at 13.24.52_61a85bb6.jpg',
-    './Outing/WhatsApp Image 2025-05-10 at 13.24.52_793fcaa3.jpg',
     './Outing/WhatsApp Image 2025-05-10 at 13.24.52_8ed4f527.jpg'
 ];
 
