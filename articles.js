@@ -93,6 +93,105 @@ During January 2025, the rebels carried out a successful offensive on Goma, the 
 The crisis in South Soudan is caused by several deep and rooted factors. One of the main causes is the conflict between political leaders, especially the dispute that occurred in 2013 between President Salva Kiir Mayardit, who belongs to the Dinka tribe, and his deputy Riek Macher, who is from the Nuer tribe. This led to a civil war that turned into a conflict between the Dinka and Nuer. Also, the weakness of government systems and political instability are important reasons that made it hard to keep order and protect national unity. In addition, the poor education and the spread of ignorance and illiteracy made it hard for people to know and ask for their rights, which made them less able to help build their society. All of these interconnected factors have led to violence, displacement, and suffering, which continue to affect millions of people across the country.
 One of the saddest parts of the South Soudan crisis is the use of children in the war. Thousands of children, have been forced to fight, spy, or transport weapons. This is a serious violation of human rights, it takes away their childhood and education. It also causes them psychological trauma that is hard to treat. Despite the efforts made by international organizations to improve the situation, this is still happening in some areas. We should remember that there is a refugee crisis both inside and outside the country. Many people live in very hard conditions in camps that don’t have enough food, health care, or education. Because of this, thousands have escaped outside the country, looking for safety and a better life in nearby countries like Uganda, Kenya, and Ethiopia. This crisis does not only hurt the lives of these people, but also puts pressure on the countries that host them, which are already facing economic problems.
 Finally, the crisis in South Soudan is not only a political problem, but also a big human tragedy. Many people are suffering because of fighting between leaders, tribal problems, weak government, and poor education. Children are losing their future, families are broken, and people live in fear and poverty. We must care about the people of South Soudan and know what happens to them. The world needs to work together to bring peace, give support, and help the people live better lives again.`
+  },
+  {
+    id: 5,
+    title: 'Justice for Africa',
+    author: 'Sama Edrees',
+    image: './Article/Justice for Africa .jpg',
+    body: `Although the African continent is endowed with vast human and natural resources, it has historically been unable to fully utilize these resources possible, enabling its countries to escape the cycle of poverty and development challenges. This has led to major powers competing to gain access to these resources, attempting to expand their influence across the continent to benefit from these resources and, on the other hand, to assist some remote regions.
+
+However, over time, the situation spiraled out of control, and what was feared occurred: the disintegration and division of the continent. This resulted in the distribution of Africa's wealth among various global powers. This has resulted in several disadvantages, the most significant of which has been the entrenchment of injustice on the African continent and the suffering of several people of African descent, particularly those of black skin, from racial discrimination and slavery practices.
+
+Even though African countries have gained full independence, some people of African descent still suffer from a form of injustice and apartheid. According to a report submitted to the United Nations on promoting respect for and the rights of people of African descent, “the legacy of slavery and apartheid continues to this day, clearly affecting the lives of millions of people of African descent.” It was also stated that “this racial discrimination exposes a large group to violence and death due to the profound impact on their psychological and physical health.”
+
+Historical Background:
+Germany apologizes for its racism, lack of justice, and coercive methods of torture against African peoples and all those of African descent in Togo, Tanzania, Cameroon, and Namibia. For reparation, Germany has:
+Returned cultural property:
+Germany has begun discussions with Africa about returning all its artifacts that were looted during colonialism and identifying African artifacts in German museums and returning them to their countries of origin
+-   Germany signed an official agreement (in 2022) to return 1,130 pieces of Benin bronze statues to their original homeland, Nigeria. (German Wave)
+-   In May 2022, Germany sent 23 artifacts (including tools, statues, jewelry, and others) to Namibia as a "long-term loan." (The German Wave)
+-   Germany has identified approximately 1,135 human beings for repatriation to its countries of origin (Kenya, Tanzania, and Rwanda), but the repatriation process is on hold until those countries accept. (CBS News)
+
+Steps to memory and history:
+-   In recognition of African leaders and chieftains, the names of several famous streets in Berlin were changed to commemorate resistance heroes, such as:
+    Magi Maji Street (after the Maji Maji rebellion in Tanzania against colonialism)
+    Anna Mungunda Street (after the Namibian political activist). (Associated Press News)
+-   Tour tours of German museums were also organized to remind people of colonialism and its continuing effects. (Berlin Postcolonial Association)
+
+Education and Academic Qualification:
+-   Germany has shown interest in education and academic qualification in African countries and has undertaken several initiatives that demonstrate its sincere intentions. The most prominent of these are:
+-   Organizing exchange programs for teachers between Germany and Africa and sending African teachers to Germany to teach them the German language and familiarize them with the latest teaching and training methods. (German Academic Exchange Service).
+-   It also established partnerships with African universities, particularly with Tanzania and Namibia, to fund universities with laboratories, libraries, and student missions. It also funded joint research on colonial history and its impact.
+-   A partnership was established between the University of Namibia and German universities in the fields of history and anthropology, with the aim of rewriting the history of the colonial era. (Baden-Württemberg Newspaper)
+
+Germany's current position on reparations:
+Germany denounced the financial compensation claims, stating that it does not consider them compensation for what happened during the colonial era, but rather merely a reconciliation, due to the absence of any legal framework at the time. (German Foreign Ministry).
+The German government has agreed to pay €1.1 billion over 30 years to Namibia. These compensation funds will not be given to the people but will be directly in the hands of the government and will not be distributed among the people as it seems fit. Instead, they will be used to establish development projects aimed at serving society in three main areas (International Organization for the Rights of Indigenous Peoples):
+Public Health:
+-   Several hospitals, clinics and medical centers located in the Herero and Nama areas will be built and developed.
+-   Initiatives and programs will also be established to combat and detect a number of diseases prevalent in Africa (tuberculosis and malaria).
+-   Medical staff in Namibia will also be trained in the latest international medical technologies by German experts.
+
+Land and Rural Infrastructure:
+-   Access to water and irrigation will be improved by upgrading the “Jamams and Outjomwese “plants and supporting the desalination process in Namibia.
+-   Agricultural lands will also be reclaimed and developed.
+-   In addition, rural roads will be developed to connect cities and rural areas, which will help integrate and connect the different regions of the country.
+
+Education and Training:
+-   New schools and vocational training centers will be built in Namibia, demonstrating Germany's commitment to Africa's future and its goal of graduating educated generations everywhere.
+-   Several scholarship programs have also been funded for affected communities to complete their university education at German universities, with postgraduate programs also available.
+
+Suggestions:
+-   Museums and memorials should be built with German funding for the leaders of the popular resistance, with the aim of reminding future generations of the effects of colonialism and commemorating the leaders.
+-   Establishing new development projects and investing in African countries to support them.
+-   Establishing new trade partnerships that benefit all parties and utilize all resources, in addition to encouraging international trade between African countries and Europe.
+-   Sending humanitarian and financial aid to places that have not received much attention from their governments.
+-   Establishing technology centers and introducing internet networks to remote areas in African countries with German funding, with the aim of connecting them to the world and keeping pace with modern requirements.
+
+على الرغم من تمتع القارة الافريقية بموارد بشرية و طبيعية بكميات هائلة الا انها لم تتمكن كليا من الاستفادة بها عبر التاريخ باكمل وجه يمكن دولها من الخروج من دائرة الفقر و التحديات التنموية  ، مما جعل القوى العظمي تتنافس لدخولها في محاولة لبسط نفوذها في القارة بهدف الاستفادة من هذه الثروات و على الجانب الاخر في محاولة لمساعدة بعض المناطق النائية. 
+لكن مع مرور الوقت خرج الامر عن السيطرة ، و قد حدث ما كان يخشى منه و هو تفكك و انقسام القارة ، مما نتج عنه توزيع ثروات افرقيا بين قوى متعددة في العالم ، و قد نتج عنه عدد من المساوئ كان اهمها ترسيخ غياب العدالة في القارة الافريقية و معاناة عدد من ذوي الاصول افريقية خصوصا اصحاب البشرة السوداء من التمييز العنصري وممارسات العبودية.
+و على الرغم من حصول الدول الافريقية على استقلالها التام الا ان بعض الاشخاص ذوي الاصول الافريقية مازالوا يعانون من احد اشكال الظلم و الفصل العنصري ، فوفقا لتقرير مقدم للامم المتحدة حول تعزيز احترام و حقوق الاشخاص المنحدرون للاصول الافريقية ان " ارث الاستعباد و الفصل العنصري لا يزال قائم حتى اليوم و هو ما يؤثر تأثيرا واضحا على حياة الملايين المنحدرين منم الاصول الافريقية " كما تم ذكر ان " هذا التمييز العنصري يعرض فئة كبرى للعنف والموت بسب التأثير العميق لصحتهم النفسية و البدنية " .  
+الخلفية التاريخية : 
+تقر دولة المانيا و تعتذر عما بدر منها من عنصرية و غياب للعدالة و اساليب التعذيب القهرية تجاه الشعوب الافارقة و كل من ينحدرون ضمن الافارقة في كل من توغو وتانزانيا و الكاميرون و ناميببا. و تعويضا عما بدر منها قامت المانيا ب : 
+إعادة الممتلكات الثقافية : 
+ بدأت ألمانيا بالمناقشة مع أفريقيا حول إرجاع كل قطعها الأثرية الي تم نهبها أثناء الإستعمار و تحديد الآثار الإفرقية الموجودة في المتاحف الألمانية و إرجاعها لمواطنها الأصلية
+_ فقد قامت  المانيا بتوقيع إتفاقية رسمية (عام 2022 م) لإعادة 1130 قطعه من تماثيل برونز بنين الى موطنها الأصلي نيجيريا. (الموجة الالمانية)
+_ كما قامت ألمانيا في (مايو 2022م)  بإرسال 23 قطعة أثرية (من أدوات و تماثيل و مجوهرات و غيرها) الى ناميبيا ك "إعارة طويلى الامد" . (الموجة الألمانية)
+_ قامت ألمانيا بتحديد حوال 1135 جمجهة بشرية لإعادتها الى دولها " كينيا و تنزانيا و رواندا" و لكن عملية الاستيلام معلقه لحين قبول تلك الدول الاستيلام. (اخبار سي بي اس)
+خطوات للذاكرة و التاريخ : 
+_ تقديرا للقادة و الزعماء الأفارقة تم تغيير أسماء العديد من الشوارع المشهورة ب "برلين" تخليدا لذكرى أبطال المقاومة مثل :
+شارع ماجي ماجي (نسبة لثورة الماجي ماجي في تانزنيا ضد الاستعمار)
+شارع آنا مونجوندا (نسبة للناشطه السياسية الناميبية).  (أخبار وكالة أسوشيتد برس)
+_ كما تم إقامة جولات في المتاحف الألمانية لتذكير الناس بالاستعمار و آثاره التي ما زالت مستمرة حتى الآن. ( جمعية برلين ما بعد الاستعمارية)
+التعليم و التأهيل الأكاديمي :
+اهتمت المانيا بالتعليم و التأهيل الاكاديمي لدول افريقيا فقد قامت بعدة مبادرات توحي بصدق نيتها فمن ابرزها : 
+_ تنظيم برامج تبادلية للمعلمين بين المانيا و افريقيا ، كما قامت بارسال المعلمين الافارقه لألمانيا و قد كان ذلك بهدف تعليمهم اللغه الألمانية و تطلعهم على أحدث أساليب التعليم و التدريب عليها. ( الهيئة الالمانية للتبادل الاكاديمي).  
+ كما أقامت شراكات مع الجامعات الأفريقية خصوصا مع دولتي تانزانيا و ناميبيا ب_  
+هدف تمويل الجامعاات بالمختبرات و المكتبات و البعثات الطلابية ، كما قامت بتمويل ابحاث مشتركه حول التاريخ الاستعماري و أثره فقد تمت شراكه بين حامعة ناميبيا و جامعات المانية في مجال التاريخ و النثروبيولوجي بهدف اعادة كتابة تاريخ الحقبة الاستعمارية. (صحيفه بادن فورتمبيرغ)
+
+موقف المانيا الحالي تجاه آليات التعويض : 
+استنكرت المانيا ما تم ذكره عن التعويضات المالية و انها لا تعتبرها كتعويضات عن ما حدث اثناء الحقبة الاستعمارية بل تعتبرها فقط مجرد صلحا ، و ذلك نظرا لغياب اي اطار قانوني في ذلك الوقت. (وزارة الخارجية الألمانية)
+ فقد اقرت الحكومة الالمانية بدفع مبلغ 1.1 مليار يورو على مدار 30 عاما لدولة " ناميبيا "  ، تلك التعويضات لن تعطى للشعب بل ستكون في يد الحكومة مباشرة مع عدم توزيعها على الشعب كما يحل لها ، بل سيتم استخدامها في انشاء مشروعات تنموية تهدف الى خدمة المجتمع في ثلاث مجالات رئيسية (المنظمة الدولية لحقوق الشعوب الأصلية): 
+الصحة العامة (جريدة التايم) :
+_ سيتم بناء و تطوير عدد من المستشفيات و العيادات و المراكز الطبية الموجودة في منطقة الهيرورو و الناما.
+_ كما ستيم اقامة مبادرات و برامج لمكافحة و اكتشاف عدد من الامراض المنتشرة في افريقيا (السل و الملاريا).
+_ كما سيتم تدريب الطواقم الطبية في ناميبيا على احدث التقنيات الطبية الموجودة عالميا عللى ايدي خبراء ألمان .
+الاراضي و البنية التحتية الريفية (السفارة الألمانية في ناميبيا):
+_ سيتم تحسين الوصول للمياه و الري عن طريق رفع كفاءة محطتي " جامامز وأوتجومويسه " و دعم عملية تحلية مياه الصرف الصحي في ناميبيا 
+_ كما سيتم اصلاح الاراضي الزراعية و تطويرها 
+_ بالاضافه الى انه سيتم الطرق الريفية بحيث جعلها تربط بين الامدن و المناطق الريفية مما يساعد على التكامل و الترابط بين المناطق المختلفه في البلاد.
+التعليم و التدرييب (جريدة الرويترز) :
+_ سيتم بناء مدارس جديدة و مراكز للتدريب المهني في ناميبيا و هو دليل على اهتمام المانيا بالمستقبل الافريقي و هدفها تخريج اجيال واعيه في كل الاماكن.
+_ كما تم تمويل عدد من برامج المنح للمجتمعات المتضررة بهدف استكمال تعليمهم الجامعي في جامعات المانية مع وجود ايضا برامج للدراسات ما بعد الجامعة .
+ الاقتراحات : 
+_ ان يتم بناء متاحف و اماكن تذكارية بتمويل ألماني لزعماء المقاومات الشعبية بهدف تذكير الاجيال القادمة باثار الاستعمار و تخليدا لذكري القادة و الزعماء.
+_ إقامة مشروعات تنموية جديدة و الاستثمار في الدول الافريقية بهدف دعمها.
+_ إقامة شراكات تجارية جديدة بحيث يستفيد منها كل الأطراف و و يتم الاستفادة من كل الموارد ، بالاضافه الى التشجيع على التجارة الدولية بين الدول الافريقية اوروبا .
+_ ارسال مساعدات انسانية و مالية للاماكن التي لم تحظى بنصيب من الاهتمام من حكوماتهم .
+_ بناء مراكز تكنولوجية و ادخال شبكات الانترنت في المناطق النائية في الدول الافريقية بتمويل ألماني ، و ذلك بهدف محاولة ربطهم بالعالم و مواكبتهم لمتطلبات العصر.
+
+`
   }
 ];
 
@@ -111,7 +210,26 @@ function formatArticleBody(body, author) {
     'The Civil War',
     'How civilians are affected by the war',
     'International involvements to stop war',
-    'Efforts to stop terrorism'
+    'Efforts to stop terrorism',
+    'Historical Background:',
+    'Returned cultural property:',
+    'Steps to memory and history:',
+    'Education and Academic Qualification:',
+    "Germany's current position on reparations:",
+    'Public Health (Times Newspaper):',
+    'Land and Rural Infrastructure:',
+    'Education and Training (Reuters):',
+    'Education and Training:',
+    'Suggestions:',
+    'الخلفية التاريخية :',
+    'إعادة الممتلكات الثقافية :',
+    'خطوات للذاكرة و التاريخ :',
+    'التعليم و التأهيل الأكاديمي :',
+    'موقف المانيا الحالي تجاه آليات التعويض :',
+    'الاقتراحات',
+    'الصحة العامة (جريدة التايم) :',
+    'الأراضي و البنية التحتية الريفية (السفارة الألمانية في ناميبيا):',
+    'التعليم و التدرييب (جريدة الرويترز) :'
   ];
 
   // Handle lists: convert bullet points to <ul><li>...</li></ul>
@@ -123,13 +241,37 @@ function formatArticleBody(body, author) {
 
   for (let i = 0; i < paragraphs.length; i++) {
     let trimmed = paragraphs[i].trim();
+    // Generic heading detection for any line ending with colon (English or Arabic)
+    if (trimmed.endsWith(':')) {
+      const isArabicHeading = /[\u0600-\u06FF]/.test(trimmed);
+      const alignHeading = isArabicHeading ? 'right' : 'left';
+      const dirHeading = isArabicHeading ? 'rtl' : 'ltr';
+// Handle underscore-list paragraphs with embedded heading
+if (trimmed.includes('\n_')) {
+  const [head, ...rest] = trimmed.split('\n');
+  const isArabicHeading = /[\u0600-\u06FF]/.test(head);
+  const alignHeading = isArabicHeading ? 'right' : 'left';
+  const dirHeading = isArabicHeading ? 'rtl' : 'ltr';
+  html += `<strong style='display:block;margin-bottom:2px;text-align:${alignHeading};direction:${dirHeading};'>${head}</strong>`;
+  const listItems = rest.filter(line => line.trim().startsWith('_')).map(line => line.replace(/^_\s*/, '').trim());
+  html += `<ul class='article-list' style='margin:0 0 10px 0; padding-left:1em;${isArabicHeading?"direction:rtl;text-align:right;":""}'>${listItems.map(item => `<li>${item}</li>`).join('')}</ul>`;
+  continue;
+}
+      html += `<strong style='display:block;margin-bottom:2px;text-align:${alignHeading};direction:${dirHeading};'>${trimmed}</strong>`;
+      continue;
+    }
+    const isArabicPara = /[\u0600-\u06FF]/.test(trimmed);
+    const dir = isArabicPara ? 'rtl' : 'ltr';
+    const textIndent = isArabicPara ? '' : 'text-indent:2em;';
+    const align = isArabicPara ? 'right' : 'left';
     // Check if this paragraph is a list (starts with • or contains multiple •)
     if (trimmed.startsWith('•')) {
       // Split into lines and filter out empty ones
       let items = trimmed.split(/\n/).filter(line => line.trim().startsWith('•'));
       listItems = items.map(line => line.replace(/^•\s*/, '').trim());
       // Add a small margin before the list
-      html += `<ul class='article-list'>${listItems.map(item => `<li>${item}</li>`).join('')}</ul>`;
+      const isArabicList = /[\u0600-\u06FF]/.test(trimmed);
+      html += `<ul class='article-list' style='margin:0 0 10px 0; padding-left:1em;${isArabicList?"direction:rtl;text-align:right;":""}'>${listItems.map(item => `<li>${item}</li>`).join('')}</ul>`;
       continue;
     }
     // Check if paragraph starts with a title
@@ -138,9 +280,12 @@ function formatArticleBody(body, author) {
       if (trimmed.startsWith(title)) {
         // Split title and the rest of the paragraph
         const rest = trimmed.slice(title.length).trim();
-        html += `<strong style='display:block;margin-bottom:2px;'>${title}</strong>`;
+        const isArabicHeading = /[\u0600-\u06FF]/.test(title);
+        const alignHeading = isArabicHeading ? 'right' : 'left';
+        const dirHeading = isArabicHeading ? 'rtl' : 'ltr';
+        html += `<strong style='display:block;margin-bottom:2px;text-align:${alignHeading};direction:${dirHeading};'>${title}</strong>`;
         if (rest) {
-          html += `<p style='text-indent:2em; margin:0 0 10px 0;'>${rest.replace(/\n/g, '<br>')}</p>`;
+          html += `<p style='direction:${dir}; text-align:${align}; ${textIndent} margin:0 0 10px 0;'>${rest.replace(/\n/g, '<br>')}</p>`;
         }
         isTitle = true;
         break;
@@ -148,7 +293,7 @@ function formatArticleBody(body, author) {
     }
     if (!isTitle) {
       // Indent every normal paragraph
-      html += `<p style='text-indent:2em; margin:0 0 10px 0;'>${trimmed.replace(/\n/g, '<br>')}</p>`;
+      html += `<p style='direction:${dir}; text-align:${align}; ${textIndent} margin:0 0 10px 0;'>${trimmed.replace(/\n/g, '<br>')}</p>`;
     }
   }
   // Add author signature at the end, left-aligned
