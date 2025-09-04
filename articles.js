@@ -112,7 +112,7 @@ During January 2025, the rebels carried out a successful offensive on Goma, the 
   },
   {
     id: 5,
-    title: 'Justice for Africa',
+    title: 'Justice for Africa (Germany)',
     author: 'Sama Edrees',
     image: './Article/Justice for Africa .jpg',
     body: `Although the African continent is endowed with vast human and natural resources, it has historically been unable to fully utilize these resources possible, enabling its countries to escape the cycle of poverty and development challenges. This has led to major powers competing to gain access to these resources, attempting to expand their influence across the continent to benefit from these resources and, on the other hand, to assist some remote regions.
@@ -354,6 +354,122 @@ European occupiers who stole art, crafts, and antiques from African nations shal
 
 `
   },
+  {
+    id: 7,
+    title: 'Justice for Africa (DRC)',
+    author: 'Bassant Hossam',
+    image: './Article/Justice for Africa.png',
+    body: `Background to the Issue
+
+    The African continent has witnessed long-standing injustices, from the transatlantic slave trade, during which millions of Africans were uprooted from their homelands to periods of colonialism that plundered resources and imposed coercive regimes, to unfair economic policies whose negative effects still perpetuate the gap between Africa and the rest of the world today. (Africa Renewal, 2025)
+    
+    The African Union has supported important initiatives, ranging from demands for the restitution of looted cultural artifacts to formal demands for reparations at the global level. The Organization of African Unity and the African Union are working to achieve reparations and justice for historical crimes committed against Africans and people of African descent since 1963. The African Union has supported initiatives to promote justice and reparations for Africans, as well as the return of artifacts and cultural heritage looted during the period of colonialism and slavery. The First African Conference on Reparations, sponsored by the Group of Eminent Personalities and the Organization of African Unity, took place in 1993, leading to the Abuja Declaration on Reparations. (African Union, 2025)
+
+    Now, in the twenty-first century, reparations are no longer merely financial compensation, but a multidimensional project aimed at creating the conditions necessary for dignity, autonomy, and shared prosperity for Africans and people of African descent. Achieving true reparations requires a comprehensive address of historical and contemporary injustices through reforming international trade and financial systems to ensure Africa's integration into the global economy on the basis of equality, strengthening its sovereignty over its resources and development options, eliminating illicit financial flows, and directing investments towards building modern national institutions and infrastructure, while ensuring equitable representation of Africans and their descendants in global governance institutions. (Africa Renewal, 2025)
+
+    The Heads of State and Government of the African Union, during the 37th Ordinary General Assembly of the Union, decided that the theme for 2025 would be "Justice for Africans and People of African Descent through Reparations." The 2025 theme, related to reparations, was proposed by the Accra 2023 Reparations Conference. (African Union, 2025)
+
+    The Position of the Democratic Republic of the Congo
+
+    The Democratic Republic of the Congo possesses vast resources, but paradoxically, its natural wealth has hampered its economic growth and political stability, as the Congo suffered a brutal colonization by Belgium. (Ukpe, 2024)
+
+    King Leopold II of Belgium formed the International African Society, ostensibly a humanitarian organization, but in reality, an instrument of the colonization of Congo. At the Berlin Conference of 1885, where the European powers carved up Africa, Leopold II's claim was recognized, and he named the territory the Congo Free State. (Ukpe, 2024)
+
+    Leopold II quickly exploited the land's abundant resources, especially rubber, the demand for which soared in the 1890s due to the advent of bicycles and automobiles. This exploitation was accompanied by severe mistreatment of the local population.
+    
+    Witnesses reported horrific abuses, including workers being flogged to death, mutilation, and rape A common tactic was taking village women hostage to force men to fill rubber quotas, resulting in deaths from exhaustion and severe abuse of women. Leopold II's methods were highly unpopular. These abuses led to a rise in national consciousness and a desire among the population to reclaim their sovereignty and rights (Ukpe, 2024). Revolts and unrest erupted against Belgian rule. The Congolese National Movement (MNC) was launched in 1958 under the leadership of Patrice Lumumba to resist and rebel against colonialism. Belgium granted independence to the colony on June 30, 1960, renaming it the Republic of Congo. Lumumba became prime minister, and Joseph Kasavubu became president (Erik M. Davis, 2013). Following independence in 1960, foreign interventions quickly undermined Congo's aspirations for true political and economic sovereignty, most notably the assassination of Prime Minister Patrice Lumumba and the installation of the Western-backed dictatorship of Mobutu Sese Seko. He was assassinated for advocating for political and economic independence from former colonial powers, which sought to maintain control over Congo's resources. In response, the United States and Belgium supported antiLumumba factions.
+
+    The United States also supported Colonel Joseph Mobutu, the army commander, when he staged a coup on September 14, 1960, to avoid civil war, because he was pro-Western and could protect US interests in the region. (Erik M. Davis, 2013)
+
+    Mobutu Sese Seko, the ruler of Congo (formerly Zaire), was pro-Western and enjoyed strong US support during the Cold War. After the 1994 Rwandan genocide, Mobutu allowed hundreds of thousands of Hutu refugees to enter eastern Congo, including elements involved in the genocide.
+
+    In 1996, Rwanda, Uganda, and Burundi invaded the Democratic Republic of the Congo under the name of the Democratic Forces for the Liberation of Congo-Zaire alliance. Although these countries claimed their goal was to stop attacks by Hutu rebel groups that had taken refuge in Congo, many experts believe that the real motive was to control the country's rich mineral resources. (Essien Ukpe, 2024)
+
+    The invasion overthrew Mobutu after American support waned and installed Laurent Kabila as president. However, he fell out with his allies over the influence of the Rwandan-backed Tutsis.
+
+    In 1998, Kabila decided to break with his former allies, which led to severe tensions. In response, Rwanda, Uganda, and Burundi resumed their military offensive, marking the beginning of the Second Congo War, considered the largest African war in modern history.
+
+    What the Congo has suffered is part of a broader pattern that many African countries have suffered, which is why the African Union is acting as a unified force. (Essien Ukpe, 2024)
+
+    The security situation remains alarming in eastern Democratic Republic of Congo. Ongoing violence restricts civilian movement, disrupts access to essential services such as health care, and causes ongoing population displacement. Displacement exacerbates health problems, including sexual and reproductive health challenges, with an alarming rise in maternal deaths and complications resulting from a lack of adequate care. It also exacerbates protection risks, with women and girls particularly vulnerable to gender-based violence in returnee areas in North and South Kivu and in remaining overcrowded displacement sites in Tanganyika and Ituri. (UNFPA DRC, 2025)
+
+    The Democratic Republic of the Congo supports African Union initiatives aimed at achieving justice for Africans and people of African descent through multidimensional reparations, including reforming international trade and financial systems, regaining control over national resources, and building a strong economy that brings dignity and autonomy to its people.
+
+    Suggested Solutions
+
+    Considering the above, the Democratic Republic of the Congo proposes several solutions
+
+    1. Independent and transparent management of natural resources
+
+    Establish an independent national body for the management and investment of natural resources, which monitors all mining and extractive operations to ensure compliance with national laws and international standards, free from corruption and external interference.
+
+    2. Direct financial compensation
+
+    Development projects in the affected country should be supported, and direct financial payments should be made to the affected countries or peoples as compensation for historical and contemporary harm resulting from colonialism, economic plunder, or human rights violations.
+
+    3. Strengthening state sovereignty and sustainable development
+
+    Granting countries greater freedom to manage their natural resources and make development decisions, and investing in education, technology, and digital infrastructure to stimulate local innovation.
+
+    4. Symbolic and cultural justice
+
+    Aiming to address the moral and cultural damage resulting from colonialism and the historical plunder of identity and heritage, not just material losses. Official recognition of historical injustice and apologies should be provided by the colonizing countries.
+
+    خلفية القضية
+
+    شهدت القارة الأفريقية ظل ًما عتيقًا، بد ًءا من تجارة الرقيق عبر الأطلسي التي اقتُلعت خلالها الملايين من أبناء القارة من أوطانهم، مرو ًرا بفترات الاستعمار التي نهبت الموارد وفرضت أنظمة حكم قسرية، وصو ًلا إلى السياسات الاقتصادية غير العادلة التي ما زالت آثارها السلبية ترسخ الفجوة بين أفريقيا وبقية العالم حتى اليوم (Africa Renewal, 2025b)
+
+    وقد دعم الاتحاد الأفريقي مبادرا ٍت هامة، بد ًءا من المطالبة باسترداد الآثار الثقافية المنهوبة وصو ًلا إلى المطالبة الرسمية بالتعويضات على المستوى العالمي حيث تعمل منظمة الوحدة الأفريقية والاتحاد الأفريقي على تحقيق التعويضات وتحقيق العدالة للجرائم التاريخية المرتكبة ضد الأفارقة والأشخاص ذوي الأصول الأفريقية منذ عام  .١٩٦٣وقد دعم الاتحاد الاستعمار والاستعباد. ُعقد المؤتمر الأفريقي الأول حول التعويضات، برعاية مجموعة الشخصيات البارزة ومنظمة الوحدة الأفريقية، عام  ،١٩٩٣مما أدى إلى إصدار إعلان أبوجا بشأن التعويضات. (African Union, 2025)
+
+    و حاليا في القرن الحادي و عشرين أصبحت التعويضات ليست مجرد تعويضات مالية و لكنها مشروع متعدد الأبعاد يهدف إلى تهيئة الظروف اللازمة للكرامة والاستقلالية والازدهار المشترك للأفارقة والأشخاص ذوي الأصول الأفريقية.تحقيق التعويضات الحقيقية يتطلب معالجة شاملة للظلم التاريخي والمعاصر من خلال إصلاح أنظمة التجارة والمالية الدولية بما يضمن اندماج أفريقيا في الاقتصاد العالمي على أساس التكافؤ، وتعزيز سيادتها على مواردها وخياراتها التنموية، والقضاء على التدفقات المالية غير المشروعة، وتوجيه الاستثمارات نحو بناء مؤسسات وطنية وبنية تحتية حديثة، مع ضمان تمثيل عادل للأفارقة وأحفادهم في مؤسسات الحوكمة العالمية. (Africa Renewal, 2025b)
+
+    قرر رؤساء دول وحكومات الاتحاد الأفريقي، خلال الجمعية العامة العادية السابعة والثلاثين للاتحاد، أن يكون موضوع عام 2025 هو  "العدالة للأفارقة والمنحدرين من أصل أفريقي من خلال التعويضات". وكان موضوع عام  ،2025المتعلق بالتعويضات، مقتر ًحا من مؤتمر أكرا  2023للتعويضات. (African Union, 2025)
+
+    موقف دولة جمهورية الكونغو الديمقراطية
+
+    تمتلك الكونغو الديمقراطية موارد الهائلة، ولكن على النحو المتناقض أعاقت ثرواتها الطبيعية، نموها الاقتصادي واستقرارها السياسي حيث عانت دولة الكونغو من استعمار وحشي من قِبل دولة بلجيكا. (Ukpe, 2024)
+
+    شكل الملك ليوبولد الثاني ملك بلجيكا الجمعية الدولية الأفريقية، وهي منظمة إنسانية ظاهريًا، ولكنها في الواقع أداة لاستعمار الكونغو. في مؤتمر برلين عام  ،١٨٨٥حيث تقاسمت القوى الأوروبية أفريقيا، تم الاعتراف بمطالبة ليوبولد الثاني، وأطلق الكونغو. في مؤتمر برلين عام  ،١٨٨٥حيث تقاسمت القوى الأوروبية أفريقيا، تم الاعتراف بمطالبة ليوبولد الثاني، وأطلق. (Ukpe, 2024)
+
+    سرعان ما استغل ليوبولد الثاني موارد الأرض الوفيرة، وخاصة المطاط، الذي ازداد الطلب عليه بشدة في تسعينيات القرن التاسع عشر بسبب ظهور الدراجات والسيارات. وقد صاحب هذا الاستغلال سوء معاملة شديد للسكان المحليين. وأفاد شهود عيان بوقوع انتهاكات مروعة، بما في ذلك جلد العمال حتى الموت والتشويه والاغتصاب. وكان من الأساليب الشائعة أخذ نساء القرى رهائن لإجبار الرجال على استيفاء حصص المطاط، مما أدى إلى وفيات بسبب الإرهاق وإساءة معاملة النساء بشدة. كانت أساليب ليوبولد الثاني غير شعبية للغاية. أدت هذه الانتهاكات الى تصاعد الوعي الوطني ورغبة السكان في استعادة سيادتهم وحقوقهم. واندلعت الثورات والاضطرابات ضد الحكم البلجيكي، وتم إطلاق الحركة الوطنية الكونغولية عام  ١٩٥٨بقيادة الزعيم باتريس لومومبا لمقاومة الإستعمار والتمرد عليه، حتى منحت بلجيكا الإستقلال للمستعمرة في  ٣٠يونيو  ،١٩٦٠وأطلق عليها اسم جمهورية الكونغو، وأصبح باتريس لومومبا رئيسا للوزراء وجوزيف كساڤوبو رئيسا للجمهورية. بعد الاستقلال عام  ،١٩٦٠قوضت التدخلات الأجنبية تطلعات الكونغو إلى السيادة السياسية والاقتصادية الحقيقية بسرعة، ولا سيما في اغتيال رئيس الوزراء باتريس لومومبا وتنصيب دكتاتورية موبوتو سيسي سيكو المدعومة من الغرب. وتم اغتياله بسبب دفاعه عن الاستقلال السياسي والاقتصادي عن القوى الاستعمارية السابقة، التي سعت إلى الحفاظ على سيطرتها على موارد الكونغو. ردًا على ذلك، دعمت الولايات المتحدة وبلجيكا الفصائل المناهضة للومبا.
+
+    كما دعمت الولايات المتحدة الأمريكية العقيد جوزيف موبوتو قائد الجيش عندما قام بانقلاب في  ١٤سبتمر ١٩٦٠لتجنب الحرب الأهلية وذلك لأنه كان مواليا للغرب ويمكنه حماية مصالح الولايات المتحدة الأمريكية في المنطقة. (Erik M. Davis, 2013)
+
+    كان موبوتو سيسي سيكو، حاكم الكونغو (زائير سابقًا)، مواليًا للغرب ويحظى بدعم قوي من الولايات المتحدة خلال فترة الحرب الباردة. بعد الإبادة الجماعية في رواندا عام  ،١٩٩٤سمح موبوتو بدخول مئات الآلاف من اللاجئين الهوتو إلى شرق الكونغو، ومن بينهم عناصر متورطة في الإبادة.
+
+    وفي عام  ,١٩٩٦قامت رواندا وأوغندا وبوروندي بغزو جمهورية الكونغو الديمقراطية تحت اسم تحالف "القوى الديمقراطية لتحرير الكونغو – زائير". ورغم أن هذه الدول زعمت أن هدفها هو وقف هجمات جماعة الهوتو المتمردة التي لجأت الى الكونغو، فإن العديد من الخبراء يرون أن الدافع الحقيقي كان السيطرة على الموارد المعدنية الغنية في البلاد. (Essien Ukpe, 2024)
+
+    أطاح الغزو بموبوتو بعد تراجع الدعم الأمريكي، ونُصب لوران كابيلا رئيسا، لكنه دخل في خلاف مع حلفائه بسبب نفوذ التوتسي المدعومين من رواندا.
+
+    وفي عام  ,١٩٩٨قرر كابيلا قطع علاقته بحلفائه السابقين، مما أدى إلى توتر شديد. وردًا على ذلك، استأنفت رواندا وأوغندا وبوروندي هجومها العسكري، معلنةً بداية حرب الكونغو الثانية، والتي تعتبر أكبر حرب أفريقية في التاريخ الحديث. (Essien Ukpe, 2024)
+
+    ويعد ما عانت منه الكونغو هو جزء من نمط أوسع عانت منه العديد من الدول الأفريقية، وهذا ما يجعل الاتحاد الأفريقي يتحرك في إطار موحد.
+
+    لا يزال الوضع الأمني يُثير القلق في شرق جمهورية الكونغو الديمقراطية. يُقيّد العنف المستمر حركة المدنيين، ويُع ّطل الوصول إلى الخدمات الأساسية كالرعاية الصحية، ويُسبّب نزو ًحا سكانيًا مستم ًرا. يُفاقم النزوح المشاكل الصحية، بما في ذلك تحديات الصحة الجنسية والإنجابية، مع ارتفاع ُمقلق في وفيات الأمهات ومضاعفاتهن نتيجةً لنقص الرعاية الكافية. كما يُفاقم مخاطر الحماية، حيث تُصبح النساء والفتيات ُمع ّرضات بشكل خاص للعنف القائم على النوع الاجتماعي في مناطق العائدين في شمال وجنوب كيفو، وفي مواقع النزوح ال ُمكتظة المتبقية في تنجانيقا وإيتوري. (UNFPA DRC, 2025)
+
+    تدعم الكونغو الديمقراطية مبادرات الاتحاد الأفريقي الهادفة إلى تحقيق العدالة للأفارقة والأشخاص ذوي الأصول الأفريقية، من خلال تعويضات متعددة الأبعاد تشمل إصلاح أنظمة التجارة والمالية الدولية، واستعادة السيطرة على الموارد الوطنية، وبناء اقتصاد قوي يحقق الكرامة والاستقلالية لشعبها.
+
+    الحلول المقترحة
+
+    في ضوء ما سبق، تقترح الكونغو الديمقراطية عدة حلول
+
+    1- إدارة الموارد الطبيعية بشكل مستقل وشفاف
+
+    إنشاء هيئة وطنية مستقلة لإدارة واستثمار الموارد الطبيعية، تراقب جميع العمليات التعدينية والاستخراجية لضمان الالتزام بالقوانين الوطنية والمعايير الدولية، بعيدًا عن الفساد والتدخل الخارجي.
+
+    2- التعويض المالي المباشر
+
+    يجب دعم المشاريع التنموية في الدولة المتضررة، ودفع مبالغ مالية مباشرة للدول أو الشعوب المتضررة تعويضا عن الضرر التاريخي والمعاصر الناتج عن الاستعمار، النهب الاقتصادي، أو انتهاكات حقوق الإنسان.
+
+    3- تعزيز سيادة الدولة والتنمية المستدامة
+
+    منح الدول حرية أكبر في إدارة مواردها الطبيعية واتخاذ القرارات التنموية والاستثمار في التعليم والتكنولوجيا والبنية التحتية الرقمية لتحفيز الابتكار المحلي.
+
+    4- عدالة رمزية وثقافية
+
+    حيث تهدف إلى معالجة الأضرار المعنوية والثقافية الناتجة عن الاستعمار والنهب التاريخي للهوية والتراث، وليس فقط الخسائر المادية كما يجب تقديم اعتراف رسمي بالظلم التاريخي واعتذارات من الدول المستع ِمرة.
+`
+  },
   
 ];
 
@@ -390,6 +506,13 @@ function formatArticleBody(body, author) {
     'Debt Cancellation as a Form of Reparation',
     'Corporate Reparations',
     'Cultural and Historic Reparations',
+    'Background to the Issue',
+    'The Position of the Democratic Republic of the Congo',
+    'Suggested Solutions',
+    '1. Independent and transparent management of natural resources',
+    '2. Direct financial compensation',
+    '3. Strengthening state sovereignty and sustainable development',
+    '4. Symbolic and cultural justice',
     'الخلفية التاريخية :',
     'إعادة الممتلكات الثقافية :',
     'خطوات للذاكرة و التاريخ :',
@@ -406,6 +529,13 @@ function formatArticleBody(body, author) {
     '٣- إلغاء الديون كشكل من أشكال التعويض',
     '٤- تعويضات الشركات',
     '٥- التعويضات الثقافية والتاريخية',
+    'خلفية القضية',
+    'موقف دولة جمهورية الكونغو الديمقراطية',
+    'الحلول المقترحة',
+    '1- إدارة الموارد الطبيعية بشكل مستقل وشفاف',
+    '2- التعويض المالي المباشر',
+    '3- تعزيز سيادة الدولة والتنمية المستدامة',
+    '4- عدالة رمزية وثقافية',
   ];
 
   // Handle lists: convert bullet points to <ul><li>...</li></ul>
