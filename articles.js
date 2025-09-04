@@ -9,24 +9,37 @@ const articles = [
 Imagine having a worthless piece of gold; you might ask, "How does gold become worthless?" Well, this is the sad case for the country of Sudan. Even before gaining independence in 1956, Sudan had faced several civil wars and coups. The first major civil war lasted from 1955 to 1976, mostly due to the internal divide between the wealthier northern region, with a majority of Muslim Arabs, and the undeveloped southern region, with a majority of Christians. The southern regions rebelled against the centralized government in Khartoum. Considered one of the longest African civil wars, the death toll for the first Sudanese civil war was estimated to be 500,000 to 1 million deaths. Thankfully, the Addis Ababa agreement granted autonomy for the south temporarily; however, it didn't last long, since renewed tensions sparked in 1983, which lasted until 2006. Similarly, conflicts rose up in response to imposing the Islamic Law (Sharia) nationwide. The Sudan People's Liberation Army/Movement (SPLA/M) was a key player in the conflict that fought for the south. The turning point in this war was signing the Comprehensive Peace Agreement in 2005, which ended the war by granting the south a 6-year autonomy period, after which the south will gain independence. Subsequently, in 2011, South Sudan was announced as an independent country, making it the 54th African independent state. Despite the secession of South Sudan, internal conflicts continued in Sudan. The Darfur region, known for its violence and mass displacement, has been the focal point since the 2000s. After the revolution in December 2018, overthrowing the longtime dictator Omar Al-Bashir, there was great hope for turning Sudan into a democratic, civilian-led country; unfortunately, this hope didn't last long. In October 2021, two of the biggest military coups formed a joint government to rule the country: the Sudanese Armed Forces (SAF), led by General Abdel-Fattah Al-Burhan, and the Rapid Support Forces (RSF), led by General Mohamed Hammadan—also known as Hamediti. The weak alliance between them started gradually breaking until shots were unleashed on the 15th of April 2023, marking the beginning of a third civil war.
 
 The RSF
+
 Since the beginning of the 21st century, the Darfur region in Sudan, located in the western borders of Sudan, has had prolonged conflicts due to ethnic problems. 2003 marked the extreme rebelling of the Darfur region, which made the former president Omar Al-Bahir stop this rebel by force. That results in the Darfur war, which took away the lives of 300,000 and displaced 2.7 million people.
+
 To destroy the uprising of non-Arabian tribes in the Nuba Mountains, located in South Sudan, Al-Bashir relied on a collection of Arab militias known as the Al-Janjaweed. In 2013, Al-Bashir announced that these militias would be known as the Rapid Support Force (RSF) and would be under the control of General Mohamed Hamdan, also known as Hamediti.
+
 Al-Bashir relied on this force too often. In 2013, he sent them to fight against the rebels in Darfur and sent them to Libya and Yemen to fight. During this period, the RSF units developed relationships with the Russian private military Wagner Group. This secured thousands of weapons and personnel for them.
 
 The Civil War
+
 After tension between both sides, conflicts started growing rapidly, focusing on key locations. One of the most important locations is the capital, Khartoum. Khartoum instantly divided between the two forces, and Al-Burhan located his government in Port Sudan. At the beginning, the RSF managed to take control over the capital and the presidential palace; however, the SAF started slowly taking over control. It began by taking control over the center of Omdurman, one of the three cities that form Sudan's wide capital. In recent months, the army managed to recapture Al-Gezira and El-Fasher. Finally, as of May 2025, the SAF successfully took control over the majority of the capital and, most importantly, recaptured the presidential palace. After planning and occupying strategic locations on both the White and Blue Rivers, the SAF has imposed control on key locations. Outside the capital, the SAF managed to control the Red Sea shore, most of the North, the Ethiopian borders, and urban cities in Darfur.
 
 How civilians are affected by the war
+
 The civil war in Sudan has pretty huge costs, with over 150,000 deaths and over 14 million displacements. The RSF has besieged multiple urban cities and key institutions. The RSF has been accused of genocide and sexual violence. It was estimated as 30 cases of rape per day for women and girls as young as 15 years old in Khartoum, accompanied by severe beatings using sharp blades or gunfire. In addition to that, according to Action Against Hunger, over 35 million Sudanese people need food aid.
 
 International involvements to stop war
+
 After the war erupted, global attention was grabbed by the United Nations after the United Nations Human Rights Council called an immediate session to address the violence. On the 6th of May 2023, the RSF and the SAF's delegates met directly for the first time in Jeddah. After multiple negotiations, both delegates signed a treaty known as the Treaty of Jeddah on May 20 of the same year. It was signed by Saudi Arabia, the United States of America, and both Sudanese delegates. The treaty was made to ensure a long-term ceasefire between the two sides. The treaty stated the following:
+
 • Agree that the interests and well-being of the Sudanese people are our top priority and to   ensure that civilians are protected at all times. 
+
 •  Respect international humanitarian law and international human rights law; for instance, they obligate differentiation between civilians and military targets, not using civilians as human shields, and respecting public and private institutions.
+
 • Commit to exert all efforts to ensure that these commitments—and all obligations of International Humanitarian Law—are fully disseminated within our ranks and appoint focal points to engage with humanitarian actors to facilitate their activities.
+
 • Allow relevant actors, such as the Sudanese Red Crescent and/or the International Committee of the Red Cross, to take all steps needed to bury the dead in coordination with relevant authorities.
+
 • Ensuring that all people operate under the instructions of the armed forces and the RSF abide by International Humanitarian Law.
+
 • Prioritize talks to reach a short-term ceasefire to ease the delivery of urgent humanitarian aid and restore essential services, and commit to scheduling more expanded discussions to reach a permanent end to hostilities.
+
 However, all these statements were broken only 48 hours after signing this treaty, after the RSF started shooting again in the capital of Khartoum`
   },
   {
@@ -90,9 +103,12 @@ During January 2025, the rebels carried out a successful offensive on Goma, the 
     author: 'Jana Waleed',
     image: './Article/South Sudan.png',
     body: `Imagine waking up every day not knowing if you find food to eat, clean water to drink, or a safe place to sleep. For millions of people in South Soudan this is their reality. South Soudan, gained independence in 2011 with great hope, but that hope quickly faded as the country descended into violence and political struggles that left entire communities shattered. Million people depend on humanitarian aid just to stay alive. Hunger, violence, poverty, and illiteracy have become part of daily life for many families in South Soudan. Entire generations are being lost due to ongoing wars. This crisis is more than a political dispute; it is a human tragedy that continues to destroy lives. So we should know the real causes of the crisis, and why we should pay attention, not just for political reasons, but also for suffering people
-The crisis in South Soudan is caused by several deep and rooted factors. One of the main causes is the conflict between political leaders, especially the dispute that occurred in 2013 between President Salva Kiir Mayardit, who belongs to the Dinka tribe, and his deputy Riek Macher, who is from the Nuer tribe. This led to a civil war that turned into a conflict between the Dinka and Nuer. Also, the weakness of government systems and political instability are important reasons that made it hard to keep order and protect national unity. In addition, the poor education and the spread of ignorance and illiteracy made it hard for people to know and ask for their rights, which made them less able to help build their society. All of these interconnected factors have led to violence, displacement, and suffering, which continue to affect millions of people across the country.
-One of the saddest parts of the South Soudan crisis is the use of children in the war. Thousands of children, have been forced to fight, spy, or transport weapons. This is a serious violation of human rights, it takes away their childhood and education. It also causes them psychological trauma that is hard to treat. Despite the efforts made by international organizations to improve the situation, this is still happening in some areas. We should remember that there is a refugee crisis both inside and outside the country. Many people live in very hard conditions in camps that don’t have enough food, health care, or education. Because of this, thousands have escaped outside the country, looking for safety and a better life in nearby countries like Uganda, Kenya, and Ethiopia. This crisis does not only hurt the lives of these people, but also puts pressure on the countries that host them, which are already facing economic problems.
-Finally, the crisis in South Soudan is not only a political problem, but also a big human tragedy. Many people are suffering because of fighting between leaders, tribal problems, weak government, and poor education. Children are losing their future, families are broken, and people live in fear and poverty. We must care about the people of South Soudan and know what happens to them. The world needs to work together to bring peace, give support, and help the people live better lives again.`
+
+    The crisis in South Soudan is caused by several deep and rooted factors. One of the main causes is the conflict between political leaders, especially the dispute that occurred in 2013 between President Salva Kiir Mayardit, who belongs to the Dinka tribe, and his deputy Riek Macher, who is from the Nuer tribe. This led to a civil war that turned into a conflict between the Dinka and Nuer. Also, the weakness of government systems and political instability are important reasons that made it hard to keep order and protect national unity. In addition, the poor education and the spread of ignorance and illiteracy made it hard for people to know and ask for their rights, which made them less able to help build their society. All of these interconnected factors have led to violence, displacement, and suffering, which continue to affect millions of people across the country.
+
+    One of the saddest parts of the South Soudan crisis is the use of children in the war. Thousands of children, have been forced to fight, spy, or transport weapons. This is a serious violation of human rights, it takes away their childhood and education. It also causes them psychological trauma that is hard to treat. Despite the efforts made by international organizations to improve the situation, this is still happening in some areas. We should remember that there is a refugee crisis both inside and outside the country. Many people live in very hard conditions in camps that don’t have enough food, health care, or education. Because of this, thousands have escaped outside the country, looking for safety and a better life in nearby countries like Uganda, Kenya, and Ethiopia. This crisis does not only hurt the lives of these people, but also puts pressure on the countries that host them, which are already facing economic problems.
+
+    Finally, the crisis in South Soudan is not only a political problem, but also a big human tragedy. Many people are suffering because of fighting between leaders, tribal problems, weak government, and poor education. Children are losing their future, families are broken, and people live in fear and poverty. We must care about the people of South Soudan and know what happens to them. The world needs to work together to bring peace, give support, and help the people live better lives again.`
   },
   {
     id: 5,
@@ -106,11 +122,15 @@ However, over time, the situation spiraled out of control, and what was feared o
 Even though African countries have gained full independence, some people of African descent still suffer from a form of injustice and apartheid. According to a report submitted to the United Nations on promoting respect for and the rights of people of African descent, “the legacy of slavery and apartheid continues to this day, clearly affecting the lives of millions of people of African descent.” It was also stated that “this racial discrimination exposes a large group to violence and death due to the profound impact on their psychological and physical health.”
 
 Historical Background:
-Germany apologizes for its racism, lack of justice, and coercive methods of torture against African peoples and all those of African descent in Togo, Tanzania, Cameroon, and Namibia. For reparation, Germany has:
+Germany apologizes for its racism, lack of justice, and coercive methods of torture against African peoples and all those of African descent in Togo, Tanzania, Cameroon, and Namibia. For reparation, Germany has
+
 Returned cultural property:
-Germany has begun discussions with Africa about returning all its artifacts that were looted during colonialism and identifying African artifacts in German museums and returning them to their countries of origin
+-   Germany has begun discussions with Africa about returning all its artifacts that were looted during colonialism and identifying African artifacts in German museums and returning them to their countries of origin
+
 -   Germany signed an official agreement (in 2022) to return 1,130 pieces of Benin bronze statues to their original homeland, Nigeria. (German Wave)
+
 -   In May 2022, Germany sent 23 artifacts (including tools, statues, jewelry, and others) to Namibia as a "long-term loan." (The German Wave)
+
 -   Germany has identified approximately 1,135 human beings for repatriation to its countries of origin (Kenya, Tanzania, and Rwanda), but the repatriation process is on hold until those countries accept. (CBS News)
 
 Steps to memory and history:
@@ -120,79 +140,221 @@ Steps to memory and history:
 -   Tour tours of German museums were also organized to remind people of colonialism and its continuing effects. (Berlin Postcolonial Association)
 
 Education and Academic Qualification:
--   Germany has shown interest in education and academic qualification in African countries and has undertaken several initiatives that demonstrate its sincere intentions. The most prominent of these are:
+
+Germany has shown interest in education and academic qualification in African countries and has undertaken several initiatives that demonstrate its sincere intentions. The most prominent of these are
+
 -   Organizing exchange programs for teachers between Germany and Africa and sending African teachers to Germany to teach them the German language and familiarize them with the latest teaching and training methods. (German Academic Exchange Service).
+
 -   It also established partnerships with African universities, particularly with Tanzania and Namibia, to fund universities with laboratories, libraries, and student missions. It also funded joint research on colonial history and its impact.
+
 -   A partnership was established between the University of Namibia and German universities in the fields of history and anthropology, with the aim of rewriting the history of the colonial era. (Baden-Württemberg Newspaper)
 
 Germany's current position on reparations:
+
 Germany denounced the financial compensation claims, stating that it does not consider them compensation for what happened during the colonial era, but rather merely a reconciliation, due to the absence of any legal framework at the time. (German Foreign Ministry).
-The German government has agreed to pay €1.1 billion over 30 years to Namibia. These compensation funds will not be given to the people but will be directly in the hands of the government and will not be distributed among the people as it seems fit. Instead, they will be used to establish development projects aimed at serving society in three main areas (International Organization for the Rights of Indigenous Peoples):
+The German government has agreed to pay €1.1 billion over 30 years to Namibia. These compensation funds will not be given to the people but will be directly in the hands of the government and will not be distributed among the people as it seems fit. Instead, they will be used to establish development projects aimed at serving society in three main areas (International Organization for the Rights of Indigenous Peoples)
+
 Public Health:
+
 -   Several hospitals, clinics and medical centers located in the Herero and Nama areas will be built and developed.
+
 -   Initiatives and programs will also be established to combat and detect a number of diseases prevalent in Africa (tuberculosis and malaria).
+
 -   Medical staff in Namibia will also be trained in the latest international medical technologies by German experts.
 
 Land and Rural Infrastructure:
+
 -   Access to water and irrigation will be improved by upgrading the “Jamams and Outjomwese “plants and supporting the desalination process in Namibia.
+
 -   Agricultural lands will also be reclaimed and developed.
+
 -   In addition, rural roads will be developed to connect cities and rural areas, which will help integrate and connect the different regions of the country.
 
 Education and Training:
+
 -   New schools and vocational training centers will be built in Namibia, demonstrating Germany's commitment to Africa's future and its goal of graduating educated generations everywhere.
+
 -   Several scholarship programs have also been funded for affected communities to complete their university education at German universities, with postgraduate programs also available.
 
 Suggestions:
 -   Museums and memorials should be built with German funding for the leaders of the popular resistance, with the aim of reminding future generations of the effects of colonialism and commemorating the leaders.
+
 -   Establishing new development projects and investing in African countries to support them.
+
 -   Establishing new trade partnerships that benefit all parties and utilize all resources, in addition to encouraging international trade between African countries and Europe.
+
 -   Sending humanitarian and financial aid to places that have not received much attention from their governments.
+
 -   Establishing technology centers and introducing internet networks to remote areas in African countries with German funding, with the aim of connecting them to the world and keeping pace with modern requirements.
 
 على الرغم من تمتع القارة الافريقية بموارد بشرية و طبيعية بكميات هائلة الا انها لم تتمكن كليا من الاستفادة بها عبر التاريخ باكمل وجه يمكن دولها من الخروج من دائرة الفقر و التحديات التنموية  ، مما جعل القوى العظمي تتنافس لدخولها في محاولة لبسط نفوذها في القارة بهدف الاستفادة من هذه الثروات و على الجانب الاخر في محاولة لمساعدة بعض المناطق النائية. 
+
 لكن مع مرور الوقت خرج الامر عن السيطرة ، و قد حدث ما كان يخشى منه و هو تفكك و انقسام القارة ، مما نتج عنه توزيع ثروات افرقيا بين قوى متعددة في العالم ، و قد نتج عنه عدد من المساوئ كان اهمها ترسيخ غياب العدالة في القارة الافريقية و معاناة عدد من ذوي الاصول افريقية خصوصا اصحاب البشرة السوداء من التمييز العنصري وممارسات العبودية.
+
 و على الرغم من حصول الدول الافريقية على استقلالها التام الا ان بعض الاشخاص ذوي الاصول الافريقية مازالوا يعانون من احد اشكال الظلم و الفصل العنصري ، فوفقا لتقرير مقدم للامم المتحدة حول تعزيز احترام و حقوق الاشخاص المنحدرون للاصول الافريقية ان " ارث الاستعباد و الفصل العنصري لا يزال قائم حتى اليوم و هو ما يؤثر تأثيرا واضحا على حياة الملايين المنحدرين منم الاصول الافريقية " كما تم ذكر ان " هذا التمييز العنصري يعرض فئة كبرى للعنف والموت بسب التأثير العميق لصحتهم النفسية و البدنية " .  
+
 الخلفية التاريخية : 
-تقر دولة المانيا و تعتذر عما بدر منها من عنصرية و غياب للعدالة و اساليب التعذيب القهرية تجاه الشعوب الافارقة و كل من ينحدرون ضمن الافارقة في كل من توغو وتانزانيا و الكاميرون و ناميببا. و تعويضا عما بدر منها قامت المانيا ب : 
+
+تقر دولة المانيا و تعتذر عما بدر منها من عنصرية و غياب للعدالة و اساليب التعذيب القهرية تجاه الشعوب الافارقة و كل من ينحدرون ضمن الافارقة في كل من توغو وتانزانيا و الكاميرون و ناميببا. و تعويضا عما بدر منها قامت المانيا ب  
+
 إعادة الممتلكات الثقافية : 
+
  بدأت ألمانيا بالمناقشة مع أفريقيا حول إرجاع كل قطعها الأثرية الي تم نهبها أثناء الإستعمار و تحديد الآثار الإفرقية الموجودة في المتاحف الألمانية و إرجاعها لمواطنها الأصلية
-_ فقد قامت  المانيا بتوقيع إتفاقية رسمية (عام 2022 م) لإعادة 1130 قطعه من تماثيل برونز بنين الى موطنها الأصلي نيجيريا. (الموجة الالمانية)
+
+ _ فقد قامت  المانيا بتوقيع إتفاقية رسمية (عام 2022 م) لإعادة 1130 قطعه من تماثيل برونز بنين الى موطنها الأصلي نيجيريا. (الموجة الالمانية)
+
 _ كما قامت ألمانيا في (مايو 2022م)  بإرسال 23 قطعة أثرية (من أدوات و تماثيل و مجوهرات و غيرها) الى ناميبيا ك "إعارة طويلى الامد" . (الموجة الألمانية)
+
 _ قامت ألمانيا بتحديد حوال 1135 جمجهة بشرية لإعادتها الى دولها " كينيا و تنزانيا و رواندا" و لكن عملية الاستيلام معلقه لحين قبول تلك الدول الاستيلام. (اخبار سي بي اس)
+
 خطوات للذاكرة و التاريخ : 
-_ تقديرا للقادة و الزعماء الأفارقة تم تغيير أسماء العديد من الشوارع المشهورة ب "برلين" تخليدا لذكرى أبطال المقاومة مثل :
+
+_ تقديرا للقادة و الزعماء الأفارقة تم تغيير أسماء العديد من الشوارع المشهورة ب "برلين" تخليدا لذكرى أبطال المقاومة مثل 
+
 شارع ماجي ماجي (نسبة لثورة الماجي ماجي في تانزنيا ضد الاستعمار)
+
 شارع آنا مونجوندا (نسبة للناشطه السياسية الناميبية).  (أخبار وكالة أسوشيتد برس)
+
 _ كما تم إقامة جولات في المتاحف الألمانية لتذكير الناس بالاستعمار و آثاره التي ما زالت مستمرة حتى الآن. ( جمعية برلين ما بعد الاستعمارية)
+
 التعليم و التأهيل الأكاديمي :
+
 اهتمت المانيا بالتعليم و التأهيل الاكاديمي لدول افريقيا فقد قامت بعدة مبادرات توحي بصدق نيتها فمن ابرزها : 
+
 _ تنظيم برامج تبادلية للمعلمين بين المانيا و افريقيا ، كما قامت بارسال المعلمين الافارقه لألمانيا و قد كان ذلك بهدف تعليمهم اللغه الألمانية و تطلعهم على أحدث أساليب التعليم و التدريب عليها. ( الهيئة الالمانية للتبادل الاكاديمي).  
- كما أقامت شراكات مع الجامعات الأفريقية خصوصا مع دولتي تانزانيا و ناميبيا ب_  
+
+كما أقامت شراكات مع الجامعات الأفريقية خصوصا مع دولتي تانزانيا و ناميبيا ب_  
+
 هدف تمويل الجامعاات بالمختبرات و المكتبات و البعثات الطلابية ، كما قامت بتمويل ابحاث مشتركه حول التاريخ الاستعماري و أثره فقد تمت شراكه بين حامعة ناميبيا و جامعات المانية في مجال التاريخ و النثروبيولوجي بهدف اعادة كتابة تاريخ الحقبة الاستعمارية. (صحيفه بادن فورتمبيرغ)
 
 موقف المانيا الحالي تجاه آليات التعويض : 
+
 استنكرت المانيا ما تم ذكره عن التعويضات المالية و انها لا تعتبرها كتعويضات عن ما حدث اثناء الحقبة الاستعمارية بل تعتبرها فقط مجرد صلحا ، و ذلك نظرا لغياب اي اطار قانوني في ذلك الوقت. (وزارة الخارجية الألمانية)
- فقد اقرت الحكومة الالمانية بدفع مبلغ 1.1 مليار يورو على مدار 30 عاما لدولة " ناميبيا "  ، تلك التعويضات لن تعطى للشعب بل ستكون في يد الحكومة مباشرة مع عدم توزيعها على الشعب كما يحل لها ، بل سيتم استخدامها في انشاء مشروعات تنموية تهدف الى خدمة المجتمع في ثلاث مجالات رئيسية (المنظمة الدولية لحقوق الشعوب الأصلية): 
+
+ فقد اقرت الحكومة الالمانية بدفع مبلغ 1.1 مليار يورو على مدار 30 عاما لدولة " ناميبيا "  ، تلك التعويضات لن تعطى للشعب بل ستكون في يد الحكومة مباشرة مع عدم توزيعها على الشعب كما يحل لها ، بل سيتم استخدامها في انشاء مشروعات تنموية تهدف الى خدمة المجتمع في ثلاث مجالات رئيسية (المنظمة الدولية لحقوق الشعوب الأصلية) 
+
 الصحة العامة (جريدة التايم) :
+
+
 _ سيتم بناء و تطوير عدد من المستشفيات و العيادات و المراكز الطبية الموجودة في منطقة الهيرورو و الناما.
+
 _ كما ستيم اقامة مبادرات و برامج لمكافحة و اكتشاف عدد من الامراض المنتشرة في افريقيا (السل و الملاريا).
+
 _ كما سيتم تدريب الطواقم الطبية في ناميبيا على احدث التقنيات الطبية الموجودة عالميا عللى ايدي خبراء ألمان .
+
 الاراضي و البنية التحتية الريفية (السفارة الألمانية في ناميبيا):
+
 _ سيتم تحسين الوصول للمياه و الري عن طريق رفع كفاءة محطتي " جامامز وأوتجومويسه " و دعم عملية تحلية مياه الصرف الصحي في ناميبيا 
+
 _ كما سيتم اصلاح الاراضي الزراعية و تطويرها 
+
 _ بالاضافه الى انه سيتم الطرق الريفية بحيث جعلها تربط بين الامدن و المناطق الريفية مما يساعد على التكامل و الترابط بين المناطق المختلفه في البلاد.
+
 التعليم و التدرييب (جريدة الرويترز) :
+
 _ سيتم بناء مدارس جديدة و مراكز للتدريب المهني في ناميبيا و هو دليل على اهتمام المانيا بالمستقبل الافريقي و هدفها تخريج اجيال واعيه في كل الاماكن.
+
 _ كما تم تمويل عدد من برامج المنح للمجتمعات المتضررة بهدف استكمال تعليمهم الجامعي في جامعات المانية مع وجود ايضا برامج للدراسات ما بعد الجامعة .
- الاقتراحات : 
+
+الاقتراحات : 
+
 _ ان يتم بناء متاحف و اماكن تذكارية بتمويل ألماني لزعماء المقاومات الشعبية بهدف تذكير الاجيال القادمة باثار الاستعمار و تخليدا لذكري القادة و الزعماء.
+
 _ إقامة مشروعات تنموية جديدة و الاستثمار في الدول الافريقية بهدف دعمها.
+
 _ إقامة شراكات تجارية جديدة بحيث يستفيد منها كل الأطراف و و يتم الاستفادة من كل الموارد ، بالاضافه الى التشجيع على التجارة الدولية بين الدول الافريقية اوروبا .
+
 _ ارسال مساعدات انسانية و مالية للاماكن التي لم تحظى بنصيب من الاهتمام من حكوماتهم .
+
 _ بناء مراكز تكنولوجية و ادخال شبكات الانترنت في المناطق النائية في الدول الافريقية بتمويل ألماني ، و ذلك بهدف محاولة ربطهم بالعالم و مواكبتهم لمتطلبات العصر.
 
 `
-  }
+  },
+  {
+    id: 6,
+    title: 'Stolen Justice',
+    author: 'Tyam Mohamed',
+    image: './Article/Stolen Justice.png',
+    body: `The government of the Republic of South Africa recognizes the horrendous state of African people and people of descent towards justice and remains committed to solving this issue through cooperation with other nations during this conference.
+
+    For centuries, people of African descent were marginalized as part of the legacy of slavery and colonialism. Since the Portuguese discovered the Cape of Good Hope, European countries started destroying the culture and freedom of African people. Colonies were the first form of injustice we, African people, faced. The United Kingdom, France, Spain, Italy, Belgium, Germany, and the Netherlands were the great powers of the world. From Ceuta in 1415 to Namibia, European power started to expand territories in Africa (Olusoga & Erichsen, 2010). Colonies proposed to us different aspects of injustice we face; violent repressions were normal to occupiers, and genocides such as the Herero & Nama genocide (1904–1908) in Namibia occurred a lot. The Herero & Nama genocide took away the lives of 50,000–65,000 Herero and 10,000 Nama (Anderson, 2005; Nielsen, 2025). Slavery was no less shameful an issue we faced. European colonies were home to brutal actions of slavery. Africans used to be forced to work on projects that would serve occupiers with no reparations. After the transatlantic slavery trade, 15 million Africans were shipped to the Americas to forcibly work on farms (The African Holocaust, 2005). Additionally, the Arab/Indian Ocean slave trade forced 18 million Africans to be shipped to the North Sahara, the Red Sea, and India. Africa’s wealth of gold, diamonds, and other resources was horrendously robbed by European occupiers. In the 15th century, Portuguese traders handled approximately 500 kg of West African gold annually (Olusoga & Erichsen, 2010). Africa loses 90 billion dollars annually due to tax evasion and corruption by multinational companies (Asiedu et al., 2024; Barrett et al., 2025).
+
+Country status
+After the Dutch East India Company (VOC) established its first colony in our dear land, they introduced brutal actions that are incompatible with human rights. Slavery flowed from day one; there were 402 enslaved people imported from Madagascar and Angola, while an estimated 17,000 slaves were forced to work from our indigenous people (Worden, 1985). The Khoikhoi population was estimated at 100,000 in 1652; however, it dropped to 20,000 after invasion due to smallpox and wars introduced by Dutch settlers (Elphick & Giliomee, 1989). In the 18th century, the Cape supplied millions of pounds of wheat, wine, and livestock annually to Dutch fleets, while enslaved labor produced profits for settlers and the VOC (Ross, 1983). Moving to the British occupation, there were 39,000 at the time of slave abolishment, which didn’t end slavery but rather played with roles (Worden, 1985). The discovery of diamonds (1867, Kimberley) and gold (1886, Witwatersrand) led to brutal labor systems. African workers were recruited through taxation (hut tax, poll tax) to force them into mines (Bundy, 1979). By 1900, there were over 100,000 African mineworkers living in closed compounds under armed guard (Crush, 1986).
+
+Fast forward to our modern time, people of European descent still occupy more wealth and resources. They form 9% of the total population, occupying 72% of farmlands (Hall, 2018). People of African descent face the harsh reality of more unemployment, approximately 35%, and less land; only 9% has been redistributed since 1994 (Aliber & Cousins, 2013). Poverty levels among people of African descent reached 64%, compared to only 1% for non-Africans (Stats SA, 2017).
+
+Our people have demanded reparations, especially after apartheid that lasted 50 years (1948-1998). The Truth and Reconciliation Commission recommended huge reparations for those affected by the apartheid in 1998 (TRC, 1998). It promised free education, financial compensation, and free health care. However, the government only delivered a one-time commission of R30,000 (4,400 USD) per victim’s family (Boraine, 2000). Moreover, there were no systematic reforms such as land return or wealth redistribution. The president’s fund was set up to be R1.9 billion (110 million USD); however, it was mismanaged, with only 5% of the fund being given by the government until 2025 (The Presidency of South Africa, 2025).
+
+Improvements
+
+After all being said, the Republic of South Africa suggests the following solutions to redeem African justice.
+
+1.Financial Compensation Funds
+
+European occupiers who benefited from our country's people and resources shall compensate with multimillion-dollar funds towards economy, education, healthcare, and lifestyle in our homeland and home continent. The UK, the Netherlands, and Portugal are the occupiers of our country that enslaved our people and robbed our resources. Therefore, they shall compensate our dear country with funds or resources.
+
+2.Land and Resource Restitution
+
+Reparations should also include land compensation by returning land or resources stolen during colonialism or apartheid. European companies still active in African mining/energy shall pay a colonial extraction tax back into African development. While resources can be hard to return, we suggest compensating with fair compensation.
+
+3.Debt Cancellation as a Form of Reparation
+
+In 2023, African nations spent 70 billion USD on debt repayment. We suggest cancelling some debts as a form of reparation towards land and resources. Since much of the debt was signed during occupations and the apartheid, European countries shall terminate debts from this era to compensate for the corruption they caused. 
+
+4.Corporate Reparations
+
+European companies such as Barclays (UK), Deutsche Bank (Germany), and Swiss Bank are all condemned for supporting the apartheid financially. Between 1972 and 1978, Barclays lent $478 million to the apartheid government during a period known as the “total onslaught.” Those companies shall compensate for the corruption they caused in our dear homeland. Other companies supported other corruption in African nations, which all shall compensate through reparations.
+ 
+
+5.Cultural and Historic Reparations
+
+
+European occupiers who stole art, crafts, and antiques from African nations shall return them back. Our dear nation of Egypt is the most affected nation by this, where the UK, Germany, and France have stolen many art crafts and antiques.
+
+
+تعترف حكومة جمهورية جنوب أفريقيا بالحالة المروعة التي يعاني منها الشعب الأفريقي وذوو الأصول الأفريقية تجاه العدالة، وتظل ملتزمة بحل هذه القضية من خلال التعاون مع الدول الأخرى خلال هذا المؤتمر.
+
+لعدة قرون، تعرض ذوو الأصول الأفريقية للتهميش كجزء من إرث العبودية والاستعمار. منذ أن اكتشف البرتغاليون رأس الرجاء الصالح، بدأت الدول الأوروبية بتدمير ثقافة وحرية الشعب الأفريقي. كانت المستعمرات أول شكل من أشكال الظلم الذي واجهناه نحن الأفارقة. كانت المملكة المتحدة، فرنسا، إسبانيا، إيطاليا، بلجيكا، ألمانيا، وهولندا القوى العظمى في العالم. من سبتة عام ١٤١٥ إلى ناميبيا، بدأت القوى الأوروبية بتوسيع أراضيها في أفريقيا (أولوسوغا وإريخسن، ٢٠١٠). عرضت المستعمرات علينا أشكالاً مختلفة من الظلم؛ فقد كانت القمعيات العنيفة أمراً عادياً لدى المحتلين، وحدثت إبادة جماعية مثل إبادة الهيريرو والناما (١٩٠٤–١٩٠٨) في ناميبيا كثيراً. أخذت إبادة الهيريرو والناما حياة ما بين ٦٥,٠٠٠–٥٠,٠٠٠ من الهيريرو و١٠,٠٠٠ من الناما (أندرسون، ٢٠٠٥؛ نيلسن، ٢٠٢٥). لم تكن العبودية قضية أقل خزياً مما واجهناه. فقد كانت المستعمرات الأوروبية موطناً لأعمال العبودية الوحشية. كان الأفارقة يُجبرون على العمل في مشاريع تخدم المحتلين دون أي تعويضات. بعد تجارة العبيد عبر الأطلسي، تم شحن ١٥ مليون أفريقي إلى الأمريكيتين للعمل قسراً في المزارع (المحرقة الأفريقية، ٢٠٠٥). بالإضافة إلى ذلك، أجبرت تجارة العبيد العربية/المحيط الهندي ١٨ مليون أفريقي على الانتقال إلى شمال الصحراء الكبرى، والبحر الأحمر، والهند. لقد نُهبت ثروات أفريقيا من الذهب والألماس وغيرها من الموارد بشكل وحشي من قبل المحتلين الأوروبيين. في القرن الخامس عشر، كان التجار البرتغاليون يتعاملون مع ما يقارب ٥٠٠ كغم من الذهب الأفريقي الغربي سنوياً (أولوسوغا وإريخسن، ٢٠١٠). تخسر أفريقيا ٩٠ مليار دولار سنوياً بسبب التهرب الضريبي والفساد من قبل الشركات متعددة الجنسيات (آسيدو وآخرون، ٢٠٢٤؛ باريت وآخرون، ٢٠٢٥).
+
+الوضع الداخلي للدولة
+
+بعد أن أنشأت شركة الهند الشرقية الهولندية أول مستعمرة لها في أرضنا العزيزة، أدخلت أعمالاً وحشية لا تتوافق مع حقوق الإنسان. تدفقت العبودية منذ اليوم الأول؛ حيث تم استيراد ٤٠٢ مستعبد من مدغشقر وأنغولا، بينما أُجبر ما يقارب ١٧,٠٠٠ من شعبنا الأصلي على العمل (ووردن، ١٩٨٥). كان عدد سكان الخوئيخوئي يُقدر بـ١٠٠,٠٠٠ في عام ١٦٥٢؛ غير أنه انخفض إلى ٢٠,٠٠٠ بعد الغزو بسبب الجدري والحروب التي جلبها المستوطنون الهولنديون (إلفيك وجيليومي، ١٩٨٩). في القرن الثامن عشر، زوّد رأس الرجاء الصالح الأساطيل الهولندية بملايين الأرطال من القمح، والنبيذ، والماشية سنوياً، بينما كان العمل المستعبد ينتج أرباحاً للمستوطنين والشركة الهولندية (روس، ١٩٨٣). بالانتقال إلى الاحتلال البريطاني، كان هناك ٣٩,٠٠٠ عند إلغاء العبودية، وهو لم ينهِ العبودية بل غيّر أدوارها (ووردن، ١٩٨٥). أدى اكتشاف الألماس (١٨٦٧، كيمبرلي) والذهب (١٨٨٦، ويتواترسراند) إلى أنظمة عمل وحشية. جرى تجنيد العمال الأفارقة من خلال الضرائب (ضريبة الأكواخ، ضريبة الرأس) لإجبارهم على دخول المناجم (بندي، ١٩٧٩). بحلول عام ١٩٠٠، كان هناك أكثر من ١٠٠,٠٠٠ عامل مناجم أفريقي يعيشون في مجمعات مغلقة تحت حراسة مسلحة (كروش، ١٩٨٦).
+
+في وقتنا الحديث، لا يزال ذوو الأصول الأوروبية يسيطرون على معظم الثروات والموارد. فهم يشكلون ٩٪ من مجموع السكان، لكنهم يسيطرون على ٧٢٪ من الأراضي الزراعية (هول، ٢٠١٨). يواجه ذوو الأصول الأفريقية واقعاً قاسياً من البطالة بنسبة تقارب ٣٥٪، وقلة الأراضي حيث لم يُعد سوى ٩٪ منها منذ عام ١٩٩٤ (أليبر وكوزينز، ٢٠١٣). بلغت مستويات الفقر بين ذوي الأصول الأفريقية ٦٤٪، مقارنة بـ١٪ فقط لغير الأفارقة (إحصاءات جنوب أفريقيا، ٢٠١٧).
+
+
+لقد طالب شعبنا بالتعويضات، خاصة بعد نظام الفصل العنصري الذي استمر خمسين عاماً (١٩٤٨–١٩٩٨). أوصت لجنة الحقيقة والمصالحة بتعويضات كبيرة للمتضررين من الفصل العنصري عام ١٩٩٨ (لجنة الحقيقة والمصالحة، ١٩٩٨). وعدت بالتعليم المجاني، والتعويض المالي، والرعاية الصحية المجانية. ومع ذلك، قدمت الحكومة فقط منحة لمرة واحدة بقيمة ٣٠,٠٠٠ راند (٤,٤٠٠ دولار أمريكي) لأسرة كل ضحية (بورين، ٢٠٠٠). علاوة على ذلك، لم تكن هناك إصلاحات منهجية مثل إعادة الأراضي أو إعادة توزيع الثروات. تم إنشاء صندوق الرئاسة بقيمة ١,٩ مليار راند (١١٠ مليون دولار أمريكي)؛ ومع ذلك، أسيء إدارته، حيث لم يُمنح سوى ٥٪ من الصندوق من قبل الحكومة حتى عام ٢٠٢٥ (رئاسة جنوب أفريقيا، ٢٠٢٥).
+
+التحسينات المقترحة
+
+بعد كل ما قيل، تقترح جمهورية جنوب أفريقيا الحلول التالية لاستعادة العدالة للأفارقة
+
+١- صناديق التعويض المالي
+
+يجب على القوى الأوروبية المحتلة التي استفادت من شعبنا ومواردنا أن تدفع صناديق بملايين الدولارات لدعم الاقتصاد، والتعليم، والرعاية الصحية، ومستوى المعيشة في وطننا والقارة بأكملها. المملكة المتحدة، هولندا، والبرتغال هم المحتلون الذين استعبدوا شعبنا ونهبوا مواردنا. لذلك، يجب عليهم تعويض بلادنا العزيزة بأموال أو موارد.
+
+ ٢- إعادة الأراضي والموارد
+
+يجب أن تشمل التعويضات أيضاً إعادة الأراضي أو الموارد المسروقة خلال فترة الاستعمار أو الفصل العنصري. يجب على الشركات الأوروبية النشطة في مجالات التعدين والطاقة في أفريقيا أن تدفع ضريبة استخراج استعماري لصالح التنمية الأفريقية. وإذا تعذر إعادة الموارد، نقترح التعويض العادل.
+
+٣- إلغاء الديون كشكل من أشكال التعويض
+
+ في عام ٢٠٢٣، أنفقت الدول الأفريقية ٧٠ مليار دولار أمريكي على سداد الديون. نقترح إلغاء بعض الديون كجزء من التعويضات عن الأرض والموارد. وبما أن كثيراً من هذه الديون وُقّعت خلال فترات الاحتلال والفصل العنصري، يجب على الدول الأوروبية إنهاؤها كجزء من تعويض الفساد الذي تسببوا به.
+
+ ٤- تعويضات الشركات
+
+تُدان الشركات الأوروبية مثل بنك باركليز (المملكة المتحدة)، وبنك دويتشه (ألمانيا)، والبنك السويسري لدعمها المالي لنظام الفصل العنصري. بين عامي ١٩٧٢ و١٩٧٨، أقرض بنك باركليز مبلغ ٤٧٨ مليون دولار للحكومة العنصرية خلال فترة عُرفت باسم "الهجوم الشامل". يجب على هذه الشركات أن تعوض عن الفساد الذي تسببت به في وطننا العزيز. كما أن شركات أخرى دعمت الفساد في دول أفريقية أخرى، ويجب عليها جميعاً التعويض من خلال برامج تعويضية.
+
+
+ ٥- التعويضات الثقافية والتاريخية
+
+
+يجب على القوى الأوروبية المحتلة التي سرقت الفنون، والحرف، والآثار من الدول الأفريقية أن تعيدها إلى أوطانها. أمتنا العزيزة مصر هي أكثر الدول المتضررة من ذلك، حيث سرقت المملكة المتحدة، ألمانيا، وفرنسا العديد من الأعمال الفنية والآثار منها.
+
+`
+  },
+  
 ];
 
 const modalOverlay = document.getElementById('modalOverlay');
@@ -221,6 +383,13 @@ function formatArticleBody(body, author) {
     'Education and Training (Reuters):',
     'Education and Training:',
     'Suggestions:',
+    'Country status',
+    'Improvements',
+    'Financial Compensation Funds',
+    'Land and Resource Restitution',
+    'Debt Cancellation as a Form of Reparation',
+    'Corporate Reparations',
+    'Cultural and Historic Reparations',
     'الخلفية التاريخية :',
     'إعادة الممتلكات الثقافية :',
     'خطوات للذاكرة و التاريخ :',
@@ -229,7 +398,14 @@ function formatArticleBody(body, author) {
     'الاقتراحات',
     'الصحة العامة (جريدة التايم) :',
     'الأراضي و البنية التحتية الريفية (السفارة الألمانية في ناميبيا):',
-    'التعليم و التدرييب (جريدة الرويترز) :'
+    'التعليم و التدرييب (جريدة الرويترز) :',
+    'الوضع الداخلي للدولة',
+    'التحسينات المقترحة',
+    '١- صناديق التعويض المالي',
+    '٢- إعادة الأراضي والموارد',
+    '٣- إلغاء الديون كشكل من أشكال التعويض',
+    '٤- تعويضات الشركات',
+    '٥- التعويضات الثقافية والتاريخية',
   ];
 
   // Handle lists: convert bullet points to <ul><li>...</li></ul>
@@ -241,6 +417,12 @@ function formatArticleBody(body, author) {
 
   for (let i = 0; i < paragraphs.length; i++) {
     let trimmed = paragraphs[i].trim();
+// Numbered English title detection (e.g., "1. Financial Compensation Funds")
+    const numMatch = trimmed.match(/^(\d+\.\s*)(.+)$/);
+    if (numMatch) {
+      html += `<strong style='display:block;margin-bottom:2px;text-align:left;'>${numMatch[0]}</strong>`;
+      continue;
+    }
     // Generic heading detection for any line ending with colon (English or Arabic)
     if (trimmed.endsWith(':')) {
       const isArabicHeading = /[\u0600-\u06FF]/.test(trimmed);
@@ -262,7 +444,7 @@ if (trimmed.includes('\n_')) {
     }
     const isArabicPara = /[\u0600-\u06FF]/.test(trimmed);
     const dir = isArabicPara ? 'rtl' : 'ltr';
-    const textIndent = isArabicPara ? '' : 'text-indent:2em;';
+    const textIndent = 'text-indent:2em;';
     const align = isArabicPara ? 'right' : 'left';
     // Check if this paragraph is a list (starts with • or contains multiple •)
     if (trimmed.startsWith('•')) {
