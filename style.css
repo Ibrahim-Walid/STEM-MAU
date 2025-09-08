@@ -298,13 +298,78 @@ nav.shrunk ul li a {
   font-weight: 800;
   margin-bottom: 8px;
   color: #00ff88;
-  text-align: center;
+}
+/* Professors Carousel Section */
+.profs-section {
+  position: relative;
+  height: 400px;
+  background: url('profs/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+.profs-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+.profs-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prof-image {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  opacity: 0;
+/* Override duplicate background setting and fix background size */
+.profs-section {
+  background: none !important;
+}
+  transform: translateX(-20px) scale(0.95);
+  transition: opacity 1s ease, transform 1s ease-in-out;
+}
+.prof-text {
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 30px;
+  max-width: 600px;
+  opacity: 0;
+  transform: translateX(20px) scale(0.95);
+  transition: opacity 1s ease, transform 1s ease-in-out;
+  /* Show active slide */
+}
+
+.profs-container.show .prof-image {
+  opacity: 1;
+}
+
+.profs-container.show .prof-text {
+  opacity: 1;
+}
+
+.profs-container.reverse {
+  flex-direction: row-reverse;
+}
+.profs-container.show .prof-image,
+.profs-container.show .prof-text {
+  opacity: 1;
+}
+/* Reverse flex direction for alternating slides */
+.profs-container.reverse {
+  flex-direction: row-reverse;
 }
 
 .stats-card p {
   font-size: 16px;
   font-weight: 600;
-  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -1230,3 +1295,191 @@ footer p {
     padding: 10px 20px;
   }
 }
+
+/* Professors Carousel Enhancements */
+.prof-image, .prof-text {
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out !important;
+}
+.profs-container.reverse .prof-image {
+  transform: translateX(20px) scale(0.95) !important;
+}
+.profs-container.reverse .prof-text {
+  transform: translateX(-20px) scale(0.95) !important;
+}
+.profs-container.show .prof-image {
+  opacity: 1 !important;
+  transform: translateX(0) scale(1) !important;
+}
+.profs-container.show .prof-text {
+  opacity: 1 !important;
+  transform: translateX(0) scale(1) !important;
+}
+@media (max-width: 768px) {
+  .profs-container {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .profs-container.reverse {
+    flex-direction: column !important;
+  }
+  .prof-image {
+    width: 80% !important;
+    margin-bottom: 20px !important;
+    transform: none !important;
+  }
+  .prof-text {
+    transform: none !important;
+    margin: 20px !important;
+  }
+}
+
+/* Professors Slide Animations */
+.slide-in-left {
+  animation: slideInLeft 0.6s ease forwards;
+}
+.slide-in-right {
+  animation: slideInRight 0.6s ease forwards;
+}
+.slide-out-left {
+  animation: slideOutLeft 0.6s ease forwards;
+}
+.slide-out-right {
+  animation: slideOutRight 0.6s ease forwards;
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-100px); opacity: 0; }
+  to   { transform: translateX(0);     opacity: 1; }
+}
+@keyframes slideInRight {
+  from { transform: translateX(100px); opacity: 0; }
+  to   { transform: translateX(0);     opacity: 1; }
+}
+@keyframes slideOutLeft {
+  from { transform: translateX(0);     opacity: 1; }
+  to   { transform: translateX(-100px);opacity: 0; }
+}
+@keyframes slideOutRight {
+  from { transform: translateX(0);     opacity: 1; }
+  to   { transform: translateX(100px); opacity: 0; }
+}
+
+/* Mobile: ensure photo on top, text below */
+@media (max-width: 768px) {
+  .prof-image {
+    order: 0 !important;
+  }
+  .prof-text {
+    order: 1 !important;
+  }
+}
+
+/* Professors Carousel Styles */
+.profs-section {
+  position: relative;
+  height: 100vh;
+  background: url('profs/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+.profs-title {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.profs-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  gap: 2rem;
+}
+.profs-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 1;
+}
+.prof-image {
+  width: 40%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: opacity 1s ease, transform 1s ease;
+}
+.prof-text {
+   width: 45%;
+   padding: 1rem;
+   box-sizing: border-box;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: rgba(0, 0, 0, 0.5);
+   border-radius: 15px;
+   color: #fff;
+   font-size: 1rem;
+   line-height: 1.6;
+   opacity: 0;
+   transform: translateX(-20px);
+   transition: opacity 1s ease, transform 1s ease;
+}
+/* Mobile: auto height */
+/* Mobile: optimize text container width */
+@media (max-width: 768px) {
+  .profs-section {
+    height: auto !important;
+    padding: 2rem 1rem;
+  }
+  .prof-text {
+    width: 90% !important;
+    margin: 0 auto 1rem;
+    padding: 1rem !important;
+  }
+}
+/* Buttons */
+/* Reposition arrows outside content */
+.prof-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 4;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+.prof-prev { left: 1rem; }
+.prof-next { right: 1rem; }
+.prof-btn:hover { background: rgba(0,0,0,0.7); }
+/* Animations */
+@keyframes fade-out-left {
+  from { opacity: 1; transform: translateX(0); }
+  to   { opacity: 0; transform: translateX(-50px); }
+}
+@keyframes fade-out-right {
+  from { opacity: 1; transform: translateX(0); }
+  to   { opacity: 0; transform: translateX(50px); }
+}
+@keyframes fade-in-left {
+  from { opacity: 0; transform: translateX(-50px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes fade-in-right {
+  from { opacity: 0; transform: translateX(50px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+.slide-out-left  { animation: fade-out-left 0.5s forwards; }
+.slide-out-right { animation: fade-out-right 0.5s forwards; }
+.slide-in-left   { animation: fade-in-left 0.5s forwards; }
+.slide-in-right  { animation: fade-in-right 0.5s forwards; }

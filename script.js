@@ -309,3 +309,89 @@ document.addEventListener('DOMContentLoaded', function() {
     initHeroParticles();
     // ... existing code ...
 });
+// Professors Carousel
+const professors = [
+  {
+    src: 'profs/DR_Randa_Faisl.jpg',
+    alt: 'Dr. Randa Faisel',
+    text: `We sincerely thank Dr. Randa Faisel for her outstanding leadership in managing the entire process of our training and conference. With her guidance, every step was organized with excellence, bringing together distinguished experts and ensuring that our delegates received high-level preparation. Her dedication and vision were key to the success of this journey, and we are truly grateful for her efforts in making this experience impactful and inspiring for all.`
+  },
+  {
+    src: 'profs/DR_Heba_Assem.jpg',
+    alt: 'Dr. Heba Assem',
+    text: `STEM Model African Union extends its deepest gratitude to Dr. Heba Assem for delivering an inspiring and insightful training session to our delegates. Her lecture on “The Founding Structure of the African Union” provided our members with invaluable knowledge, historical context, and a deeper understanding of the institutional pillars that uphold the African Union. Her dedication to empowering youth, coupled with her remarkable expertise and vision, has left a lasting impact on our team as we prepare for the upcoming conference. We are truly honored to have learned from a distinguished African leader who continues to shape and inspire the next generation.`
+  },
+  {
+    src: 'profs/DR_Ayat_Abdel-Aziz.jpg',
+    alt: 'Dr. Ayat Ali',
+    text: `We were honored to receive an enlightening training session from Dr. Ayat Ali, an esteemed expert in African politics, who guided our STEM Model African Union delegates through the intricate political structure and decision-making processes of the African Union. Her insightful presentation shed light on the AU’s foundational mechanisms, strategic political architecture, and the environment in which continental governance unfolds. This session not only deepened our members’ understanding of AU politics but also strengthened their capacity to engage confidently in debates and diplomatic simulations. On behalf of the entire STEM MAU community, we extend our sincere appreciation to Dr. Ayat Ali for sharing her expertise, for her clarity of instruction, and for empowering our delegates with the knowledge needed to represent the continent’s political frameworks effectively.`
+  },
+  {
+    src: 'profs/DR_Samar_El-Bagoury.jpg',
+    alt: 'Dr. Samar El Bagoury',
+    text: `It is our distinct privilege to extend heartfelt gratitude to Dr. Samar El Bagoury, a distinguished Professor of Economics at Cairo University renowned for her expertise in African development and economic policy. During the recent training session delivered to our STEM MAU delegates, Dr. El Bagoury offered an enlightening lecture on African Economics, broadening our understanding of the continent’s economic dynamics and empowering our members with invaluable academic insight. We are profoundly thankful for her dedication and generosity in sharing her profound knowledge and for inspiring our team to critically engage with the economic underpinnings of African progress.`
+  },
+  {
+    src: 'profs/Mr_Anglo_William.jpg',
+    alt: 'Dr. Anglo William',
+    text: `We were deeply honored to host Dr. Anglo William, a distinguished expert in African justice, who generously shared his insights with our STEM Model African Union delegates. In his session on the foundations and frameworks of justice in Africa, Dr. William offered profound perspectives that illuminated legal principles, historical precedents, and contemporary dynamics vital to our understanding of continental jurisprudence. His thoughtful guidance not only enriched our delegates’ knowledge but also equipped them with the analytical tools needed to confidently engage in conference debates and policymaking simulations. We extend our heartfelt gratitude to Dr. Anglo William for his dedication, clarity of instruction, and commitment to nurturing the next generation of African leaders. His contribution has significantly elevated the quality of our training and inspired our team to pursue justice with both rigor and vision.`
+  },
+  {
+    src: 'profs/DR_Islam_Fekry.jpg',
+    alt: 'Dr. Islam Fekry',
+    text: `We are truly honored to have had Dr. Islam Fekry deliver an exceptional training session for our delegates under the theme “Africa Through Egyptian Eyes.” Through his remarkable insights and profound perspective, Dr. Fekry highlighted the deep historical, cultural, and strategic ties between Egypt and the African continent, enriching our members’ understanding of Africa’s unique role in shaping regional and global dynamics. His valuable contribution has not only broadened the horizons of our delegates but also inspired them to embrace a deeper sense of responsibility toward Africa’s future.`
+  },
+  {
+    src: 'profs/DR_Mohamed_Fouad.jpg',
+    alt: 'Dr. Mohamed Fouad',
+    text: `We were deeply privileged to welcome Dr. Mohamed Fouad, a distinguished scholar and expert on African water politics and transboundary resource management, who delivered an insightful training session to our STEM MAU members. With his profound expertise, Dr. Mohamed guided our delegates through the complex dynamics of the Nile Basin, the Grand Ethiopian Renaissance Dam, and the broader water security challenges in Africa. His lecture not only enriched our understanding of the historical, political, and environmental dimensions of this pressing issue but also equipped our members with the analytical tools necessary to address such challenges in the upcoming Model African Union Conference. We extend our sincere gratitude to Dr. Mohamed Fouad for his invaluable contribution, his dedication to empowering youth, and his commitment to advancing dialogue on one of Africa’s most critical issues. His words will undoubtedly inspire our members as they step into their roles as future policymakers and advocates for sustainable development.`
+  },
+  {
+    src: 'profs/DR_Hassan_Ghazaly.jpg',
+    alt: 'Dr. Hassan Ghazally',
+    text: `We are deeply honored to extend our heartfelt gratitude to Dr. Hassan Ghazally, an esteemed youth leadership and policy expert, who has made remarkable contributions to empowering young voices across Africa. With a rich background as the Vice President of the Pan-African Youth Union (2017–2020), and as the founder and coordinator of the African Youth Office at the Egyptian Ministry of Youth and Sports, Dr. Ghazally has played a vital role in shaping continental youth policies and advancing opportunities for young leaders. In our journey at STEM Model African Union, Dr. Ghazally stood as the guiding force who organized and managed all of our training sessions and the final conference. He was the one who connected us with distinguished doctors, professors, and experts—ensuring that our members received the highest level of mentorship and preparation. On behalf of the entire team, we sincerely thank Dr. Hassan Ghazally for his dedication, vision, and invaluable support in making this experience possible. His unwavering commitment to youth development continues to inspire us all.`
+  },
+  {
+    src: 'profs/Ambassador_Amr_El-Jowaily.jpg',
+    alt: 'Ambassador Amr Aljowaily',
+    text: `We were very privileged to have Ambassador Amr Aljowaily, Africa’s most esteemed diplomat and intellectual leader, present a life-altering training session with our STEM Model African Union members. With a long and illustrious career culminating in leadership roles at the AU Commission and postings around the globe, Ambassador Aljowaily guided our representatives through the topic “Justice for Africans and People of African Descent Through Reparations.” His message was both informative and inspirational, leaving our members newly committed to contributing to Africa’s future.`
+  }
+];
+
+let profIndex = 0;
+const profImgEl = document.getElementById('prof-img');
+const profTextEl = document.getElementById('prof-text');
+const profContEl = document.querySelector('.profs-container');
+const prevBtn = document.querySelector('.prof-prev');
+const nextBtn = document.querySelector('.prof-next');
+
+function showProfessor(newIndex) {
+  profContEl.classList.remove('reverse','show');
+  if (newIndex % 2 === 1) profContEl.classList.add('reverse');
+  profImgEl.src = professors[newIndex].src;
+  profImgEl.alt = professors[newIndex].alt;
+  profTextEl.innerHTML = `<p>${professors[newIndex].text}</p>`;
+  // Force reflow for smooth transition
+  void profImgEl.offsetWidth;
+  profContEl.classList.add('show');
+  profIndex = newIndex;
+}
+
+window.addEventListener('load', () => {
+  showProfessor(profIndex);
+  // Auto-advance carousel every 6s
+  setInterval(() => {
+    profIndex = (profIndex + 1) % professors.length;
+    showProfessor(profIndex);
+  }, 6000);
+});
+
+// Previous/Next button handlers
+prevBtn.addEventListener('click', () => {
+  const newIndex = (profIndex - 1 + professors.length) % professors.length;
+  showProfessor(newIndex);
+});
+nextBtn.addEventListener('click', () => {
+  const newIndex = (profIndex + 1) % professors.length;
+  showProfessor(newIndex);
+});
