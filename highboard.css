@@ -1,539 +1,470 @@
-/* Active Navigation Styles for High Board Page */
-nav ul li a.active {
-    color: #00ff88 !important;
-    position: relative !important;
-}
-
-nav ul li a.active::after {
-    content: '' !important;
-    position: absolute !important;
-    bottom: -5px !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 2px !important;
-    background: #00ff88 !important;
-    border-radius: 2px !important;
-}
-
-
+/* High Board — modern layout, STEM MAU identity */
 
 #highboard {
-    padding: 120px 20px 40px;
-    background: linear-gradient(135deg, #1A5C38, #0052B4);
-    color: white;
-    min-height: 100vh;
-  }
-  
-  #highboard h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: white;
-  }
-  
-  #highboard h3 {
-    text-align: center;
-    font-size: 2rem;
-    margin: 2rem 0 1rem;
-    color: white;
-  }
-  
-  #highboard > p {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 2rem;
-    line-height: 1.6;
-    font-size: 1.1rem;
-  }
-  
-  .welcome-highlight {
-    display: inline-block;
-    font-weight: bold;
-    color: #00ff88;
-    position: relative;
-    padding: 0 5px;
-    text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
-    animation: glow-text 2s ease-in-out infinite;
-  }
-  
-  @keyframes glow-text {
-    0%, 100% {
-      text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
-    }
-    50% {
-      text-shadow: 0 0 20px rgba(0, 255, 136, 0.8), 0 0 30px rgba(0, 255, 136, 0.4);
-    }
-  }
-  
-  .welcome-box {
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    padding: 20px;
-    margin: 2rem auto;
-    max-width: 800px;
-    border: 1px solid rgba(0, 255, 136, 0.3);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 255, 136, 0.1) inset;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .welcome-box::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(
-      45deg,
-      rgba(0, 255, 136, 0) 0%,
-      rgba(0, 255, 136, 0.1) 50%,
-      rgba(0, 255, 136, 0) 100%
-    );
-    animation: shine 3s ease-in-out infinite;
-    z-index: 1;
-    pointer-events: none;
-  }
-  
-  @keyframes shine {
-    0% {
-      transform: translateX(-100%) translateY(-100%) rotate(45deg);
-    }
-    100% {
-      transform: translateX(100%) translateY(100%) rotate(45deg);
-    }
-  }
-  
-  .welcome-box p {
-    position: relative;
-    z-index: 2;
-    margin: 0;
-    font-size: 1.1rem;
-    line-height: 1.8;
-  }
-  
+  padding: 130px 24px 64px;
+  min-height: 100vh;
+  background: #0a1628;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0, 255, 136, 0.12), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 50%, rgba(0, 82, 180, 0.15), transparent),
+    radial-gradient(ellipse 50% 30% at 0% 80%, rgba(26, 92, 56, 0.2), transparent),
+    linear-gradient(180deg, #0d1f14 0%, #0a1628 40%, #061018 100%);
+  color: #fff;
+}
+
+#highboard h2 {
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, #fff 0%, var(--stem-accent, #00ff88) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#highboard h2::after {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 4px;
+  margin: 1rem auto 0;
+  background: linear-gradient(90deg, var(--stem-green, #1A5C38), var(--stem-accent, #00ff88), var(--stem-blue, #0052B4));
+  border-radius: var(--radius-pill, 999px);
+  -webkit-text-fill-color: initial;
+}
+
+#highboard h3 {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 1.85rem);
+  font-weight: 700;
+  margin: 3.5rem 0 1.5rem;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+#highboard h3::before {
+  content: '';
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  height: 1px;
+  margin: 0 auto 1.25rem;
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 136, 0.5), transparent);
+}
+
+.welcome-highlight {
+  display: inline;
+  font-weight: 700;
+  color: var(--stem-accent, #00ff88);
+  text-shadow: 0 0 24px rgba(0, 255, 136, 0.4);
+}
+
+.welcome-box {
+  max-width: 720px;
+  margin: 2rem auto 3rem;
+  padding: 28px 32px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg, 24px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--stem-green, #1A5C38), var(--stem-accent, #00ff88), var(--stem-blue, #0052B4));
+}
+
+.welcome-box p {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  z-index: 1;
+}
+
+/* Leadership tier */
+.highboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto 1rem;
+  padding: 0;
+}
+
+.member-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg, 24px);
+  padding: 2rem 1.5rem 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.member-card::after {
+  display: none;
+}
+
+.member-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(0, 255, 136, 0.25);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.3);
+}
+
+.member-card > img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.member-card:hover > img {
+  transform: scale(1.04);
+  border-color: rgba(0, 255, 136, 0.5);
+  box-shadow: 0 0 0 4px rgba(0, 255, 136, 0.15), 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+.member-card h3 {
+  margin: 0.75rem 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+.member-card h3::before {
+  display: none;
+}
+
+.member-card > a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin: 0 6px;
+  padding: 0;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: background 0.25s ease, transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.member-card > a::before {
+  display: none;
+}
+
+.member-card > a:hover {
+  background: rgba(0, 255, 136, 0.15);
+  border-color: rgba(0, 255, 136, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 255, 136, 0.2);
+}
+
+.member-card a img {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) invert(1);
+  border: none;
+  margin: 0;
+}
+
+/* Role chips (replaces corner ribbons) */
+.ribbon-container {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  right: auto;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%);
+  overflow: visible;
+  z-index: 5;
+}
+
+.ribbon {
+  position: relative;
+  top: auto;
+  right: auto;
+  width: auto;
+  padding: 6px 16px;
+  transform: none;
+  border-radius: 100px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.ribbon::before,
+.ribbon::after {
+  display: none;
+}
+
+.ribbon-president {
+  background: linear-gradient(135deg, #ffd700, #f0a500);
+  color: #1a1200;
+}
+
+.ribbon-vice,
+.ribbon-secretary {
+  background: linear-gradient(135deg, #e8e8e8, #b8b8b8);
+  color: #222;
+}
+
+.badge {
+  top: 14px;
+  right: 14px;
+  width: 36px;
+  height: 36px;
+  font-size: 0.7rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.badge-president {
+  background: linear-gradient(135deg, #ffd700, #e6a800);
+  color: #1a1200;
+}
+
+.badge-vice,
+.badge-secretary {
+  background: linear-gradient(135deg, #d4d4d4, #a8a8a8);
+  color: #222;
+}
+
+/* Management tier emphasis */
+.management-card {
+  overflow: visible;
+}
+
+.management-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(0, 255, 136, 0.2));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.president-card {
+  grid-column: span 1;
+}
+
+.president-card::before {
+  background: linear-gradient(135deg, #ffd700, #00ff88, #0052B4);
+}
+
+.president-card > img {
+  width: 160px;
+  height: 160px;
+}
+
+@media (min-width: 900px) {
   .highboard-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  .member-card {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    padding: 2.5rem 1.5rem 1.5rem;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    backdrop-filter: blur(5px);
-  }
-  
-  .member-card::after {
-    display: none;
-  }
-  
-  .member-card > img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    object-fit: cover;
-    border: 3px solid rgba(255, 255, 255, 0.3);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-  }
-  
-  .member-card:hover > img {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
-  }
-  
-  .member-card h3 {
-    margin: 1.5rem 0 0.5rem;
-    font-size: 1.4rem;
-  }
-  
-  .member-card p {
-    color: #ccc;
-    margin-bottom: 0.5rem;
-  }
-  
-  .member-card a {
-    display: inline-block;
-    margin: 0.5rem;
-    position: relative;
-    padding: 8px;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 0 rgba(0, 255, 136, 0);
-  }
-  
-  .member-card a img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: none;
-    margin: 0;
-    filter: brightness(0) invert(1);
-    display: block;
-    object-fit: cover;
-    position: relative;
-    z-index: 1;
-    transition: transform 0.3s ease;
-  }
-  
-  .member-card a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 50%;
-    z-index: 0;
-  }
-  
-  .member-card:hover a {
-    box-shadow: 0 0 25px rgba(0, 255, 136, 0.6);
-  }
-  
-  .member-card a:hover img {
-    transform: scale(1.2);
-  }
-  
-  @media (max-width: 768px) {
-    #highboard {
-      padding: 100px 15px 30px;
-    }
-    
-    #highboard h2 {
-      font-size: 2rem;
-    }
-    
-    #highboard h3 {
-      font-size: 1.6rem;
-    }
-    
-    .highboard-grid {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      padding: 1rem;
-    }
-    
-    .member-card {
-      padding: 3rem 1rem 1rem;
-    }
-    
-    .member-card img {
-      width: 120px;
-      height: 120px;
-    }
-    
-    .member-card h3 {
-      margin-top: 2rem;
-    }
-    
-    .role-label {
-      font-size: 0.8rem;
-      padding: 0.3rem 0;
-    }
-  }
-  
-  .track-section {
-    margin: 3rem 0;
-    padding: 1.5rem;
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .track-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, rgba(0, 255, 136, 0.05), transparent);
-    z-index: -1;
-  }
-  
-  .track-section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-  }
-  
-  .track-section:hover .track-icon {
-    color: #00ff88;
-    transform: scale(1.1);
-  }
-  
-  .track-title {
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    color: #fff;
-    position: relative;
-    padding-bottom: 0.5rem;
-  }
-  
-  .track-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background: linear-gradient(90deg, transparent, #00ff88, transparent);
-  }
-  
-  .head-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  .track-icon {
-    margin-bottom: 0.5rem;
-    background: linear-gradient(135deg, #1A5C38, #0052B4);
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 1rem;
-    color: white;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  .member-pair {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .role-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: inline-block;
-    padding: 0.4rem 0;
-    font-size: 0.9rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    background: rgba(0, 255, 136, 0.2);
-    color: #00ff88;
-  }
-  
-  .head-label {
-    background: linear-gradient(90deg, rgba(0, 204, 102, 0.3), rgba(0, 204, 102, 0.5));
-    color: white;
-    font-weight: bold;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-  }
-  
-  .vice-label {
-    background: linear-gradient(90deg, rgba(0, 119, 255, 0.3), rgba(0, 119, 255, 0.5));
-    color: white;
-    font-weight: bold;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-  }
-  
-  @media (max-width: 768px) {
-    .track-section {
-      padding: 1rem;
-      margin: 2rem 0;
-    }
-    
-    .track-title {
-      font-size: 1.5rem;
-    }
-    
-    .head-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-  
-  .management-card {
-    position: relative;
-    overflow: visible;
-    transform-style: preserve-3d;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  }
-  
-  .management-card::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    border: 4px solid transparent;
-  }
-  
-  .president-card::before {
-    border-image: linear-gradient(45deg, #FFD700, #FFA500, #FFD700) 1;
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
-  }
-  
+
   .president-card {
-    transform: scale(1.05);
+    grid-column: 1 / -1;
+    max-width: 380px;
+    margin: 0 auto;
+    width: 100%;
   }
-  
-  .vice-president-card::before {
-    border-image: linear-gradient(45deg, #C0C0C0, #E8E8E8, #C0C0C0) 1;
-    box-shadow: 0 0 15px rgba(192, 192, 192, 0.3);
+}
+
+/* Track sections */
+.track-section {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 2rem 1.75rem 2.25rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg, 24px);
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.track-section::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, var(--stem-accent, #00ff88), var(--stem-blue, #0052B4));
+  border-radius: 4px 0 0 4px;
+  z-index: 0;
+}
+
+.track-section:hover {
+  border-color: rgba(0, 255, 136, 0.2);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.track-icon {
+  width: 64px;
+  height: 64px;
+  font-size: 1.5rem;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--stem-green, #1A5C38), var(--stem-blue, #0052B4));
+  border-radius: 16px;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(0, 82, 180, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: transform 0.35s ease, color 0.35s ease;
+}
+
+.track-section:hover .track-icon {
+  transform: scale(1.05);
+  color: var(--stem-accent, #00ff88);
+}
+
+.track-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  padding-bottom: 0;
+  letter-spacing: -0.02em;
+}
+
+.track-title::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 3px;
+  margin: 0.75rem auto 0;
+  background: var(--stem-accent, #00ff88);
+  border-radius: 2px;
+  position: static;
+  transform: none;
+}
+
+.head-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.track-head-card::before {
+  background: linear-gradient(135deg, rgba(0, 255, 136, 0.4), rgba(0, 82, 180, 0.3));
+}
+
+.role-label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: auto;
+  padding: 5px 12px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  border-radius: 100px;
+  text-transform: uppercase;
+}
+
+.head-label {
+  background: rgba(0, 255, 136, 0.25);
+  color: var(--stem-accent, #00ff88);
+  border: 1px solid rgba(0, 255, 136, 0.35);
+}
+
+.vice-label {
+  background: rgba(0, 82, 180, 0.35);
+  color: #7eb8ff;
+  border: 1px solid rgba(0, 82, 180, 0.5);
+}
+
+.track-section:hover .member-card {
+  transform: none;
+}
+
+.track-head-card:hover {
+  border-color: rgba(0, 255, 136, 0.35);
+}
+
+@media (max-width: 768px) {
+  #highboard {
+    padding: 116px 16px 48px;
   }
-  
-  .secretary-card::before {
-    border-image: linear-gradient(45deg, #C0C0C0, #E8E8E8, #C0C0C0) 1;
-    box-shadow: 0 0 15px rgba(192, 192, 192, 0.3);
+
+  .welcome-box {
+    padding: 22px 20px;
+    margin-bottom: 2rem;
   }
-  
-  .badge {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    font-weight: bold;
-    z-index: 10;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+  .welcome-box p {
+    font-size: 0.95rem;
   }
-  
-  .badge-president {
-    background: linear-gradient(135deg, #FFD700, #FFA500);
-    color: #000;
+
+  .highboard-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
-  
-  .badge-vice {
-    background: linear-gradient(135deg, #C0C0C0, #E8E8E8);
-    color: #000;
+
+  .member-card {
+    padding: 2.25rem 1.25rem 1.25rem;
   }
-  
-  .badge-secretary {
-    background: linear-gradient(135deg, #C0C0C0, #E8E8E8);
-    color: #000;
+
+  .member-card > img {
+    width: 120px;
+    height: 120px;
   }
-  
-  .track-head-card {
-    position: relative;
+
+  .president-card > img {
+    width: 140px;
+    height: 140px;
   }
-  
-  .track-head-card::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border: 2px solid;
-    border-image: linear-gradient(45deg, rgba(0, 255, 136, 0.5), transparent) 1;
-    z-index: -1;
-    opacity: 0.7;
+
+  .track-section {
+    padding: 1.5rem 1.25rem 1.75rem;
+    margin: 1.5rem auto;
   }
-  
-  .track-title {
-    margin-top: 0.5rem;
+
+  .head-grid {
+    grid-template-columns: 1fr;
   }
-  
-  .track-section:hover .member-card {
-    transform: translateY(-3px);
-  }
-  
-  .ribbon-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    z-index: 5;
-  }
-  
+
   .ribbon {
-    position: absolute;
-    top: 40px;
-    right: -50px;
-    width: 200px;
-    padding: 8px 0;
-    background: #000;
-    color: #fff;
-    text-align: center;
-    transform: rotate(45deg);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-size: 0.7rem;
-    z-index: 10;
+    font-size: 0.6rem;
+    padding: 5px 12px;
   }
-  
-  .ribbon::before,
-  .ribbon::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    border-style: solid;
-    border-width: 5px;
-  }
-  
-  .ribbon::before {
-    left: 0;
-  }
-  
-  .ribbon::after {
-    right: 0;
-  }
-  
-  .ribbon-president {
-    background: linear-gradient(45deg, #FFD700, #FFA500);
-    color: #000;
-  }
-  
-  .ribbon-president::before,
-  .ribbon-president::after {
-    border-color: #b07e00 transparent transparent transparent;
-  }
-  
-  .ribbon-vice {
-    background: linear-gradient(45deg, #C0C0C0, #E8E8E8);
-    color: #000;
-  }
-  
-  .ribbon-vice::before,
-  .ribbon-vice::after {
-    border-color: #919191 transparent transparent transparent;
-  }
-  
-  .ribbon-secretary {
-    background: linear-gradient(45deg, #C0C0C0, #E8E8E8);
-    color: #000;
-  }
-  
-  .ribbon-secretary::before,
-  .ribbon-secretary::after {
-    border-color: #919191 transparent transparent transparent;
-  }
-  
-  @media (max-width: 768px) {
-    .ribbon {
-      font-size: 0.6rem;
-      padding: 6px 0;
-      top: 35px;
-      right: -55px;
-    }
-  } 
+}

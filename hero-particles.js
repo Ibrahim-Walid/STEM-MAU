@@ -1,5 +1,5 @@
-function initHeroParticles() {
-    const heroSection = document.querySelector('#home');
+function initHeroParticles(selector) {
+    const heroSection = document.querySelector(selector);
     if (!heroSection) return;
 
     // Create canvas element
@@ -90,5 +90,6 @@ function initHeroParticles() {
 
 // Call the function when the DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
-    initHeroParticles();
+    initHeroParticles('#home');
+    initHeroParticles('#professors');
 }); 

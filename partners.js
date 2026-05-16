@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (target) {
                 window.scrollTo({
-                    top: target.offsetTop - 70,
+                    top: target.offsetTop - 120,
                     behavior: 'smooth'
                 });
             }

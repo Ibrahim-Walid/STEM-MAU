@@ -32,7 +32,7 @@ window.addEventListener('load', () => {
           if (targetSection) {
             setTimeout(() => {
               window.scrollTo({
-                top: targetSection.offsetTop - 70,
+                top: targetSection.offsetTop - 120,
                 behavior: 'smooth'
               });
             }, 100);
@@ -45,7 +45,7 @@ window.addEventListener('load', () => {
           if (targetElement) {
             setTimeout(() => {
               window.scrollTo({
-                top: targetElement.offsetTop - 70,
+                top: targetElement.offsetTop - 120,
                 behavior: 'smooth'
               });
             }, 100);
@@ -59,24 +59,32 @@ window.addEventListener('load', () => {
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('nav ul');
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  navMenu.classList.toggle('active');
-});
+function setNavOpen(open) {
+  if (!hamburger || !navMenu) return;
+  hamburger.classList.toggle('active', open);
+  hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  hamburger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  navMenu.classList.toggle('active', open);
+  document.body.classList.toggle('nav-open', open);
+}
 
-document.querySelectorAll('nav ul li a').forEach(link => {
-  link.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    navMenu.classList.remove('active');
+if (hamburger && navMenu) {
+  hamburger.addEventListener('click', () => {
+    setNavOpen(!navMenu.classList.contains('active'));
   });
-});
 
-document.addEventListener('click', (e) => {
-  if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
-    hamburger.classList.remove('active');
-    navMenu.classList.remove('active');
-  }
-});
+  document.querySelectorAll('nav ul li a').forEach(link => {
+    link.addEventListener('click', () => {
+      setNavOpen(false);
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+      setNavOpen(false);
+    }
+  });
+}
 
 const typewriterText = "BUILD A BETTER AFRICA";
 let i = 0;
@@ -110,7 +118,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       navMenu.classList.remove('active');
 
       window.scrollTo({
-        top: target.offsetTop - 70,
+        top: target.offsetTop - 120,
         behavior: 'smooth'
       });
 
@@ -361,37 +369,65 @@ const professors = [
 let profIndex = 0;
 const profImgEl = document.getElementById('prof-img');
 const profTextEl = document.getElementById('prof-text');
+const profNameEl = document.getElementById('prof-name');
 const profContEl = document.querySelector('.profs-container');
+const profsDotsEl = document.getElementById('profs-dots');
 const prevBtn = document.querySelector('.prof-prev');
 const nextBtn = document.querySelector('.prof-next');
 
+function buildProfessorDots() {
+  if (!profsDotsEl) return;
+  profsDotsEl.innerHTML = professors
+    .map(
+      (_, i) =>
+        `<button type="button" class="profs-dot${i === 0 ? ' active' : ''}" role="tab" aria-label="Professor ${i + 1}" data-index="${i}"></button>`
+    )
+    .join('');
+  profsDotsEl.querySelectorAll('.profs-dot').forEach((dot) => {
+    dot.addEventListener('click', () => showProfessor(Number(dot.dataset.index)));
+  });
+}
+
+function updateProfessorDots(index) {
+  if (!profsDotsEl) return;
+  profsDotsEl.querySelectorAll('.profs-dot').forEach((dot, i) => {
+    dot.classList.toggle('active', i === index);
+    dot.setAttribute('aria-selected', i === index ? 'true' : 'false');
+  });
+}
+
 function showProfessor(newIndex) {
-  profContEl.classList.remove('reverse','show');
+  if (!profContEl || !profImgEl || !profTextEl) return;
+  profContEl.classList.remove('reverse', 'show');
   if (newIndex % 2 === 1) profContEl.classList.add('reverse');
   profImgEl.src = professors[newIndex].src;
   profImgEl.alt = professors[newIndex].alt;
+  if (profNameEl) profNameEl.textContent = professors[newIndex].alt;
   profTextEl.innerHTML = `<p>${professors[newIndex].text}</p>`;
-  // Force reflow for smooth transition
   void profImgEl.offsetWidth;
   profContEl.classList.add('show');
   profIndex = newIndex;
+  updateProfessorDots(newIndex);
 }
 
-window.addEventListener('load', () => {
-  showProfessor(profIndex);
-  // Auto-advance carousel every 6s
-  setInterval(() => {
-    profIndex = (profIndex + 1) % professors.length;
-    showProfessor(profIndex);
-  }, 6000);
-});
+if (profContEl) {
+  buildProfessorDots();
 
-// Previous/Next button handlers
-prevBtn.addEventListener('click', () => {
-  const newIndex = (profIndex - 1 + professors.length) % professors.length;
-  showProfessor(newIndex);
-});
-nextBtn.addEventListener('click', () => {
-  const newIndex = (profIndex + 1) % professors.length;
-  showProfessor(newIndex);
-});
+  window.addEventListener('load', () => {
+    showProfessor(profIndex);
+    setInterval(() => {
+      const newIndex = (profIndex + 1) % professors.length;
+      showProfessor(newIndex);
+    }, 6000);
+  });
+
+  prevBtn?.addEventListener('click', () => {
+    const newIndex = (profIndex - 1 + professors.length) % professors.length;
+    showProfessor(newIndex);
+  });
+
+  nextBtn?.addEventListener('click', () => {
+    const newIndex = (profIndex + 1) % professors.length;
+    showProfessor(newIndex);
+  });
+}
