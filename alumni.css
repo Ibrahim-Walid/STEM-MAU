@@ -1,454 +1,438 @@
-/* Active Navigation Styles for Alumni Page */
-nav ul li a.active {
-    color: #00ff88 !important;
-    position: relative !important;
-}
-
-nav ul li a.active::after {
-    content: '' !important;
-    position: absolute !important;
-    bottom: -5px !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 2px !important;
-    background: #00ff88 !important;
-    border-radius: 2px !important;
-}
-
-
-
-.alumni-header {
-    height: 100vh;
-    min-height: 100vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-    margin-top: 0;
-    overflow: hidden;
-}
-
-.header-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
-
-.header-bg::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(26, 92, 56, 0.9), rgba(0, 82, 180, 0.9));
-    z-index: 1;
-    box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-}
-
-.header-content {
-    position: relative;
-    z-index: 2;
-    padding: 0 20px;
-    max-width: 800px;
-    margin-top: 70px;
-}
-
-.header-content h1 {
-    font-size: clamp(28px, 5vw, 48px);
-    font-weight: 800;
-    margin-bottom: 15px;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-}
-
-.header-content p {
-    font-size: clamp(16px, 2.5vw, 20px);
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.hero-message {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 2rem;
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    margin-top: 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.hero-message p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin: 0;
-}
-
-#alumni-stories {
-    padding: 5rem 0;
-    background: linear-gradient(135deg, rgba(20, 85, 100, 0.9), rgba(5, 80, 160, 0.9));
-    position: relative;
-    overflow: hidden;
-    z-index: 0;
-}
-
-#alumni-stories::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background:
-        radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 0.1%, transparent 0.2%) 0 0 / 15px 15px,
-        radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.07) 0.1%, transparent 0.2%) 0 0 / 25px 25px,
-        radial-gradient(circle at 70% 80%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 0.1%, transparent 0.2%) 0 0 / 20px 20px;
-    opacity: 0.8;
-    animation: particle-move 15s linear infinite;
-    pointer-events: none;
-    z-index: 1;
-}
-
-/* Ensure no other pseudo-elements are interfering */
-#alumni-stories::after {
-    display: none;
-}
-
-@keyframes particle-move {
-    0% {
-        background-position: 0% 0%, 0% 0%, 0% 0%;
-    }
-    100% {
-        background-position: 100% 100%, 50% 100%, -50% 100%;
-    }
-}
-
-.section-container {
-    position: relative;
-    z-index: 2;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 20px;
-}
-
-.section-container h2 {
-    font-size: 36px;
-    font-weight: 800;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 30px;
-    position: relative;
-    z-index: 1;
-}
-
-.section-container h2::before,
-.section-container h2::after {
-    content: '•';
-    color: #00ff88;
-    display: inline-block;
-    margin: 0 15px;
-    font-size: 24px;
-    vertical-align: middle;
-}
-
-.highlight {
-    color: #ffffff;
-}
-
-.highlight::after {
-    display: none;
-}
-
-.alumni-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.alumni-card {
-    background: #003366;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    border: 2px solid #1A5C38;
-    position: relative;
-}
-
-/* Add special style for founder's card */
-.alumni-card.founder {
-    border: 3px solid #FFD700; /* Golden border */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 215, 0, 0.3); /* Golden glow */
-}
-
-.alumni-card.founder:hover {
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 215, 0, 0.4); /* Enhanced golden glow on hover */
-}
-
-.image-container {
-    position: relative;
-    height: 300px;
-    width: 100%;
-}
-
-.image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.university-badge {
-    position: absolute;
-    bottom: -40px;
-    right: 20px;
-    width: 80px;
-    height: 80px;
-    background: #fff;
-    border-radius: 50%;
-    padding: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-    transition: all 0.3s ease;
-    z-index: 2;
-}
-
-.university-badge img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-    border-radius: 50%;
-}
-
-.card-content {
-    padding: 3rem 2rem 4rem 2rem;
-    background: #003366;
-    margin-top: 0;
-    position: relative;
-    z-index: 1;
-}
-
-.card-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #ffffff;
-}
-
-.university {
-    color: #00ff88;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.major {
-    color: #cccccc;
-    margin-bottom: 1rem;
-}
-
-.story {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: #ffffff;
-}
-
-.alumni-card:hover {
-    transform: translateY(-10px);
-}
-
-.alumni-card:hover .university-badge {
-    transform: translateY(-10px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-.alumni-card:hover .university-badge img {
-    transform: scale(1.1);
-}
-
-#join-alumni {
-    padding: 5rem 0;
-    background: linear-gradient(135deg, rgba(26, 92, 56, 0.9), rgba(0, 82, 180, 0.9));
-    color: #fff;
-    position: relative;
-    overflow: hidden;
-}
-
-#join-alumni::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: 
-        radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 0.1%, transparent 0.2%) 0 0 / 15px 15px,
-        radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.07) 0.1%, transparent 0.2%) 0 0 / 25px 25px,
-        radial-gradient(circle at 70% 80%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 0.1%, transparent 0.2%) 0 0 / 20px 20px;
-    opacity: 0.8;
-    animation: particle-move 15s linear infinite;
-    pointer-events: none;
-}
-
-@keyframes particle-move {
-    0% {
-        background-position: 0% 0%, 0% 0%, 0% 0%;
-    }
-    100% {
-        background-position: 100% 100%, 50% 100%, -50% 100%;
-    }
-}
-
-.cta-container {
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 0 20px;
-}
-
-.cta-container h2 {
-    font-size: 36px;
-    font-weight: 800;
-    margin-bottom: 2rem;
-    position: relative;
-}
-
-.cta-container h2::before,
-.cta-container h2::after {
-    content: '•';
-    color: #00ff88;
-    display: inline-block;
-    margin: 0 15px;
-    font-size: 24px;
-    vertical-align: middle;
-}
-
-.motivation-content {
-    margin-bottom: 2rem;
-}
-
-.highlight-text {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: #00ff88;
-}
-
-.join-message {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 2rem;
-    color: #fff;
-}
-
-.cta-button {
-    position: relative;
-    z-index: 2;
-    display: inline-block;
-    padding: 1rem 2rem;
-    background: transparent;
-    color: #00ff88;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    border: 1px solid #00ff88;
-    cursor: pointer;
-}
-
-.cta-button:hover {
-    background: rgba(0, 255, 136, 0.1);
-    transform: translateY(-3px);
-}
-
-@media (max-width: 768px) {
-    .header-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .header-content p {
-        font-size: 1rem;
-    }
-
-    .hero-message {
-        padding: 1.5rem;
-    }
-
-    .hero-message p {
-        font-size: 1rem;
-    }
-
-    .section-container h2 {
-        font-size: 2rem;
-    }
-
-    .alumni-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .cta-container h2 {
-        font-size: 2rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .header-content h1 {
-        font-size: 2rem;
-    }
-
-    .header-content p {
-        font-size: 0.9rem;
-    }
-
-    .hero-message {
-        padding: 1rem;
-    }
-
-    .hero-message p {
-        font-size: 0.9rem;
-    }
-
-    .section-container h2 {
-        font-size: 1.8rem;
-    }
-
-    .cta-container h2 {
-        font-size: 1.8rem;
-    }
-
-    .highlight-text {
-        font-size: 1.2rem;
-    }
-
-    .join-message {
-        font-size: 1rem;
-    }
-}
-
-/* Add styles for the team logo */
-.team-logo {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-    width: 50px;
-    height: 50px;
-    z-index: 20;
-    pointer-events: none;
-    background: transparent;
-}
-
-.team-logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-    opacity: 1;
-}
-
-.alumni-card a {
-    text-decoration: none;
-} 
+/* Alumni page — similar rhythm to partners, distinct profile-grid layout */
+
+body.alumni-page {
+  background: #f0f5f2;
+}
+
+/* —— Hero —— */
+.alumni-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 58vh;
+  padding: clamp(120px, 14vh, 150px) clamp(20px, 4vw, 48px) clamp(56px, 8vh, 80px);
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  margin: 0;
+}
+
+.alumni-header-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(145deg, rgba(0, 82, 180, 0.82), rgba(26, 92, 56, 0.9)),
+    url('./Alumni/Seif Wael.jpg') center 30% / cover no-repeat;
+  z-index: 0;
+}
+
+.alumni-header-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.alumni-header .header-content {
+  position: relative;
+  z-index: 2;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.alumni-eyebrow {
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 6px 14px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: var(--radius-pill);
+}
+
+.alumni-header h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  margin: 0 0 14px;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+}
+
+.alumni-tagline {
+  margin: 0 auto;
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 560px;
+}
+
+/* —— Intro + stats —— */
+.alumni-intro {
+  background: #fff;
+  border-bottom: 1px solid rgba(26, 92, 56, 0.1);
+}
+
+.alumni-lead {
+  max-width: 780px;
+  margin: 0 auto 36px;
+  text-align: center;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #3d5248;
+}
+
+.alumni-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.alumni-stats li {
+  text-align: center;
+  padding: 20px 16px;
+  background: #eef6f1;
+  border: 1px solid rgba(26, 92, 56, 0.12);
+  border-radius: var(--radius-md);
+}
+
+.alumni-stats strong {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--stem-green);
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.alumni-stats span {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #5a7266;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* —— Showcase grid —— */
+#alumni-stories {
+  background: #f0f5f2;
+}
+
+#alumni-stories .section-heading {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+#alumni-stories .section-subtitle {
+  margin: 0;
+  font-size: 1rem;
+  color: #5a7266;
+}
+
+.alumni-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.alumni-profile {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(26, 92, 56, 0.1);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(26, 92, 56, 0.07);
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), border-color var(--transition-smooth);
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.alumni-profile.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.alumni-profile:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-elevated);
+  border-color: rgba(0, 255, 136, 0.3);
+}
+
+.alumni-profile--featured {
+  border-color: rgba(255, 193, 7, 0.55);
+  box-shadow: 0 6px 28px rgba(255, 193, 7, 0.15);
+}
+
+.alumni-profile--featured:hover {
+  border-color: rgba(255, 193, 7, 0.75);
+  box-shadow: 0 12px 36px rgba(255, 193, 7, 0.22);
+}
+
+.alumni-profile-media {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: linear-gradient(160deg, var(--stem-blue), var(--stem-green-dark));
+}
+
+.alumni-profile-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.alumni-profile:hover .alumni-profile-media img {
+  transform: scale(1.05);
+}
+
+.alumni-founder-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  padding: 5px 12px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #1a3d2e;
+  background: linear-gradient(135deg, #ffd54f, #ffb300);
+  border-radius: var(--radius-pill);
+}
+
+.alumni-uni-badge {
+  position: absolute;
+  bottom: -28px;
+  right: 18px;
+  z-index: 3;
+  width: 72px;
+  height: 72px;
+  padding: 8px;
+  background: #fff;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.alumni-uni-badge img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.alumni-profile:hover .alumni-uni-badge {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+}
+
+.alumni-profile-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 22px 24px;
+}
+
+.alumni-role-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  margin-bottom: 10px;
+  padding: 5px 11px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--stem-blue);
+  background: rgba(0, 82, 180, 0.08);
+  border: 1px solid rgba(0, 82, 180, 0.14);
+  border-radius: var(--radius-pill);
+}
+
+.alumni-role-tag i {
+  font-size: 0.75rem;
+  color: var(--stem-accent);
+}
+
+.alumni-profile--featured .alumni-role-tag {
+  color: #9a7200;
+  background: rgba(255, 193, 7, 0.15);
+  border-color: rgba(255, 193, 7, 0.35);
+}
+
+.alumni-profile-body h3 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--stem-green);
+  letter-spacing: -0.02em;
+}
+
+.alumni-university {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--stem-blue);
+  text-decoration: none;
+  transition: color var(--transition-smooth);
+}
+
+.alumni-university:hover {
+  color: var(--stem-green);
+}
+
+.alumni-major {
+  margin: 0 0 10px;
+  font-size: 0.85rem;
+  color: #6b7f75;
+}
+
+.alumni-role {
+  margin: 0;
+  margin-top: auto;
+  padding-top: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #3d5248;
+  border-top: 1px solid rgba(26, 92, 56, 0.1);
+}
+
+.alumni-profile a {
+  text-decoration: none;
+}
+
+/* —— CTA (light band — contrasts partners’ dark CTA) —— */
+.alumni-cta {
+  padding: clamp(64px, 8vw, 88px) clamp(20px, 4vw, 48px);
+  background: #e4f0ea;
+  border-top: 1px solid rgba(26, 92, 56, 0.12);
+}
+
+.alumni-cta-inner {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  padding: clamp(36px, 5vw, 48px);
+  background: #fff;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(26, 92, 56, 0.12);
+  box-shadow: 0 8px 32px rgba(26, 92, 56, 0.08);
+}
+
+.alumni-cta-eyebrow {
+  margin: 0 0 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--stem-blue);
+}
+
+.alumni-cta-inner h2 {
+  margin-bottom: 16px;
+}
+
+.alumni-cta-text {
+  margin: 0 0 28px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4a6b5a;
+}
+
+.alumni-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--stem-green);
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), background var(--transition-smooth);
+  box-shadow: 0 4px 20px rgba(26, 92, 56, 0.25);
+}
+
+.alumni-cta-btn:hover {
+  transform: translateY(-2px);
+  background: var(--stem-green-dark);
+  box-shadow: 0 8px 28px rgba(26, 92, 56, 0.35);
+}
+
+.alumni-cta-btn i {
+  font-size: 0.9rem;
+  transition: transform var(--transition-smooth);
+}
+
+.alumni-cta-btn:hover i {
+  transform: translateX(4px);
+}
+
+/* —— Responsive —— */
+@media (max-width: 768px) {
+  .alumni-header {
+    min-height: 50vh;
+    padding-top: 110px;
+  }
+
+  .alumni-stats {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .alumni-stats li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-align: left;
+    padding: 16px 20px;
+  }
+
+  .alumni-stats strong {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+
+  #alumni-stories .section-heading {
+    margin-bottom: 32px;
+  }
+
+  .alumni-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .alumni-profile-body {
+    padding: 36px 18px 20px;
+  }
+
+  .alumni-uni-badge {
+    width: 64px;
+    height: 64px;
+    bottom: -24px;
+  }
+}
+

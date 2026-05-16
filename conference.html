@@ -14,7 +14,7 @@
     <meta property="og:description"
         content="Explore the STEM Model African Union Conference - our flagship event showcasing diplomacy and leadership skills.">
     <meta property="og:image" content="./Conference/IMG-20250501-WA0016.jpg">
-    <meta property="og:url" content="https://stemmau.org/conference".
+    <meta property="og:url" content="https://stemmau.org/conference">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
 
@@ -22,12 +22,13 @@
     <link rel="shortcut icon" type="image/x-icon" href="/logo.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/logo.ico">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
     <link rel="stylesheet" href="conference.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
-<body>
+<body class="site-page conference-page">
     <div class="preloader">
         <div class="ball1">
             <svg width="200px" height="200px" viewBox="0 0 100 100">
@@ -52,16 +53,12 @@
     <nav>
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="index.html" class="nav-home-link">
-                    <img src="./logo-removebg-preview.png" alt="STEM Model African Union Logo">
+                <a href="index.html">
+                    <img src="./logo-main.png" alt="STEM Model African Union Logo">
                 </a>
-                <h1>STEM Model African Union</h1>
+                <h1>STEM Model <span class="nav-title-african">African</span> <span class="nav-title-union">Union</span></h1>
             </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <button type="button" class="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
             <ul>
                 <li><a href="index.html" class="main-page-link" data-section="home">Home</a></li>
                 <li><a href="events.html">Events</a></li>
@@ -227,7 +224,7 @@
     </main>
 
     <footer>
-        <p>© 2025 STEM Model African Union. All rights reserved.</p>
+        <p>© 2025 STEM Model <span class="footer-accent">African Union</span>. All rights reserved.</p>
         <p>نظام الاتحاد الأفريقى: المحاكاة العلمية للشباب الأفريقي</p>
     </footer>
 
@@ -249,17 +246,15 @@
             });
         });
 
-        document.querySelector('.nav-home-link').addEventListener('click', function (e) {
-            e.preventDefault();
-            localStorage.setItem('scrollToSection', 'home');
-            window.location.href = 'index.html';
-        });
-
-        document.getElementById('contactButton').addEventListener('click', function (e) {
-            e.preventDefault();
-            localStorage.setItem('scrollToSection', 'contact');
-            window.location.href = 'index.html#contact';
-        });
+        const logoLink = document.querySelector('.nav-logo a');
+        if (logoLink) {
+            logoLink.addEventListener('click', function (e) {
+                if (this.getAttribute('href') === 'index.html') return;
+                e.preventDefault();
+                localStorage.setItem('scrollToSection', 'home');
+                window.location.href = 'index.html';
+            });
+        }
     </script>
 </body>
 

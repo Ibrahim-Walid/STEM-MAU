@@ -16,10 +16,11 @@
   <link rel="shortcut icon" type="image/x-icon" href="/logo.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/logo.ico">
   <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="articles.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
+  <link rel="stylesheet" href="articles.css">
 </head>
-<body>
+<body class="site-page articles-page">
   <div class="preloader">
     <div class="ball1">
       <svg width="200px" height="200px" viewBox="0 0 100 100">
@@ -46,13 +47,9 @@
         <a href="index.html">
           <img src="./logo-main.png" alt="STEM Model African Union Logo">
         </a>
-        <h1>STEM Model African Union</h1>
+        <h1>STEM Model <span class="nav-title-african">African</span> <span class="nav-title-union">Union</span></h1>
       </div>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <button type="button" class="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
       <ul>
         <li><a href="index.html" class="main-page-link" data-section="home">Home</a></li>
         <li><a href="events.html">Events</a></li>
@@ -66,7 +63,7 @@
     </div>
   </nav>
   <div class="articles-center-wrapper">
-    <h1 class="articles-title">Magazine</h1>
+    <h1 class="articles-title">Our <span class="page-accent">Magazine</span></h1>
     <div class="articles-grid">
       <div class="article-card" data-article="1">
         <div class="article-image" style="background-image: url('./Article/Sudanese Civil War.png');"></div>

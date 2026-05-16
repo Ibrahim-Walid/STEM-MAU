@@ -1,0 +1,264 @@
+/* Shared subpage layout — matches homepage design system */
+
+body.site-page {
+  background: #f4f6f8;
+}
+
+/* —— Page heroes —— */
+.events-header,
+.alumni-header,
+.partners-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 72vh;
+  padding: clamp(120px, 16vh, 160px) clamp(20px, 4vw, 48px) clamp(64px, 8vh, 96px);
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.events-header .header-bg,
+.alumni-header .header-bg,
+.partners-header .header-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.events-header .header-bg::after,
+.alumni-header .header-bg::after,
+.partners-header .header-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(26, 92, 56, 0.75), rgba(0, 82, 180, 0.75)),
+    rgba(0, 0, 0, 0.45);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.events-header .header-bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-content {
+  position: relative;
+  z-index: 2;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.header-content h1 {
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 800;
+  margin: 0 0 14px;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.header-content p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  margin: 0 auto;
+  max-width: 620px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-message {
+  margin-top: 28px;
+  padding: clamp(20px, 3vw, 28px) clamp(22px, 3vw, 32px);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: var(--shadow-soft);
+  text-align: left;
+}
+
+.hero-message p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.92);
+  max-width: none;
+}
+
+/* —— Main content —— */
+body.site-page main {
+  background: #f4f6f8;
+  margin: 0;
+}
+
+.section-container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: clamp(64px, 8vw, 88px) clamp(20px, 4vw, 48px);
+  box-sizing: border-box;
+}
+
+body.site-page:not(.conference-page) section h2,
+body.site-page:not(.conference-page) .section-container h2 {
+  font-size: clamp(1.75rem, 4vw, 2.35rem);
+  font-weight: 800;
+  color: var(--stem-green);
+  text-align: center;
+  margin: 0 auto 36px;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  position: relative;
+  display: block;
+  max-width: 720px;
+}
+
+body.site-page:not(.conference-page) section h2::before,
+body.site-page:not(.conference-page) section h2::after {
+  display: none !important;
+}
+
+body.site-page:not(.conference-page) section h2::after {
+  display: block !important;
+  content: '';
+  width: 56px;
+  height: 4px;
+  margin: 14px auto 0;
+  background: linear-gradient(90deg, var(--stem-green), var(--stem-accent));
+  border-radius: var(--radius-pill);
+}
+
+.highlight,
+.page-accent,
+.profs-title-accent {
+  color: var(--stem-accent);
+}
+
+.highlight::after {
+  display: none;
+}
+
+/* —— Glass / card surfaces —— */
+body.site-page:not(.alumni-page) .alumni-card,
+body.site-page:not(.partners-page) .partner-card,
+body.site-page .event-card,
+body.site-page .topic-card,
+body.site-page .wrap {
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: var(--shadow-soft);
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), border-color var(--transition-smooth);
+}
+
+body.site-page:not(.alumni-page) .alumni-card:hover,
+body.site-page .partner-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-elevated);
+  border-color: rgba(0, 255, 136, 0.25);
+}
+
+/* —— Magazine page —— */
+body.site-page.articles-page {
+  background: linear-gradient(180deg, #0d1f14 0%, #0a1628 50%, #061018 100%);
+}
+
+body.site-page.articles-page .articles-center-wrapper {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+  padding: clamp(120px, 14vh, 150px) clamp(20px, 4vw, 48px) clamp(64px, 8vh, 88px);
+  min-height: auto;
+  justify-content: flex-start;
+}
+
+body.site-page.articles-page .articles-title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 800;
+  margin: 0 auto 40px;
+  letter-spacing: -0.03em;
+  color: #fff;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+body.site-page.articles-page .articles-title::after {
+  width: 56px;
+  height: 4px;
+  margin-top: 14px;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(90deg, var(--stem-green), var(--stem-accent));
+}
+
+body.site-page.articles-page .articles-grid {
+  max-width: 1180px;
+  gap: 24px;
+}
+
+body.site-page.articles-page .article-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+body.site-page.articles-page .article-card:hover {
+  border-color: rgba(0, 255, 136, 0.4);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-elevated);
+}
+
+body.site-page.articles-page .article-info h2,
+body.site-page.articles-page .article-title {
+  color: #fff;
+}
+
+/* —— Conference page —— */
+body.conference-page main {
+  background: #f8f9fa;
+}
+
+body.conference-page .highlight {
+  color: var(--stem-accent);
+}
+
+/* —— High board page —— */
+body.site-page.highboard-page #highboard {
+  padding-top: clamp(120px, 14vh, 150px);
+}
+
+/* —— Carousel controls —— */
+body.site-page .carousel-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  border-radius: 50%;
+  transition: background var(--transition-smooth), border-color var(--transition-smooth), transform var(--transition-smooth);
+}
+
+body.site-page .carousel-btn:hover {
+  background: rgba(0, 255, 136, 0.2);
+  border-color: rgba(0, 255, 136, 0.45);
+  transform: scale(1.06);
+}
+
+@media (max-width: 768px) {
+  .events-header,
+  .alumni-header,
+  .partners-header {
+    min-height: 65vh;
+    padding-top: 110px;
+  }
+
+  .section-container {
+    padding: 56px 20px;
+  }
+}

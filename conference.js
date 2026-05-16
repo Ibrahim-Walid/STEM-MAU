@@ -106,7 +106,9 @@ function initCertificateCarousel() {
     const prevBtn = document.querySelector('.certificate-prev');
     const nextBtn = document.querySelector('.certificate-next');
     const indicatorsContainer = document.querySelector('.certificate-indicators');
-    
+
+    if (!wrapper || !prevBtn || !nextBtn || !indicatorsContainer) return;
+
     wrapper.innerHTML = '';
     
     const certificateImages = [
@@ -314,6 +316,7 @@ function initScrollAnimations() {
 function initMenuTabs() {
     const menuTabs = document.querySelectorAll('.menu-tab');
     const menuItems = document.querySelectorAll('.menu-item');
+    if (!menuTabs.length || !menuItems.length) return;
     const menuTabArrows = document.querySelectorAll('.menu-tab-arrow');
     const spacer = document.getElementById('mobile-menu-spacer');
     
@@ -445,7 +448,9 @@ function initMenuTabs() {
 
 function initGalleryCarousel() {
     const carousel = document.querySelector('.conference-carousel');
+    if (!carousel) return;
     const track = carousel.querySelector('.carousel-track');
+    if (!track) return;
     const nextButton = carousel.querySelector('.next-btn');
     const prevButton = carousel.querySelector('.prev-btn');
     const indicatorsContainer = carousel.querySelector('.carousel-indicators');

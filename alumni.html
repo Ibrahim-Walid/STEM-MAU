@@ -4,34 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STEM MAU Alumni</title>
+    <title>Alumni - STEM Model African Union</title>
     <meta name="description"
         content="Discover the success stories of STEM Model African Union alumni who have been accepted into prestigious international universities.">
     <meta name="keywords"
         content="STEM, Model African Union, MAU, alumni, success stories, international universities, education">
 
-    <!-- Favicon configuration -->
     <link rel="icon" type="image/x-icon" href="/logo.ico">
     <link rel="shortcut icon" type="image/x-icon" href="/logo.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/logo.ico">
     <link rel="manifest" href="./site.webmanifest">
     <meta name="theme-color" content="#ffffff">
 
-    <meta property="og:title" content="STEM MAU Alumni">
+    <meta property="og:title" content="Alumni - STEM Model African Union">
     <meta property="og:description"
         content="Discover the success stories of STEM Model African Union alumni who have been accepted into prestigious international universities.">
-    <meta property="og:image" content="./alumni/hero-bg.jpg">
+    <meta property="og:image" content="./Alumni/Seif Wael.jpg">
     <meta property="og:url" content="https://stemmau.org/alumni">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
     <link rel="stylesheet" href="alumni.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
-<body>
+<body class="site-page alumni-page">
     <div class="preloader">
         <div class="ball1">
             <svg width="200px" height="200px" viewBox="0 0 100 100">
@@ -56,16 +56,14 @@
     <nav>
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="index.html" class="nav-home-link">
-                    <img src="./logo-removebg-preview.png" alt="STEM Model African Union Logo">
+                <a href="index.html">
+                    <img src="./logo-main.png" alt="STEM Model African Union Logo">
                 </a>
-                <h1>STEM Model African Union</h1>
+                <h1>STEM Model <span class="nav-title-african">African</span> <span class="nav-title-union">Union</span></h1>
             </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <button type="button" class="hamburger" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
             <ul>
                 <li><a href="index.html" class="main-page-link" data-section="home">Home</a></li>
                 <li><a href="events.html">Events</a></li>
@@ -80,179 +78,188 @@
     </nav>
 
     <header class="alumni-header">
-        <div class="header-bg">
-            <div class="particles"></div>
-        </div>
+        <div class="alumni-header-bg"></div>
+        <div class="alumni-header-overlay"></div>
         <div class="header-content">
-            <h1>Our Alumni</h1>
-            <p>Celebrating the achievements of our former members who continue to make an impact globally</p>
-            <div class="hero-message">
-                <p>At STEM MAU, we transform ambitious students into global leaders through our dynamic conferences and events. By immersing students in real-world diplomatic scenarios, we build the confidence and expertise that top universities value, creating a legacy of excellence that continues to inspire future generations.</p>
-            </div>
+            <p class="alumni-eyebrow">Our Legacy</p>
+            <h1>STEM MAU <span class="page-accent">Alumni</span></h1>
+            <p class="alumni-tagline">Former members who continue to lead on campuses and communities worldwide</p>
         </div>
     </header>
 
-    <main>
+    <main class="alumni-main">
+        <section class="alumni-intro">
+            <div class="section-container">
+                <p class="alumni-lead">
+                    At STEM MAU, we transform ambitious students into global leaders through conferences and real-world
+                    diplomatic experiences. Our alumni carry that foundation into top universities across the globe—proof
+                    that the skills built here open doors far beyond our sessions.
+                </p>
+                <ul class="alumni-stats" aria-label="Alumni highlights">
+                    <li><strong>8+</strong><span>Featured graduates</span></li>
+                    <li><strong>6</strong><span>Countries represented</span></li>
+                    <li><strong>100%</strong><span>International placements</span></li>
+                </ul>
+            </div>
+        </section>
+
         <section id="alumni-stories">
             <div class="section-container">
-                <h2>Success <span class="highlight">Stories</span></h2>
+                <header class="section-heading">
+                    <h2>Success <span class="highlight">Stories</span></h2>
+                    <p class="section-subtitle">Where our members are studying and leading next</p>
+                </header>
+
                 <div class="alumni-grid">
-                    <div class="alumni-card">
-                        <div class="image-container">
-                            <img src="./Alumni/Belal Ahmed.jpg" alt="Alumni Member">
-                            <a href="https://www.upenn.edu/" target="_blank"><div class="university-badge">
-                                <img src="./Alumni/Pennsylvania.png" alt="University Logo">
-                            </div></a>
+                    <article class="alumni-profile">
+                        <div class="alumni-profile-media">
+                            <img src="./Alumni/Belal Ahmed.jpg" alt="Belal Ahmed">
+                            <a href="https://www.upenn.edu/" target="_blank" rel="noopener noreferrer" class="alumni-uni-badge" aria-label="University of Pennsylvania">
+                                <img src="./Alumni/Pennsylvania.png" alt="">
+                            </a>
                         </div>
-                        <div class="card-content">
+                        <div class="alumni-profile-body">
+                            <span class="alumni-role-tag"><i class="fas fa-star"></i> 2024</span>
                             <h3>Belal Ahmed</h3>
-                            <a href="https://www.upenn.edu/" target="_blank"><p class="university">University of Pennsylvania</p></a>
-                            <p class="major">Undecided</p>
-                            <p class="story">Conference Coordinator 2024</p>
+                            <a href="https://www.upenn.edu/" target="_blank" rel="noopener noreferrer" class="alumni-university">University of Pennsylvania</a>
+                            <p class="alumni-major">Undecided</p>
+                            <p class="alumni-role">Conference Coordinator 2024</p>
                         </div>
-                        <div class="team-logo">
-                            <img src="./logo-removebg-preview.png" alt="Team Logo">
+                    </article>
+
+                    <article class="alumni-profile">
+                        <div class="alumni-profile-media">
+                            <img src="./Alumni/Ahmed Khaled.jpg" alt="Ahmed Khaled">
+                            <a href="https://en.uestc.edu.cn/" target="_blank" rel="noopener noreferrer" class="alumni-uni-badge" aria-label="University of Electronic Science and Technology of China">
+                                <img src="./Alumni/University of Electronic Science and Technology of China.jpg" alt="">
+                            </a>
                         </div>
-                    </div>
-                    
-                    <div class="alumni-card">
-                        <div class="image-container">
-                            <img src="./Alumni/Ahmed Khaled.jpg" alt="Alumni Member">
-                            <a href="https://en.uestc.edu.cn/" target="_blank"><div class="university-badge">
-                                <img src="./Alumni/University of Electronic Science and Technology of China.jpg" alt="University Logo">
-                            </div></a>
-                        </div>
-                        <div class="card-content">
+                        <div class="alumni-profile-body">
+                            <span class="alumni-role-tag"><i class="fas fa-star"></i> 2024</span>
                             <h3>Ahmed Khaled</h3>
-                            <a href="https://en.uestc.edu.cn/" target="_blank"><p class="university">University of Electronic Science and Technology of China</p></a>
-                            <p class="major">Engineering</p>
-                            <p class="story">Head of IT 2024</p>
+                            <a href="https://en.uestc.edu.cn/" target="_blank" rel="noopener noreferrer" class="alumni-university">University of Electronic Science and Technology of China</a>
+                            <p class="alumni-major">Engineering</p>
+                            <p class="alumni-role">Head of IT 2024</p>
                         </div>
-                        <div class="team-logo">
-                            <img src="./logo-removebg-preview.png" alt="Team Logo">
+                    </article>
+
+                    <article class="alumni-profile alumni-profile--featured">
+                        <div class="alumni-profile-media">
+                            <img src="./Alumni/Seif Wael.jpg" alt="Seif Wael">
+                            <span class="alumni-founder-badge">Founder</span>
+                            <a href="https://www.coloradocollege.edu/" target="_blank" rel="noopener noreferrer" class="alumni-uni-badge" aria-label="Colorado College">
+                                <img src="./Alumni/Colorado College.png" alt="">
+                            </a>
                         </div>
-                    </div>
-                    
-                    <div class="alumni-card founder">
-                        <div class="image-container">
-                            <img src="./Alumni/Seif Wael.jpg" alt="Alumni Member">
-                            <a href="https://www.coloradocollege.edu/" target="_blank"><div class="university-badge">
-                                <img src="./Alumni/Colorado College.png" alt="University Logo">
-                            </div></a>
-                        </div>
-                        <div class="card-content">
+                        <div class="alumni-profile-body">
+                            <span class="alumni-role-tag"><i class="fas fa-crown"></i> 2023</span>
                             <h3>Seif Wael</h3>
-                            <a href="https://www.coloradocollege.edu/" target="_blank"><p class="university">Colorado College</p></a>
-                            <p class="major">Computer science</p>
-                            <p class="story">Founder & President 2023</p>
+                            <a href="https://www.coloradocollege.edu/" target="_blank" rel="noopener noreferrer" class="alumni-university">Colorado College</a>
+                            <p class="alumni-major">Computer Science</p>
+                            <p class="alumni-role">Founder &amp; President 2023</p>
                         </div>
-                        <div class="team-logo">
-                            <img src="./logo-removebg-preview.png" alt="Team Logo">
+                    </article>
+
+                    <article class="alumni-profile">
+                        <div class="alumni-profile-media">
+                            <img src="./Alumni/Mohamed Mashour.jpg" alt="Mohamed Mashour">
+                            <a href="https://www.africanleadershipacademy.org/" target="_blank" rel="noopener noreferrer" class="alumni-uni-badge" aria-label="African Leadership Academy">
+                                <img src="./Alumni/ALA.jpeg" alt="">
+                            </a>
                         </div>
-                    </div>
-                    <div class="alumni-card">
-                        <div class="image-container">
-                            <img src="./Alumni/Mohamed Mashour.jpg" alt="Alumni Member">
-                            <a href="https://www.africanleadershipacademy.org/" target="_blank"><div class="university-badge">
-                                <img src="./Alumni/ALA.jpeg" alt="University Logo">
-                            </div></a>
-                        </div>
-                        <div class="card-content">
+                        <div class="alumni-profile-body">
+                            <span class="alumni-role-tag"><i class="fas fa-star"></i> 2023</span>
                             <h3>Mohamed Mashour</h3>
-                            <a href="https://www.africanleadershipacademy.org/" target="_blank"><p class="university">African Leadership Academy</p></a>
-                            <p class="major">High School (Pre-College)</p>
-                            <p class="story">Academic Director 2023</p>
+                            <a href="https://www.africanleadershipacademy.org/" target="_blank" rel="noopener noreferrer" class="alumni-university">African Leadership Academy</a>
+                            <p class="alumni-major">High School (Pre-College)</p>
+                            <p class="alumni-role">Academic Director 2023</p>
                         </div>
-                        <div class="team-logo">
-                            <img src="./logo-removebg-preview.png" alt="Team Logo">
+                    </article>
+
+                    <article class="alumni-profile">
+                        <div class="alumni-profile-media">
+                            <img src="./Alumni/Ahmed Elshafey.jpg" alt="Ahmed Elshafey">
+                            <a href="https://www.wagner.edu/" target="_blank" rel="noopener noreferrer" class="alumni-uni-badge" aria-label="Wagner College">
+                                <img src="./Alumni/Wagner College.jpg" alt="">
+                            </a>
                         </div>
-                    </div>
-                    <div class="alumni-card">
-                        <div class="image-container">
-                            <img src="./Alumni/Ahmed Elshafey.jpg" alt="Alumni Member">
-                            <a href="https://www.wagner.edu/" target="_blank"><div class="university-badge">
-                                <img src="./Alumni/Wagner College.jpg" alt="University Logo">
-                            </div></a>
-                        </div>
-                        <div class="card-content">
+                        <div class="alumni-profile-body">
+                            <span class="alumni-role-tag"><i class="fas fa-star"></i> 2023</span>
                             <h3>Ahmed Elshafey</h3>
-                            <a href="https://www.wagner.edu/" target="_blank"><p class="university">Wagner College</p></a>
-                            <p class="major">Business</p>
-                            <p class="story">Head marketing 2023</p>
+                            <a href="https://www.wagner.edu/" target="_blank" rel="noopener noreferrer" class="alumni-university">Wagner College</a>
+                            <p class="alumni-major">Business</p>
+                            <p class="alumni-role">Head Marketing 2023</p>
                         </div>
-                        <div class="team-logo">
-                            <img src="./logo-removebg-preview.png" alt="Team Logo">
+                    </article>
+
+                    <article class="alumni-profile">
+                        <div class="alumni-profile-media">
+                            <img src="./Alumni/Yousef Abbas.jpg" alt="Yousef Abbas">
+                            <a href="https://www.guc.edu.eg/" target="_blank" rel="noopener noreferrer" class="alumni-uni-badge" aria-label="German University in Cairo">
+                                <img src="./Alumni/GUC.jpeg" alt="">
+                            </a>
                         </div>
-                    </div>
-                    <div class="alumni-card">
-                        <div class="image-container">
-                            <img src="./Alumni/Yousef Abbas.jpg" alt="Alumni Member">
-                            <a href="https://www.guc.edu.eg/" target="_blank"><div class="university-badge">
-                                <img src="./Alumni/GUC.jpeg" alt="University Logo">
-                            </div></a>
-                        </div>
-                        <div class="card-content">
+                        <div class="alumni-profile-body">
+                            <span class="alumni-role-tag"><i class="fas fa-star"></i> 2023</span>
                             <h3>Yousef Abbas</h3>
-                            <a href="https://www.guc.edu.eg/" target="_blank"><p class="university">German University in Cairo</p></a>
-                            <p class="major">Engineering</p>
-                            <p class="story">Secretary 2023</p>
+                            <a href="https://www.guc.edu.eg/" target="_blank" rel="noopener noreferrer" class="alumni-university">German University in Cairo</a>
+                            <p class="alumni-major">Engineering</p>
+                            <p class="alumni-role">Secretary 2023</p>
                         </div>
-                        <div class="team-logo">
-                            <img src="./logo-removebg-preview.png" alt="Team Logo">
+                    </article>
+
+                    <article class="alumni-profile">
+                        <div class="alumni-profile-media">
+                            <img src="./Alumni/Mazen Hisham.jpg" alt="Mazen Hisham">
+                            <a href="https://en.nuist.edu.cn/main.psp" target="_blank" rel="noopener noreferrer" class="alumni-uni-badge" aria-label="Nanjing University of Information Science and Technology">
+                                <img src="./Alumni/NUIST.png" alt="">
+                            </a>
                         </div>
-                    </div>
-                    <div class="alumni-card">
-                        <div class="image-container">
-                            <img src="./Alumni/Mazen Hisham.jpg" alt="Alumni Member">
-                            <a href="https://en.nuist.edu.cn/main.psp" target="_blank"><div class="university-badge">
-                                <img src="./Alumni/NUIST.png" alt="University Logo">
-                            </div></a>
-                        </div>
-                        <div class="card-content">
+                        <div class="alumni-profile-body">
+                            <span class="alumni-role-tag"><i class="fas fa-star"></i> 2024</span>
                             <h3>Mazen Hisham</h3>
-                            <a href="https://en.nuist.edu.cn/main.psp" target="_blank"><p class="university">Nanjing University of Information Science and Technology</p></a>
-                            <p class="major">Engineering</p>
-                            <p class="story">Head of Content Writing 2024</p>
+                            <a href="https://en.nuist.edu.cn/main.psp" target="_blank" rel="noopener noreferrer" class="alumni-university">Nanjing University of Information Science and Technology</a>
+                            <p class="alumni-major">Engineering</p>
+                            <p class="alumni-role">Head of Content Writing 2024</p>
                         </div>
-                        <div class="team-logo">
-                            <img src="./logo-removebg-preview.png" alt="Team Logo">
+                    </article>
+
+                    <article class="alumni-profile">
+                        <div class="alumni-profile-media">
+                            <img src="./Alumni/Hazem Taha.jpg" alt="Hazem Taha">
+                            <a href="https://www.uwc-usa.org/" target="_blank" rel="noopener noreferrer" class="alumni-uni-badge" aria-label="United World College of the Atlantic">
+                                <img src="./Alumni/UWC_USA.jpg" alt="">
+                            </a>
                         </div>
-                    </div>
-                    <div class="alumni-card">
-                        <div class="image-container">
-                            <img src="./Alumni/Hazem Taha.jpg" alt="Alumni Member">
-                            <a href="https://www.uwc-usa.org/" target="_blank"><div class="university-badge">
-                                <img src="./Alumni/UWC_USA.jpg" alt="University Logo">
-                            </div></a>
-                        </div>
-                        <div class="card-content">
+                        <div class="alumni-profile-body">
+                            <span class="alumni-role-tag"><i class="fas fa-star"></i> 2025</span>
                             <h3>Hazem Taha</h3>
-                            <a href="https://www.uwc-usa.org/" target="_blank"><p class="university">United World College of the Atlantic</p></a>
-                            <p class="major">High School (Pre-College)</p>
-                            <p class="story">Head of Academics 2025</p>
+                            <a href="https://www.uwc-usa.org/" target="_blank" rel="noopener noreferrer" class="alumni-university">United World College of the Atlantic</a>
+                            <p class="alumni-major">High School (Pre-College)</p>
+                            <p class="alumni-role">Head of Academics 2025</p>
                         </div>
-                        <div class="team-logo">
-                            <img src="./logo-removebg-preview.png" alt="Team Logo">
-                        </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="join-alumni">
-            <div class="cta-container">
-                <h2>Be Our Next Success Story</h2>
-                <div class="motivation-content">
-                    <p class="highlight-text">Join STEM MAU</p>
-                    <p class="join-message">Join our community of future leaders and become part of our growing legacy of success. Your journey to excellence starts here, where every member has the opportunity to shine and achieve their dreams.</p>
-                </div>
-                <a href="index.html#contact" class="cta-button" id="contactButton">Start Your Journey</a>
+        <section id="join-alumni" class="alumni-cta">
+            <div class="alumni-cta-inner">
+                <p class="alumni-cta-eyebrow">Your turn</p>
+                <h2>Be Our Next <span class="highlight">Success Story</span></h2>
+                <p class="alumni-cta-text">
+                    Join our community of future leaders and become part of a growing legacy. Your journey to excellence
+                    starts here—where every member has the opportunity to shine.
+                </p>
+                <a href="index.html#contact" class="alumni-cta-btn" id="contactButton">
+                    Start Your Journey <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2025 STEM Model African Union. All rights reserved.</p>
+        <p>© 2025 STEM Model <span class="footer-accent">African Union</span>. All rights reserved.</p>
         <p>نظام الاتحاد الأفريقى: المحاكاة العلمية للشباب الأفريقي</p>
     </footer>
 
@@ -264,6 +271,24 @@
 
     <script src="script.js"></script>
     <script src="alumni.js"></script>
+    <script>
+        document.querySelectorAll('.main-page-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                localStorage.setItem('scrollToSection', this.getAttribute('data-section'));
+                window.location.href = 'index.html#' + this.getAttribute('data-section');
+            });
+        });
+
+        const contactBtn = document.getElementById('contactButton');
+        if (contactBtn) {
+            contactBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                localStorage.setItem('scrollToSection', 'contact');
+                window.location.href = 'index.html#contact';
+            });
+        }
+    </script>
 </body>
 
-</html> 
+</html>

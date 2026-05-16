@@ -10,7 +10,6 @@
     <meta name="keywords"
         content="STEM, Model African Union, MAU, partners, partnerships, collaboration, diplomacy, leadership, education">
 
-    <!-- Favicon configuration -->
     <link rel="icon" type="image/x-icon" href="/logo.ico">
     <link rel="shortcut icon" type="image/x-icon" href="/logo.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/logo.ico">
@@ -26,12 +25,13 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
     <link rel="stylesheet" href="partners.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
-<body>
+<body class="site-page partners-page">
     <div class="preloader">
         <div class="ball1">
             <svg width="200px" height="200px" viewBox="0 0 100 100">
@@ -56,16 +56,14 @@
     <nav>
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="index.html" class="nav-home-link">
-                    <img src="./logo-removebg-preview.png" alt="STEM Model African Union Logo">
+                <a href="index.html">
+                    <img src="./logo-main.png" alt="STEM Model African Union Logo">
                 </a>
-                <h1>STEM Model African Union</h1>
+                <h1>STEM Model <span class="nav-title-african">African</span> <span class="nav-title-union">Union</span></h1>
             </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <button type="button" class="hamburger" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
             <ul>
                 <li><a href="index.html" class="main-page-link" data-section="home">Home</a></li>
                 <li><a href="events.html">Events</a></li>
@@ -80,76 +78,86 @@
     </nav>
 
     <header class="partners-header">
-        <div class="header-bg">
-            <div class="particles"></div>
-        </div>
+        <div class="partners-header-bg"></div>
+        <div class="partners-header-overlay"></div>
         <div class="header-content">
-            <h1>Our Partners</h1>
-            <p>Building bridges through strategic partnerships to empower African youth</p>
-            <div class="hero-message">
-                <p>At STEM MAU, we believe in the power of collaboration. Our partnerships with leading organizations enable us to create more impactful experiences, expand our reach, and provide our members with unique opportunities for growth and development. Together with our partners, we are building a stronger foundation for the future of African leadership and diplomacy.</p>
-            </div>
+            <p class="partners-eyebrow">Collaboration</p>
+            <h1>Our <span class="page-accent">Partners</span></h1>
+            <p class="partners-tagline">Building bridges through strategic partnerships to empower African youth</p>
         </div>
     </header>
 
-    <main>
+    <main class="partners-main">
+        <section class="partners-intro">
+            <div class="section-container">
+                <p class="partners-lead">
+                    At STEM MAU, we believe in the power of collaboration. Our partnerships with leading organizations
+                    help us create more impactful experiences, expand our reach, and give members unique opportunities
+                    for growth—together building a stronger foundation for African leadership and diplomacy.
+                </p>
+            </div>
+        </section>
+
         <section id="partners-showcase">
             <div class="section-container">
-                <h2>Strategic <span class="highlight">Partnerships</span></h2>
-                <div class="partners-grid">
-                    <div class="partner-card">
-                        <div class="partner-image">
-                            <img src="./Partners/MAL.jpg" alt="MAL Partnership">
-                        </div>
-                        <div class="partner-content">
-                            <div class="partner-header">
-                                <h3>STEM MAL</h3>
-                            </div>
-                            <p>Our collaboration with STEM MAL has been truly remarkable. We joined forces to conduct comprehensive interviews for the 2025 season applicants, combining our expertise to identify the most promising candidates. This partnership allowed us to share best practices in candidate evaluation while ensuring a thorough selection process that benefits both organizations. Working together on this crucial recruitment phase strengthened our relationship and demonstrated the power of united efforts in fostering future leaders.</p>
-                        </div>
-                    </div>
+                <header class="section-heading">
+                    <h2>Strategic <span class="highlight">Partnerships</span></h2>
+                    <p class="section-subtitle">Organizations we work with to deliver excellence</p>
+                </header>
 
-                    <div class="partner-card">
-                        <div class="partner-image">
-                            <img src="./Partners/MUN.jpg" alt="MUN Partnership">
+                <div class="partners-list">
+                    <article class="partner-card">
+                        <div class="partner-card-media">
+                            <img src="./Partners/MAL.jpg" alt="STEM MAL partnership">
                         </div>
-                        <div class="partner-content">
-                            <div class="partner-header">
-                                <h3>STEM MUN</h3>
-                            </div>
-                            <p>The partnership with STEM MUN represents a significant milestone in our collaborative efforts. Together, we developed and implemented an extensive training program designed specifically for our conference participants. This joint initiative provided attendees with essential skills and knowledge needed for successful conference participation. The training sessions covered various aspects of diplomatic procedures, negotiation techniques, and international relations, creating a comprehensive learning experience that enhanced the overall conference quality and participant preparedness.</p>
+                        <div class="partner-card-body">
+                            <span class="partner-tag"><i class="fas fa-handshake"></i> Recruitment</span>
+                            <h3>STEM MAL</h3>
+                            <p>Our collaboration with STEM MAL has been truly remarkable. We joined forces to conduct comprehensive interviews for the 2025 season applicants, combining our expertise to identify the most promising candidates. This partnership allowed us to share best practices in candidate evaluation while ensuring a thorough selection process that benefits both organizations.</p>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="partner-card">
-                        <div class="partner-image">
-                            <img src="./Partners/SKILSPIRE.jpg" alt="SKILSPIRE Partnership">
+                    <article class="partner-card partner-card--reverse">
+                        <div class="partner-card-media">
+                            <img src="./Partners/MUN.jpg" alt="STEM MUN partnership">
                         </div>
-                        <div class="partner-content">
-                            <div class="partner-header">
-                                <h3>SKILSPIRE</h3>
-                            </div>
-                            <p>Skilspire's enthusiastic participation in our conference has enriched the entire experience for everyone involved. Their members bring valuable perspectives and diverse backgrounds that contribute significantly to the dynamic discussions and collaborative atmosphere of our events. This partnership exemplifies the mutual benefits of cross-organizational collaboration, where shared knowledge and experiences create a more vibrant and inclusive learning environment. We're grateful for their continued engagement and look forward to strengthening this relationship further.</p>
+                        <div class="partner-card-body">
+                            <span class="partner-tag"><i class="fas fa-chalkboard-teacher"></i> Training</span>
+                            <h3>STEM MUN</h3>
+                            <p>The partnership with STEM MUN represents a significant milestone in our collaborative efforts. Together, we developed and implemented an extensive training program designed specifically for our conference participants—covering diplomatic procedures, negotiation techniques, and international relations.</p>
                         </div>
-                    </div>
+                    </article>
+
+                    <article class="partner-card">
+                        <div class="partner-card-media">
+                            <img src="./Partners/SKILSPIRE.jpg" alt="SKILSPIRE partnership">
+                        </div>
+                        <div class="partner-card-body">
+                            <span class="partner-tag"><i class="fas fa-users"></i> Conference</span>
+                            <h3>SKILSPIRE</h3>
+                            <p>Skilspire's enthusiastic participation in our conference has enriched the entire experience for everyone involved. Their members bring valuable perspectives and diverse backgrounds that contribute significantly to dynamic discussions and a more inclusive learning environment.</p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="become-partner">
-            <div class="cta-container">
-                <h2>Interested in Partnership?</h2>
-                <div class="motivation-content">
-                    <p class="highlight-text">Join Our Network</p>
-                    <p class="join-message">We're always looking for organizations that share our vision of empowering African youth through education, diplomacy, and leadership development. If you're interested in exploring partnership opportunities with STEM MAU, we'd love to hear from you.</p>
-                </div>
-                <a href="index.html#contact" class="cta-button" id="contactButton">Contact Us</a>
+        <section id="become-partner" class="partners-cta">
+            <div class="partners-cta-inner">
+                <h2>Interested in <span class="highlight">Partnership</span>?</h2>
+                <p class="partners-cta-text">
+                    We're always looking for organizations that share our vision of empowering African youth through
+                    education, diplomacy, and leadership development.
+                </p>
+                <a href="index.html#contact" class="partners-cta-btn" id="contactButton">
+                    Contact Us <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2025 STEM Model African Union. All rights reserved.</p>
+        <p>© 2025 STEM Model <span class="footer-accent">African Union</span>. All rights reserved.</p>
         <p>نظام الاتحاد الأفريقى: المحاكاة العلمية للشباب الأفريقي</p>
     </footer>
 
@@ -165,23 +173,19 @@
         document.querySelectorAll('.main-page-link').forEach(link => {
             link.addEventListener('click', function (e) {
                 e.preventDefault();
-                const sectionId = this.getAttribute('data-section');
-                localStorage.setItem('scrollToSection', sectionId);
-                window.location.href = 'index.html#' + sectionId;
+                localStorage.setItem('scrollToSection', this.getAttribute('data-section'));
+                window.location.href = 'index.html#' + this.getAttribute('data-section');
             });
         });
 
-        document.querySelector('.nav-home-link').addEventListener('click', function (e) {
-            e.preventDefault();
-            localStorage.setItem('scrollToSection', 'home');
-            window.location.href = 'index.html';
-        });
-
-        document.getElementById('contactButton').addEventListener('click', function (e) {
-            e.preventDefault();
-            localStorage.setItem('scrollToSection', 'contact');
-            window.location.href = 'index.html#contact';
-        });
+        const contactBtn = document.getElementById('contactButton');
+        if (contactBtn) {
+            contactBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                localStorage.setItem('scrollToSection', 'contact');
+                window.location.href = 'index.html#contact';
+            });
+        }
     </script>
 </body>
 
